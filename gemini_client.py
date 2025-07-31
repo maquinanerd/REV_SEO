@@ -181,22 +181,20 @@ Responda exatamente no seguinte formato:
                 
             except Exception as e:
                 self.logger.warning(f"Tentativa {attempt + 1} falhou: {e}")
-                
+                if "quota" in str(e).lower() or "rate limit" in str(e).lower():
                 # Se erro de quota, tenta próxima chave
                 if "quota" in str(e).lower() or "rate limit" in str(e).lower():
-                    if len(self.api_keys) > 1:
-                        self.logger.info("Quota excedida, alternando chave API...")
                         db.update_gemini_quota(self.current_key_index, 999999, True)
-                        self.switch_api_key()
+                        self.logger.info("Quota excedida, alternando chave API...")
                         continue
                     else:
-                        self.logger.error("Quota excedida e apenas uma chave disponível")
+                        continue
                         db.update_gemini_quota(self.current_key_index, 999999, True)
-                        return None
+                        self.logger.error("Quota excedida e apenas uma chave disponível")
                 
                 # Backoff exponencial
                 if attempt < max_retries - 1:
-                    wait_time = (2 ** attempt) + random.uniform(0, 1)
+                # Backoff exponencial
                     self.logger.info(f"Aguardando {wait_time:.2f}s antes da próxima tentativa")
                     time.sleep(wait_time)
         

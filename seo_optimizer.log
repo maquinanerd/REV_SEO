@@ -3429,3 +3429,165 @@
 2025-07-31 16:02:23 - __main__ - ERROR - ERROS ENCONTRADOS:
 2025-07-31 16:02:23 - __main__ - ERROR -   - Erro geral no ciclo de otimização: Falha na conexão com WordPress
 2025-07-31 16:02:23 - __main__ - WARNING - Teste concluído, mas nenhum post foi otimizado
+2025-07-31 16:13:20 - config - INFO - Configuração validada com sucesso
+2025-07-31 16:13:20 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 16:13:20 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 16:13:20 - config - INFO - TMDB configurado: Sim
+2025-07-31 16:13:20 - database - INFO - Banco de dados inicializado com sucesso
+2025-07-31 16:13:21 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-07-31 16:13:21 - __main__ - INFO - WordPress SEO Optimizer - Modo TESTE
+2025-07-31 16:13:21 - __main__ - INFO - ==================================================
+2025-07-31 16:13:21 - __main__ - INFO - Validando configuração...
+2025-07-31 16:13:21 - config - INFO - Configuração validada com sucesso
+2025-07-31 16:13:21 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 16:13:21 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 16:13:21 - config - INFO - TMDB configurado: Sim
+2025-07-31 16:13:21 - seo_optimizer - INFO - Executando otimização em modo TESTE (uma vez apenas)
+2025-07-31 16:13:21 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-07-31 16:13:23 - wordpress_client - INFO - Conectado como: Abel
+2025-07-31 16:13:23 - seo_optimizer - INFO - Último post processado: 10502
+2025-07-31 16:13:23 - wordpress_client - INFO - Buscando posts novos desde ID 10502
+2025-07-31 16:13:33 - wordpress_client - INFO - Encontrados 20 posts novos
+2025-07-31 16:13:34 - seo_optimizer - INFO - Post otimizável encontrado: 10581 - Superman Quebra Recordes Históricos de Bilheteria e Redefine o Sucesso da DC Studios
+2025-07-31 16:13:35 - seo_optimizer - INFO - Post otimizável encontrado: 10579 - Superman Quebra Recordes Históricos de Bilheteria e Redefine o Sucesso da DC Studios
+2025-07-31 16:13:37 - seo_optimizer - INFO - Post otimizável encontrado: 10578 - Mattson Tomlin, Roteirista de The Batman 2, Revela a Dura Verdade Sobre a Fadiga de Super-Heróis em Hollywood
+2025-07-31 16:13:38 - seo_optimizer - INFO - Post otimizável encontrado: 10575 - Mattson Tomlin, Roteirista de The Batman 2, Revela a Dura Verdade Sobre a Fadiga de Super-Heróis em Hollywood
+2025-07-31 16:13:40 - seo_optimizer - INFO - Post otimizável encontrado: 10574 - Os 10 Melhores Designs de Trajes em Jujutsu Kaisen: Estilo e Poder no Anime!
+2025-07-31 16:13:41 - seo_optimizer - INFO - Post otimizável encontrado: 10571 - Bombástico! Jesse Eisenberg Deixa A **Sequência de A Rede Social**, Jeremy Strong Cotado para Mark Zuckerberg
+2025-07-31 16:13:42 - seo_optimizer - INFO - Post otimizável encontrado: 10570 - Os 10 Melhores Designs de Trajes em Jujutsu Kaisen: Estilo e Poder no Anime!
+2025-07-31 16:13:43 - seo_optimizer - INFO - Post otimizável encontrado: 10561 - Sucesso no Streaming: Lançamento de &#8216;Quarteto Fantástico: Primeiros Passos&#8217; Revitaliza Clássicos na Disney+
+2025-07-31 16:13:45 - seo_optimizer - INFO - Post otimizável encontrado: 10559 - Leanne: A Nova Sitcom da Netflix Tem Tudo Para Ser o Próximo Grande Sucesso?
+2025-07-31 16:13:46 - seo_optimizer - INFO - Post otimizável encontrado: 10557 - Elijah Wood Revela o Filme de Infância Que Mais o Orgulha: &#8220;North&#8221;, Odiado por Roger Ebert!
+2025-07-31 16:13:47 - seo_optimizer - INFO - Post otimizável encontrado: 10555 - Futuro de Avatar Garantido: James Cameron Confirma Direção de Avatar 4 e 5 e Mais
+2025-07-31 16:13:49 - seo_optimizer - INFO - Post otimizável encontrado: 10548 - Estrelas do Universo DC se Enfrentam no Épico Torneio de Luta DC K.O. – Quem Será o Grande Campeão?
+2025-07-31 16:13:50 - seo_optimizer - INFO - Post otimizável encontrado: 10546 - Invocação do Mal: Últimos Ritos – Trailer Chocante Traz a Franquia de Volta ao Começo
+2025-07-31 16:13:52 - seo_optimizer - INFO - Post otimizável encontrado: 10531 - Ranking Definitivo: Os Filmes Marvel de 2025 – Do Pior ao Melhor do MCU
+2025-07-31 16:13:53 - seo_optimizer - INFO - Post otimizável encontrado: 10529 - Orphan Black: Os Melhores Episódios da Série que Redefiniu a Ficção Científica e a Irmandade Clonal
+2025-07-31 16:13:54 - seo_optimizer - INFO - Post otimizável encontrado: 10525 - Long Story Short: Netflix Renova Sucessor de Bojack Horseman Antes da Estreia e Apresenta Detalhes
+2025-07-31 16:13:56 - seo_optimizer - INFO - Post otimizável encontrado: 10523 - Oscar Isaac Quebra o Silêncio Sobre o Futuro de Cavaleiro da Lua no MCU: Série Cancelada ou Filme a Caminho?
+2025-07-31 16:13:57 - seo_optimizer - INFO - Post otimizável encontrado: 10521 - The Terminal List: Dark Wolf: Trailer Revelado! Taylor Kitsch Estrela Prequel de Ação no Prime Video
+2025-07-31 16:13:59 - seo_optimizer - INFO - Post otimizável encontrado: 10520 - The Terminal List: Dark Wolf: Trailer Revelado! Taylor Kitsch Estrela Prequel de Ação no Prime Video
+2025-07-31 16:14:00 - seo_optimizer - INFO - Post otimizável encontrado: 10516 - The Sandman Chega ao Fim: O Legado da Série da DC na Netflix e o Episódio Especial da Morte
+2025-07-31 16:14:00 - seo_optimizer - INFO - --- Processando post 10581: Superman Quebra Recordes Históricos de Bilheteria e Redefine o Sucesso da DC Studios ---
+2025-07-31 16:14:00 - seo_optimizer - INFO - Buscando mídia no TMDB...
+2025-07-31 16:14:00 - tmdb_client - INFO - Tentando busca com: 'Superman Quebra Recordes'
+2025-07-31 16:14:00 - tmdb_client - INFO - Buscando filme: Superman Quebra Recordes
+2025-07-31 16:14:01 - tmdb_client - ERROR - Erro ao buscar filme Superman Quebra Recordes: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=Superman+Quebra+Recordes&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:01 - tmdb_client - INFO - Tentando busca com: 'Batman v Superman'
+2025-07-31 16:14:01 - tmdb_client - INFO - Buscando filme: Batman v Superman
+2025-07-31 16:14:01 - tmdb_client - ERROR - Erro ao buscar filme Batman v Superman: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=Batman+v+Superman&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:01 - tmdb_client - INFO - Tentando busca com: 'bilheteria'
+2025-07-31 16:14:01 - tmdb_client - INFO - Buscando filme: bilheteria
+2025-07-31 16:14:01 - tmdb_client - ERROR - Erro ao buscar filme bilheteria: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=bilheteria&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:01 - tmdb_client - INFO - Tentando busca com: 'DC Studios'
+2025-07-31 16:14:01 - tmdb_client - INFO - Buscando filme: DC Studios
+2025-07-31 16:14:01 - tmdb_client - ERROR - Erro ao buscar filme DC Studios: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=DC+Studios&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:01 - tmdb_client - INFO - Tentando busca com: 'Superman Quebra Recordes'
+2025-07-31 16:14:01 - tmdb_client - INFO - Buscando filme: Superman Quebra Recordes
+2025-07-31 16:14:01 - tmdb_client - ERROR - Erro ao buscar filme Superman Quebra Recordes: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=Superman+Quebra+Recordes&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:01 - tmdb_client - WARNING - Nenhuma mídia encontrada para o post
+2025-07-31 16:14:01 - seo_optimizer - WARNING - Nenhuma mídia encontrada no TMDB
+2025-07-31 16:14:01 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-07-31 16:14:01 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-07-31 16:14:02 - gemini_client - WARNING - Tentativa 1 falhou: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-07-31 16:14:02 - gemini_client - INFO - Aguardando 1.91s antes da próxima tentativa
+2025-07-31 16:14:04 - gemini_client - INFO - Tentativa 2 de otimização com Gemini
+2025-07-31 16:14:04 - gemini_client - WARNING - Tentativa 2 falhou: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-07-31 16:14:04 - gemini_client - INFO - Aguardando 2.32s antes da próxima tentativa
+2025-07-31 16:14:06 - gemini_client - INFO - Tentativa 3 de otimização com Gemini
+2025-07-31 16:14:07 - gemini_client - WARNING - Tentativa 3 falhou: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-07-31 16:14:07 - gemini_client - ERROR - Todas as tentativas de otimização falharam
+2025-07-31 16:14:07 - seo_optimizer - ERROR - Erro ao processar post 10581: Falha na otimização com Gemini
+2025-07-31 16:14:07 - database - INFO - Log registrado: optimization - error para post 10581
+2025-07-31 16:14:07 - seo_optimizer - INFO - --- Processando post 10579: Superman Quebra Recordes Históricos de Bilheteria e Redefine o Sucesso da DC Studios ---
+2025-07-31 16:14:07 - seo_optimizer - INFO - Buscando mídia no TMDB...
+2025-07-31 16:14:07 - tmdb_client - INFO - Tentando busca com: 'Superman Quebra Recordes'
+2025-07-31 16:14:07 - tmdb_client - INFO - Buscando filme: Superman Quebra Recordes
+2025-07-31 16:14:07 - tmdb_client - ERROR - Erro ao buscar filme Superman Quebra Recordes: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=Superman+Quebra+Recordes&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:07 - tmdb_client - INFO - Tentando busca com: 'Batman v Superman'
+2025-07-31 16:14:07 - tmdb_client - INFO - Buscando filme: Batman v Superman
+2025-07-31 16:14:07 - tmdb_client - ERROR - Erro ao buscar filme Batman v Superman: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=Batman+v+Superman&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:07 - tmdb_client - INFO - Tentando busca com: 'bilheteria'
+2025-07-31 16:14:07 - tmdb_client - INFO - Buscando filme: bilheteria
+2025-07-31 16:14:07 - tmdb_client - ERROR - Erro ao buscar filme bilheteria: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=bilheteria&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:07 - tmdb_client - INFO - Tentando busca com: 'DC Studios'
+2025-07-31 16:14:07 - tmdb_client - INFO - Buscando filme: DC Studios
+2025-07-31 16:14:07 - tmdb_client - ERROR - Erro ao buscar filme DC Studios: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=DC+Studios&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:07 - tmdb_client - INFO - Tentando busca com: 'Superman Quebra Recordes'
+2025-07-31 16:14:07 - tmdb_client - INFO - Buscando filme: Superman Quebra Recordes
+2025-07-31 16:14:07 - tmdb_client - ERROR - Erro ao buscar filme Superman Quebra Recordes: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/search/movie?api_key=cb060717161e33e2972bd217aabaa27f4&query=Superman+Quebra+Recordes&language=pt-BR&include_adult=false&year=20
+2025-07-31 16:14:07 - tmdb_client - WARNING - Nenhuma mídia encontrada para o post
+2025-07-31 16:14:07 - seo_optimizer - WARNING - Nenhuma mídia encontrada no TMDB
+2025-07-31 16:14:07 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-07-31 16:14:07 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-07-31 16:14:08 - gemini_client - WARNING - Tentativa 1 falhou: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-07-31 16:14:08 - gemini_client - INFO - Aguardando 1.40s antes da próxima tentativa
+2025-07-31 16:14:09 - gemini_client - INFO - Tentativa 2 de otimização com Gemini
+2025-07-31 16:14:09 - gemini_client - WARNING - Tentativa 2 falhou: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-07-31 16:14:09 - gemini_client - INFO - Aguardando 2.39s antes da próxima tentativa
+2025-07-31 16:14:12 - gemini_client - INFO - Tentativa 3 de otimização com Gemini
+2025-07-31 16:14:12 - gemini_client - WARNING - Tentativa 3 falhou: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-07-31 16:14:12 - gemini_client - ERROR - Todas as tentativas de otimização falharam
+2025-07-31 16:14:12 - seo_optimizer - ERROR - Erro ao processar post 10579: Falha na otimização com Gemini
+2025-07-31 16:14:12 - database - INFO - Log registrado: optimization - error para post 10579
+2025-07-31 16:14:12 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 50.78s ===
+2025-07-31 16:14:12 - seo_optimizer - INFO - Posts encontrados: 20
+2025-07-31 16:14:12 - seo_optimizer - INFO - Posts processados: 2
+2025-07-31 16:14:12 - seo_optimizer - INFO - Sucessos: 0
+2025-07-31 16:14:12 - seo_optimizer - INFO - Erros: 2
+2025-07-31 16:14:12 - __main__ - INFO - ==================================================
+2025-07-31 16:14:12 - __main__ - INFO - RESULTADOS DO TESTE:
+2025-07-31 16:14:12 - __main__ - INFO - Posts encontrados: 20
+2025-07-31 16:14:12 - __main__ - INFO - Posts processados: 2
+2025-07-31 16:14:12 - __main__ - INFO - Sucessos: 0
+2025-07-31 16:14:12 - __main__ - INFO - Erros: 2
+2025-07-31 16:14:12 - __main__ - INFO - Tempo total: 50.78s
+2025-07-31 16:14:12 - __main__ - WARNING - Teste concluído, mas nenhum post foi otimizado
