@@ -4005,3 +4005,79 @@ message: "API key not valid. Please pass a valid API key."
 2025-07-31 17:49:03 - __main__ - INFO - Erros: 0
 2025-07-31 17:49:03 - __main__ - INFO - Tempo total: 48.28s
 2025-07-31 17:49:03 - __main__ - INFO - Teste concluído com sucesso!
+2025-07-31 18:08:30 - config - INFO - Configuração validada com sucesso
+2025-07-31 18:08:30 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 18:08:30 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 18:08:30 - config - INFO - TMDB configurado: Sim
+2025-07-31 18:08:30 - database - INFO - Banco de dados inicializado com sucesso
+2025-07-31 18:08:32 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-07-31 18:08:32 - __main__ - INFO - WordPress SEO Optimizer - Modo TESTE
+2025-07-31 18:08:32 - __main__ - INFO - ==================================================
+2025-07-31 18:08:32 - __main__ - INFO - Validando configuração...
+2025-07-31 18:08:32 - config - INFO - Configuração validada com sucesso
+2025-07-31 18:08:32 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 18:08:32 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 18:08:32 - config - INFO - TMDB configurado: Sim
+2025-07-31 18:08:32 - seo_optimizer - INFO - Executando otimização em modo TESTE (uma vez apenas)
+2025-07-31 18:08:32 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-07-31 18:08:33 - wordpress_client - INFO - Conectado como: Abel
+2025-07-31 18:08:33 - seo_optimizer - INFO - Último post processado: 10608
+2025-07-31 18:08:33 - wordpress_client - INFO - Buscando posts novos desde ID 10608
+2025-07-31 18:08:53 - wordpress_client - INFO - Encontrados 4 posts novos
+2025-07-31 18:08:53 - seo_optimizer - INFO - Verificando 4 posts por duplicatas...
+2025-07-31 18:08:53 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: 'Entrevista Com o Vampiro: 7 Grandes Diferenças Entre o Livro e a Série da AMC que Reinventaram a Lenda'
+2025-07-31 18:08:53 - seo_optimizer - INFO - Mantendo post ID 10620 e removendo os outros.
+2025-07-31 18:08:53 - seo_optimizer - INFO - Movendo post duplicado ID 10617 para a lixeira...
+2025-07-31 18:08:56 - seo_optimizer - INFO - Post ID 10617 movido para a lixeira com sucesso.
+2025-07-31 18:08:56 - seo_optimizer - INFO - Post otimizável encontrado: 10620 - Entrevista Com o Vampiro: 7 Grandes Diferenças Entre o Livro e a Série da AMC que Reinventaram a Lenda
+2025-07-31 18:08:56 - seo_optimizer - INFO - Post otimizável encontrado: 10618 - KPop Caçadores de Demônios: Como a Trilha Sonora Quebrou Recordes e Dominou a Netflix
+2025-07-31 18:08:56 - seo_optimizer - INFO - Post otimizável encontrado: 10611 - Nova Slayer Revelada: Conheça Nova, a Protagonista do Reboot de Buffy, a Caça-Vampiros no Hulu
+2025-07-31 18:08:56 - seo_optimizer - INFO - --- Processando post 10620: Entrevista Com o Vampiro: 7 Grandes Diferenças Entre o Livro e a Série da AMC que Reinventaram a Lenda ---
+2025-07-31 18:08:56 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-07-31 18:08:56 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-07-31 18:08:56 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-07-31 18:09:08 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-07-31 18:09:08 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-07-31 18:09:08 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-07-31 18:09:08 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-07-31 18:09:08 - wordpress_client - INFO - Excerpt truncado: 427 → 111 caracteres
+2025-07-31 18:09:08 - wordpress_client - INFO - Atualizando conteúdo do post 10620
+2025-07-31 18:09:11 - wordpress_client - INFO - Post 10620 atualizado com sucesso
+2025-07-31 18:09:11 - wordpress_client - INFO - Meta description truncada: 427 → 111 caracteres
+2025-07-31 18:09:11 - wordpress_client - INFO - Atualizando meta Yoast do post 10620
+2025-07-31 18:09:13 - wordpress_client - INFO - Meta Yoast do post 10620 atualizada
+2025-07-31 18:09:13 - database - INFO - Log registrado: optimization - success para post 10620
+2025-07-31 18:09:13 - database - INFO - Último post processado atualizado para ID: 10620
+2025-07-31 18:09:13 - seo_optimizer - INFO - Post 10620 otimizado com sucesso em 16.83s
+2025-07-31 18:09:13 - seo_optimizer - INFO - SEO Score: 80
+2025-07-31 18:09:13 - seo_optimizer - INFO - --- Processando post 10618: KPop Caçadores de Demônios: Como a Trilha Sonora Quebrou Recordes e Dominou a Netflix ---
+2025-07-31 18:09:13 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-07-31 18:09:13 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-07-31 18:09:13 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-07-31 18:09:23 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-07-31 18:09:23 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-07-31 18:09:23 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-07-31 18:09:23 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-07-31 18:09:23 - wordpress_client - INFO - Excerpt truncado: 438 → 159 caracteres
+2025-07-31 18:09:23 - wordpress_client - INFO - Atualizando conteúdo do post 10618
+2025-07-31 18:09:24 - wordpress_client - INFO - Post 10618 atualizado com sucesso
+2025-07-31 18:09:24 - wordpress_client - INFO - Meta description truncada: 438 → 159 caracteres
+2025-07-31 18:09:24 - wordpress_client - INFO - Atualizando meta Yoast do post 10618
+2025-07-31 18:09:25 - wordpress_client - INFO - Meta Yoast do post 10618 atualizada
+2025-07-31 18:09:25 - database - INFO - Log registrado: optimization - success para post 10618
+2025-07-31 18:09:25 - database - INFO - Último post processado atualizado para ID: 10618
+2025-07-31 18:09:25 - seo_optimizer - INFO - Post 10618 otimizado com sucesso em 12.67s
+2025-07-31 18:09:25 - seo_optimizer - INFO - SEO Score: 80
+2025-07-31 18:09:25 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 53.80s ===
+2025-07-31 18:09:25 - seo_optimizer - INFO - Posts encontrados: 3
+2025-07-31 18:09:25 - seo_optimizer - INFO - Posts processados: 2
+2025-07-31 18:09:25 - seo_optimizer - INFO - Sucessos: 2
+2025-07-31 18:09:25 - seo_optimizer - INFO - Erros: 0
+2025-07-31 18:09:25 - __main__ - INFO - ==================================================
+2025-07-31 18:09:25 - __main__ - INFO - RESULTADOS DO TESTE:
+2025-07-31 18:09:25 - __main__ - INFO - Posts encontrados: 3
+2025-07-31 18:09:25 - __main__ - INFO - Posts processados: 2
+2025-07-31 18:09:25 - __main__ - INFO - Sucessos: 2
+2025-07-31 18:09:25 - __main__ - INFO - Erros: 0
+2025-07-31 18:09:25 - __main__ - INFO - Tempo total: 53.80s
+2025-07-31 18:09:25 - __main__ - INFO - Teste concluído com sucesso!
