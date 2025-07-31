@@ -160,11 +160,18 @@ class WordPressClient:
             content: Novo conteúdo
         """
         try:
+            # Trunca o excerpt inteligentemente para máximo 180 caracteres
+            truncated_excerpt = self._truncate_excerpt_intelligently(excerpt, 180)
+            
+            # Log da truncagem se foi aplicada
+            if len(excerpt.strip()) > 180:
+                self.logger.info(f"Excerpt truncado: {len(excerpt)} → {len(truncated_excerpt)} caracteres")
+            
             url = f"{self.base_url}/wp-json/wp/v2/posts/{post_id}"
             
             data = {
                 'title': title,
-                'excerpt': excerpt,
+                'excerpt': truncated_excerpt,
                 'content': content
             }
             
@@ -191,12 +198,19 @@ class WordPressClient:
             focus_keyword: Palavra-chave foco
         """
         try:
+            # Trunca a meta description também para 180 caracteres
+            truncated_meta_desc = self._truncate_excerpt_intelligently(meta_description, 180)
+            
+            # Log da truncagem se foi aplicada
+            if len(meta_description.strip()) > 180:
+                self.logger.info(f"Meta description truncada: {len(meta_description)} → {len(truncated_meta_desc)} caracteres")
+            
             url = f"{self.base_url}/wp-json/wp/v2/posts/{post_id}"
             
             data = {
                 'meta': {
                     '_yoast_wpseo_title': seo_title,
-                    '_yoast_wpseo_metadesc': meta_description,
+                    '_yoast_wpseo_metadesc': truncated_meta_desc,
                     '_yoast_wpseo_focuskw': focus_keyword
                 }
             }
@@ -248,6 +262,49 @@ class WordPressClient:
         
         return meta_updated
     
+    def _truncate_excerpt_intelligently(self, excerpt: str, max_length: int = 180) -> str:
+        """
+        Trunca o excerpt de forma inteligente, cortando em pontos naturais
+        
+        Args:
+            excerpt: Texto do excerpt
+            max_length: Tamanho máximo (padrão 180 caracteres)
+            
+        Returns:
+            Excerpt truncado de forma inteligente
+        """
+        import re
+        
+        # Remove tags HTML do excerpt
+        clean_excerpt = re.sub(r'<[^>]+>', '', excerpt).strip()
+        
+        # Se já está dentro do limite, retorna como está
+        if len(clean_excerpt) <= max_length:
+            return clean_excerpt
+        
+        # Trunca no limite máximo
+        truncated = clean_excerpt[:max_length]
+        
+        # Tenta cortar no final de uma frase (. ! ?)
+        sentence_match = re.search(r'^(.+[.!?])\s*', truncated)
+        if sentence_match and len(sentence_match.group(1)) >= max_length * 0.6:
+            return sentence_match.group(1).strip()
+        
+        # Se não encontrou fim de frase, tenta cortar no final de uma palavra
+        # Procura o último espaço antes do limite
+        last_space = truncated.rfind(' ')
+        if last_space > max_length * 0.7:  # Pelo menos 70% do limite
+            truncated = truncated[:last_space]
+        
+        # Remove pontuação final incompleta se houver
+        truncated = re.sub(r'[,;:]$', '', truncated.strip())
+        
+        # Adiciona reticências se foi truncado
+        if len(clean_excerpt) > max_length:
+            truncated += '...'
+        
+        return truncated.strip()
+
     def _extract_focus_keyword(self, title: str, content: str) -> str:
         """Extrai palavra-chave foco do título e conteúdo"""
         import re
