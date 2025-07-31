@@ -136,7 +136,7 @@ class Config:
     @property
     def check_interval_minutes(self) -> int:
         """Intervalo entre verificações em minutos"""
-        return int(os.getenv("CHECK_INTERVAL_MINUTES", "60"))
+        return int(os.getenv("CHECK_INTERVAL_MINUTES", "20"))
     
     def validate_config(self):
         """Valida se todas as configurações necessárias estão presentes"""
