@@ -554,6 +554,37 @@ class SEODashboard {
         });
     }
 
+    showAlert(message, type = 'info') {
+        // Create alert container if it doesn't exist
+        let container = document.getElementById('alert-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'alert-container';
+            container.className = 'position-fixed top-0 start-50 translate-middle-x mt-3';
+            container.style.zIndex = '9999';
+            document.body.appendChild(container);
+        }
+
+        // Create alert
+        const alertId = 'alert-' + Date.now();
+        const alertHtml = `
+            <div id="${alertId}" class="alert alert-${type} alert-dismissible fade show" role="alert">
+                ${message}
+                <button type="button" class="btn-close" onclick="document.getElementById('${alertId}').remove()"></button>
+            </div>
+        `;
+
+        container.insertAdjacentHTML('beforeend', alertHtml);
+
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+            const alertElement = document.getElementById(alertId);
+            if (alertElement) {
+                alertElement.remove();
+            }
+        }, 5000);
+    }
+
     async processSpecificPost() {
         const postUrl = document.getElementById('postUrl').value.trim();
         const btn = document.getElementById('processPostBtn');

@@ -144,8 +144,34 @@ class Database:
     
     def get_gemini_quota_info(self) -> Dict:
         """Retorna informações sobre quota do Gemini"""
-        with self.get_connection() as conn:
-            cursor = conn.cursor()
+        try:
+            with self.get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute('SELECT * FROM gemini_quota WHERE id = 1')
+                result = cursor.fetchone()
+                
+                if result:
+                    return {
+                        'api_key_index': result['api_key_index'],
+                        'requests_made': result['requests_made'],
+                        'quota_exceeded': bool(result['quota_exceeded']),
+                        'last_reset_date': result['last_reset_date']
+                    }
+                else:
+                    return {
+                        'api_key_index': 0,
+                        'requests_made': 0,
+                        'quota_exceeded': False,
+                        'last_reset_date': None
+                    }
+        except Exception as e:
+            self.logger.error(f"Erro ao obter quota do Gemini: {e}")
+            return {
+                'api_key_index': 0,
+                'requests_made': 0,
+                'quota_exceeded': False,
+                'last_reset_date': None
+            }.cursor()
             cursor.execute('SELECT * FROM gemini_quota WHERE id = 1')
             result = cursor.fetchone()
             return dict(result) if result else {}
@@ -181,46 +207,65 @@ class Database:
     
     def get_statistics(self) -> Dict:
         """Retorna estatísticas gerais do sistema"""
-        with self.get_connection() as conn:
-            cursor = conn.cursor()
-            
-            # Total de posts processados
-            cursor.execute('SELECT total_posts_processed FROM processing_control WHERE id = 1')
-            result = cursor.fetchone()
-            total_processed = result[0] if result else 0
-            
-            # Posts processados hoje
-            cursor.execute('''
-                SELECT COUNT(*) FROM processing_logs 
-                WHERE DATE(created_at) = DATE('now') AND status = 'success'
-            ''')
-            today_processed = cursor.fetchone()[0]
-            
-            # Posts com erro hoje
-            cursor.execute('''
-                SELECT COUNT(*) FROM processing_logs 
-                WHERE DATE(created_at) = DATE('now') AND status = 'error'
-            ''')
-            today_errors = cursor.fetchone()[0]
-            
-            # Último processamento
-            cursor.execute('''
-                SELECT created_at FROM processing_logs 
-                ORDER BY created_at DESC LIMIT 1
-            ''')
-            last_processing = cursor.fetchone()
-            last_processing = last_processing[0] if last_processing else None
-            
+        try:
+            with self.get_connection() as conn:
+                cursor = conn.cursor()
+                
+                # Total de posts processados
+                cursor.execute('SELECT total_posts_processed FROM processing_control WHERE id = 1')
+                result = cursor.fetchone()
+                total_processed = result[0] if result else 0
+                
+                # Posts processados hoje
+                cursor.execute('''
+                    SELECT COUNT(*) FROM processing_logs 
+                    WHERE DATE(created_at) = DATE('now') AND status = 'success'
+                ''')
+                today_processed = cursor.fetchone()[0]
+                
+                # Posts com erro hoje
+                cursor.execute('''
+                    SELECT COUNT(*) FROM processing_logs 
+                    WHERE DATE(created_at) = DATE('now') AND status = 'error'
+                ''')
+                today_errors = cursor.fetchone()[0]
+                
+                # Último processamento
+                cursor.execute('''
+                    SELECT created_at FROM processing_logs 
+                    ORDER BY created_at DESC LIMIT 1
+                ''')
+                last_processing = cursor.fetchone()
+                last_processing = last_processing[0] if last_processing else None
+                
+                return {
+                    'total_processed': total_processed,
+                    'today_processed': today_processed,
+                    'today_errors': today_errors,
+                    'last_processing': last_processing
+                }
+        except Exception as e:
+            self.logger.error(f"Erro ao obter estatísticas: {e}")
             return {
-                'total_processed': total_processed,
-                'today_processed': today_processed,
-                'today_errors': today_errors,
-                'last_processing': last_processing
+                'total_processed': 0,
+                'today_processed': 0,
+                'today_errors': 0,
+                'last_processing': None
             }
     
     def set_statistic(self, key: str, value: Any):
         """Define uma estatística personalizada"""
-        with self.get_connection() as conn:
+        try:
+            with self.get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute('''
+                    INSERT OR REPLACE INTO statistics (key, value, updated_at)
+                    VALUES (?, ?, ?)
+                ''', (key, str(value), datetime.now().isoformat()))
+                conn.commit()
+                self.logger.info(f"Estatística definida: {key} = {value}")
+        except Exception as e:
+            self.logger.error(f"Erro ao definir estatística {key}: {e}")ion() as conn:
             cursor = conn.cursor()
             cursor.execute('''
                 INSERT OR REPLACE INTO statistics (key, value, updated_at)

@@ -41,6 +41,17 @@
                         <div class="mt-3">
                             <div class="input-group">
                                 <input type="url" id="postUrl" class="form-control" 
+                                       placeholder="https://www.maquinanerd.com.br/post-url/" 
+                                       aria-label="URL do post">
+                                <button id="processPostBtn" class="btn btn-success" 
+                                        onclick="window.dashboard.processSpecificPost()">
+                                    <i class="fas fa-magic me-1"></i>Processar Post
+                                </button>
+                            </div>
+                            <small class="text-muted">Cole a URL do post específico que deseja processar</small>
+                        </div>>
+                            <div class="input-group">
+                                <input type="url" id="postUrl" class="form-control" 
                                        placeholder="Cole a URL do post aqui..." 
                                        value="https://www.maquinanerd.com.br/quem-sera-o-proximo-batman-do-dcu-7-atores-ideais-alem-de-alan-ritchson-para-the-brave-and-the-bold/">
                                 <button id="processPostBtn" class="btn btn-success">
