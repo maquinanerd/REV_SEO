@@ -185,7 +185,9 @@ class SEOOptimizer:
             title = post_data.get('title', {}).get('rendered', '')
             excerpt = post_data.get('excerpt', {}).get('rendered', '')
             content = post_data.get('content', {}).get('rendered', '')
-            tags = post_data.get('tags', [])
+            
+            embedded_terms = post_data.get('_embedded', {}).get('wp:term', [[], []])
+            tags = embedded_terms[1] if len(embedded_terms) > 1 else []
             
             if not title or not content:
                 raise ValueError("Post sem título ou conteúdo")

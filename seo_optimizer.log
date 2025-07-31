@@ -3811,3 +3811,50 @@ message: "API key not valid. Please pass a valid API key."
 2025-07-31 17:09:34 - __main__ - INFO - Erros: 0
 2025-07-31 17:09:34 - __main__ - INFO - Tempo total: 24.63s
 2025-07-31 17:09:34 - __main__ - WARNING - Teste concluído, mas nenhum post foi otimizado
+2025-07-31 17:32:41 - config - INFO - Configuração validada com sucesso
+2025-07-31 17:32:41 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 17:32:41 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 17:32:41 - config - INFO - TMDB configurado: Sim
+2025-07-31 17:32:41 - database - INFO - Banco de dados inicializado com sucesso
+2025-07-31 17:32:42 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-07-31 17:32:42 - __main__ - INFO - WordPress SEO Optimizer - Modo TESTE
+2025-07-31 17:32:42 - __main__ - INFO - ==================================================
+2025-07-31 17:32:42 - __main__ - INFO - Validando configuração...
+2025-07-31 17:32:42 - config - INFO - Configuração validada com sucesso
+2025-07-31 17:32:42 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 17:32:42 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 17:32:42 - config - INFO - TMDB configurado: Sim
+2025-07-31 17:32:42 - seo_optimizer - INFO - Executando otimização em modo TESTE (uma vez apenas)
+2025-07-31 17:32:42 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-07-31 17:33:05 - wordpress_client - INFO - Conectado como: Abel
+2025-07-31 17:33:05 - seo_optimizer - INFO - Último post processado: 10589
+2025-07-31 17:33:05 - wordpress_client - INFO - Buscando posts novos desde ID 10589
+2025-07-31 17:33:28 - wordpress_client - INFO - Encontrados 6 posts novos
+2025-07-31 17:33:28 - seo_optimizer - INFO - Verificando 6 posts por duplicatas...
+2025-07-31 17:33:28 - seo_optimizer - INFO - Post otimizável encontrado: 10603 - Fantastic Four: First Steps: A Revelação Chave de Franklin Storm para Avengers: Secret Wars
+2025-07-31 17:33:28 - seo_optimizer - INFO - Post otimizável encontrado: 10601 - Por Que &#8216;Entrevista com o Vampiro&#8217; é a Série de Horror Mais Subestimada da TV Atual?
+2025-07-31 17:33:28 - seo_optimizer - INFO - Post otimizável encontrado: 10599 - Maratona Hulu: 10 Séries Imperdíveis Para Assistir em Um Fim de Semana
+2025-07-31 17:33:28 - seo_optimizer - INFO - Post otimizável encontrado: 10598 - Maratona no Fim de Semana: As 10 Melhores Séries do Hulu Para Assistir em Pouco Tempo
+2025-07-31 17:33:28 - seo_optimizer - INFO - Post otimizável encontrado: 10595 - Henry Cavill: O Reinado do Imortal Começa com o Aguardado Reboot de Highlander
+2025-07-31 17:33:28 - seo_optimizer - INFO - Post otimizável encontrado: 10591 - Ranking dos Melhores Vilões de The Flash: Do Zoom a Eobard Thawne
+2025-07-31 17:33:28 - seo_optimizer - INFO - --- Processando post 10603: Fantastic Four: First Steps: A Revelação Chave de Franklin Storm para Avengers: Secret Wars ---
+2025-07-31 17:33:28 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-07-31 17:33:28 - seo_optimizer - ERROR - Erro ao processar post 10603: 'int' object has no attribute 'get'
+2025-07-31 17:33:28 - database - INFO - Log registrado: optimization - error para post 10603
+2025-07-31 17:33:28 - seo_optimizer - INFO - --- Processando post 10601: Por Que &#8216;Entrevista com o Vampiro&#8217; é a Série de Horror Mais Subestimada da TV Atual? ---
+2025-07-31 17:33:28 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-07-31 17:33:28 - seo_optimizer - ERROR - Erro ao processar post 10601: 'int' object has no attribute 'get'
+2025-07-31 17:33:28 - database - INFO - Log registrado: optimization - error para post 10601
+2025-07-31 17:33:28 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 46.63s ===
+2025-07-31 17:33:28 - seo_optimizer - INFO - Posts encontrados: 6
+2025-07-31 17:33:28 - seo_optimizer - INFO - Posts processados: 2
+2025-07-31 17:33:28 - seo_optimizer - INFO - Sucessos: 0
+2025-07-31 17:33:28 - seo_optimizer - INFO - Erros: 2
+2025-07-31 17:33:28 - __main__ - INFO - ==================================================
+2025-07-31 17:33:28 - __main__ - INFO - RESULTADOS DO TESTE:
+2025-07-31 17:33:28 - __main__ - INFO - Posts encontrados: 6
+2025-07-31 17:33:28 - __main__ - INFO - Posts processados: 2
+2025-07-31 17:33:28 - __main__ - INFO - Sucessos: 0
+2025-07-31 17:33:28 - __main__ - INFO - Erros: 2
+2025-07-31 17:33:28 - __main__ - INFO - Tempo total: 46.63s
+2025-07-31 17:33:28 - __main__ - WARNING - Teste concluído, mas nenhum post foi otimizado
