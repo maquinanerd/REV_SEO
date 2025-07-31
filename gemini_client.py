@@ -59,6 +59,7 @@ class GeminiClient:
 
 **Conteúdo:**
 - Reestruture os parágrafos longos em blocos mais curtos e escaneáveis.
+- **Não resuma ou encurte o texto.** O objetivo é reestruturar e otimizar, mantendo toda a informação original. Apenas melhore a fluidez e a formatação.
 - ⚠️ IMPORTANTE: Envolva cada parágrafo individualmente com a tag HTML <p>. Exemplo: <p>Primeiro parágrafo.</p><p>Segundo parágrafo.</p>
 - Não use <br> para criar parágrafos.
 - Mantenha o tom jornalístico e objetivo.
