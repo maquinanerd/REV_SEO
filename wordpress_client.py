@@ -392,19 +392,20 @@ class WordPressClient:
         Returns:
             True se o post é de filme ou série
         """
-        # Check if categories are already extracted
-        categories = post_data.get('categories')
-
-        # If not, extract from embedded data
-        if categories is None:
+        try:
+            # O campo 'categories' em um post bruto é uma lista de IDs (inteiros).
+            # Precisamos dos objetos de categoria completos dos dados '_embedded'.
             embedded_terms = post_data.get('_embedded', {}).get('wp:term', [[]])
             categories = embedded_terms[0] if len(embedded_terms) > 0 else []
 
-        # Verifica se tem categoria de filme ou série
-        movie_category = any(cat.get('id') == config.movie_category_id for cat in categories)
-        series_category = any(cat.get('id') == config.series_category_id for cat in categories)
-        
-        return movie_category or series_category
+            # Verifica se tem categoria de filme ou série
+            movie_category = any(cat.get('id') == config.movie_category_id for cat in categories)
+            series_category = any(cat.get('id') == config.series_category_id for cat in categories)
+            
+            return movie_category or series_category
+        except Exception as e:
+            self.logger.error(f"Erro ao verificar otimizabilidade do post {post_data.get('id', 'N/A')}: {e}")
+            return False
     
     def get_post_by_url(self, post_url: str) -> Optional[Dict]:
         """
