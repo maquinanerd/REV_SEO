@@ -93,23 +93,23 @@ class WordPressClient:
                 'order': 'desc',
                 '_embed': 1
             }
-            
+
             self.logger.info(f"Buscando posts novos desde ID {last_post_id}")
             response = self.session.get(url, params=params)
             response.raise_for_status()
-            
+
             posts = response.json()
-            
+
             # Filtra posts com ID maior que o último processado
             new_posts = [post for post in posts if post['id'] > last_post_id]
-            
+
             self.logger.info(f"Encontrados {len(new_posts)} posts novos")
             return new_posts
-            
+
         except Exception as e:
             self.logger.error(f"Erro ao buscar posts novos: {e}")
             return []
-    
+
     def get_post_categories(self, post_id: int) -> List[Dict]:
         """Obtém categorias de um post"""
         try:
