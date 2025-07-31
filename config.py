@@ -14,14 +14,39 @@ class Config:
         self.validate_config()
     
     def setup_logging(self):
-        """Configura o sistema de logging"""
+        """Configura o sistema de logging com fuso horário de Brasília (UTC-3)"""
+        import logging
+        from datetime import datetime, timezone, timedelta
+        
+        # Define o fuso horário de Brasília (UTC-3)
+        brasilia_tz = timezone(timedelta(hours=-3))
+        
+        class BrasiliaFormatter(logging.Formatter):
+            def formatTime(self, record, datefmt=None):
+                dt = datetime.fromtimestamp(record.created, tz=brasilia_tz)
+                if datefmt:
+                    s = dt.strftime(datefmt)
+                else:
+                    s = dt.strftime('%Y-%m-%d %H:%M:%S')
+                return s
+        
+        formatter = BrasiliaFormatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        
+        # Remove handlers existentes para evitar duplicação
+        root_logger = logging.getLogger()
+        for handler in root_logger.handlers[:]:
+            root_logger.removeHandler(handler)
+        
+        # Configura novos handlers com o formatter correto
+        file_handler = logging.FileHandler('seo_optimizer.log')
+        file_handler.setFormatter(formatter)
+        
+        stream_handler = logging.StreamHandler()
+        stream_handler.setFormatter(formatter)
+        
         logging.basicConfig(
             level=logging.DEBUG,
-            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-            handlers=[
-                logging.FileHandler('seo_optimizer.log'),
-                logging.StreamHandler()
-            ]
+            handlers=[file_handler, stream_handler]
         )
         self.logger = logging.getLogger(__name__)
     
