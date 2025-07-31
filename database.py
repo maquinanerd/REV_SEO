@@ -186,7 +186,8 @@ class Database:
             
             # Total de posts processados
             cursor.execute('SELECT total_posts_processed FROM processing_control WHERE id = 1')
-            total_processed = cursor.fetchone()[0] if cursor.fetchone() else 0
+            result = cursor.fetchone()
+            total_processed = result[0] if result else 0
             
             # Posts processados hoje
             cursor.execute('''

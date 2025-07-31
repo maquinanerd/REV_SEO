@@ -3,8 +3,7 @@ import logging
 import time
 import random
 from typing import Dict, List, Optional, Tuple
-from google import genai
-from google.genai import types
+import google.generativeai as genai
 from config import config
 from database import db
 
@@ -22,7 +21,8 @@ class GeminiClient:
         """Inicializa o cliente Gemini com a chave atual"""
         try:
             current_key = self.api_keys[self.current_key_index]
-            self.client = genai.Client(api_key=current_key)
+            genai.configure(api_key=current_key)
+            self.client = genai.GenerativeModel("gemini-1.5-flash")
             self.logger.info(f"Cliente Gemini inicializado com chave {self.current_key_index + 1}")
         except Exception as e:
             self.logger.error(f"Erro ao inicializar cliente Gemini: {e}")
@@ -157,10 +157,7 @@ Responda exatamente no seguinte formato:
                 self.logger.info(f"Tentativa {attempt + 1} de otimização com Gemini")
                 
                 # Faz a requisição para o Gemini
-                response = self.client.models.generate_content(
-                    model="gemini-2.5-flash",
-                    contents=prompt
-                )
+                response = self.client.generate_content(prompt)
                 
                 if not response.text:
                     raise ValueError("Resposta vazia do Gemini")

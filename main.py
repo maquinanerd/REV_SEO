@@ -16,6 +16,9 @@ from config import config
 from seo_optimizer import seo_optimizer
 from database import db
 
+# Importa o app Flask do dashboard para compatibilidade com gunicorn
+from dashboard import app
+
 class SEOOptimizerApp:
     """Aplicação principal do WordPress SEO Optimizer"""
     

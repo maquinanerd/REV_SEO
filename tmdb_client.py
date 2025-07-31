@@ -34,7 +34,7 @@ class TMDBClient:
             }
             
             if year:
-                params['year'] = year
+                params['year'] = str(year)
             
             self.logger.info(f"Buscando filme: {query}")
             response = self.session.get(url, params=params)
@@ -67,7 +67,7 @@ class TMDBClient:
             }
             
             if year:
-                params['first_air_date_year'] = year
+                params['first_air_date_year'] = str(year)
             
             self.logger.info(f"Buscando série: {query}")
             response = self.session.get(url, params=params)
