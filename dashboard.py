@@ -142,7 +142,8 @@ def api_config():
         config_info = {
             'wordpress_url': config.wordpress_url,
             'wordpress_username': config.wordpress_username,
-            'author_id': config.author_id,
+            'target_author_id': config.target_author_id,  # Posts do João (ID 6)
+            'editor_author_id': config.editor_author_id,  # Você editando (ID 9)
             'movie_category_id': config.movie_category_id,
             'series_category_id': config.series_category_id,
             'max_posts_per_cycle': config.max_posts_per_cycle,

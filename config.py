@@ -84,9 +84,14 @@ class Config:
     
     # Sistema Configuration
     @property
-    def author_id(self) -> int:
-        """ID do autor João no WordPress"""
-        return int(os.getenv("WORDPRESS_AUTHOR_ID", "6"))
+    def target_author_id(self) -> int:
+        """ID do autor cujos posts serão otimizados (João)"""
+        return int(os.getenv("TARGET_AUTHOR_ID", "6"))
+    
+    @property
+    def editor_author_id(self) -> int:
+        """ID do autor que fará as edições (você)"""
+        return int(os.getenv("EDITOR_AUTHOR_ID", "9"))
     
     @property
     def movie_category_id(self) -> int:

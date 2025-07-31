@@ -13,7 +13,8 @@ class SEOOptimizer:
     
     def __init__(self):
         self.logger = logging.getLogger(__name__)
-        self.author_id = config.author_id
+        self.target_author_id = config.target_author_id  # Posts do João (ID 6)
+        self.editor_author_id = config.editor_author_id  # Você editando (ID 9)
         self.max_posts_per_cycle = config.max_posts_per_cycle
         
     def run_optimization_cycle(self) -> Dict:
@@ -98,9 +99,9 @@ class SEOOptimizer:
             last_processed_id = db.get_last_processed_post_id()
             self.logger.info(f"Último post processado: {last_processed_id}")
             
-            # Busca posts novos
+            # Busca posts novos do autor alvo (João - ID 6)
             new_posts = wordpress_client.get_new_posts_since_id(
-                self.author_id, 
+                self.target_author_id, 
                 last_processed_id,
                 per_page=20  # Busca mais posts para ter opções
             )

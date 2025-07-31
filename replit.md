@@ -7,6 +7,7 @@ WordPress SEO Optimizer is a Python-based system that automatically optimizes Wo
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Content Management: User ID 9 edits posts from User ID 6 (João).
 
 ## System Architecture
 
@@ -59,10 +60,10 @@ The application follows a modular architecture with clear separation of concerns
 
 ## Data Flow
 
-1. **Content Discovery**: System queries WordPress for new posts by specific author
+1. **Content Discovery**: System queries WordPress for new posts by João (User ID 6)
 2. **Metadata Enrichment**: TMDB API provides movie/series details and media assets
 3. **AI Optimization**: Gemini AI optimizes content using journalism-focused prompts
-4. **Content Update**: WordPress REST API updates posts with optimized content and Yoast SEO fields
+4. **Content Update**: WordPress REST API updates posts with optimized content and Yoast SEO fields (edited by User ID 9)
 5. **Tracking & Logging**: All activities logged to SQLite database for monitoring
 
 ### Post Processing Pipeline
