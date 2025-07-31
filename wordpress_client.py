@@ -20,7 +20,8 @@ class WordPressClient:
         encoded_credentials = base64.b64encode(credentials.encode()).decode()
         self.session.headers.update({
             'Authorization': f'Basic {encoded_credentials}',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'User-Agent': 'WordPressSEOOptimizer/1.0'
         })
     
     def test_connection(self) -> bool:

@@ -3397,3 +3397,35 @@
 2025-07-31 15:56:35 - __main__ - INFO - Erros: 0
 2025-07-31 15:56:35 - __main__ - INFO - Tempo total: 1.54s
 2025-07-31 15:56:35 - __main__ - ERROR -   - Erro geral no ciclo de otimiza��o: Falha na conex�o com WordPress
+2025-07-31 16:02:21 - config - INFO - Configuração validada com sucesso
+2025-07-31 16:02:21 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 16:02:21 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 16:02:21 - config - INFO - TMDB configurado: Sim
+2025-07-31 16:02:21 - database - INFO - Banco de dados inicializado com sucesso
+2025-07-31 16:02:22 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-07-31 16:02:22 - __main__ - INFO - WordPress SEO Optimizer - Modo TESTE
+2025-07-31 16:02:22 - __main__ - INFO - ==================================================
+2025-07-31 16:02:22 - __main__ - INFO - Validando configuração...
+2025-07-31 16:02:22 - config - INFO - Configuração validada com sucesso
+2025-07-31 16:02:22 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 16:02:22 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 16:02:22 - config - INFO - TMDB configurado: Sim
+2025-07-31 16:02:22 - seo_optimizer - INFO - Executando otimização em modo TESTE (uma vez apenas)
+2025-07-31 16:02:22 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-07-31 16:02:23 - wordpress_client - ERROR - Erro ao testar conexão: 401 Client Error: Unauthorized for url: https://www.maquinanerd.com.br/wp-json/wp/v2/users/me
+2025-07-31 16:02:23 - seo_optimizer - ERROR - Erro geral no ciclo de otimização: Falha na conexão com WordPress
+2025-07-31 16:02:23 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 1.36s ===
+2025-07-31 16:02:23 - seo_optimizer - INFO - Posts encontrados: 0
+2025-07-31 16:02:23 - seo_optimizer - INFO - Posts processados: 0
+2025-07-31 16:02:23 - seo_optimizer - INFO - Sucessos: 0
+2025-07-31 16:02:23 - seo_optimizer - INFO - Erros: 0
+2025-07-31 16:02:23 - __main__ - INFO - ==================================================
+2025-07-31 16:02:23 - __main__ - INFO - RESULTADOS DO TESTE:
+2025-07-31 16:02:23 - __main__ - INFO - Posts encontrados: 0
+2025-07-31 16:02:23 - __main__ - INFO - Posts processados: 0
+2025-07-31 16:02:23 - __main__ - INFO - Sucessos: 0
+2025-07-31 16:02:23 - __main__ - INFO - Erros: 0
+2025-07-31 16:02:23 - __main__ - INFO - Tempo total: 1.36s
+2025-07-31 16:02:23 - __main__ - ERROR - ERROS ENCONTRADOS:
+2025-07-31 16:02:23 - __main__ - ERROR -   - Erro geral no ciclo de otimização: Falha na conexão com WordPress
+2025-07-31 16:02:23 - __main__ - WARNING - Teste concluído, mas nenhum post foi otimizado
