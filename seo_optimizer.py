@@ -163,6 +163,54 @@ class SEOOptimizer:
         except Exception as e:
             self.logger.error(f"Erro ao buscar posts novos: {e}")
             return []
+
+    def _calculate_seo_score(self, optimized_data: Dict, focus_keyword: str) -> int:
+        """
+        Calcula uma pontuação de SEO com base em critérios objetivos.
+
+        Args:
+            optimized_data: Dicionário com 'title', 'excerpt', 'content'.
+            focus_keyword: A palavra-chave foco do post.
+
+        Returns:
+            Uma pontuação de 0 a 100.
+        """
+        score = 0
+        reasons = []
+
+        title = optimized_data.get('title', '').lower()
+        excerpt = optimized_data.get('excerpt', '').lower()
+        content = optimized_data.get('content', '')
+        keyword = focus_keyword.lower()
+
+        # 1. Palavra-chave no Título (20 pontos)
+        if keyword in title:
+            score += 20
+            reasons.append("KW no título")
+        
+        # 2. Palavra-chave no Resumo (20 pontos)
+        if keyword in excerpt:
+            score += 20
+            reasons.append("KW no resumo")
+
+        # 3. Links Internos (20 pontos)
+        if '<a href=' in content:
+            score += 20
+            reasons.append("Links internos")
+
+        # 4. Uso de Negrito (20 pontos)
+        if '<b>' in content:
+            score += 20
+            reasons.append("Uso de negrito")
+
+        # 5. Estrutura de Parágrafos (20 pontos)
+        # Mais de 2 parágrafos indica boa quebra de texto
+        if content.count('<p>') > 2:
+            score += 20
+            reasons.append("Boa estrutura de parágrafos")
+        
+        self.logger.info(f"Cálculo do SEO Score: {score}/100. Fatores: {', '.join(reasons) or 'Nenhum'}")
+        return score
     
     def _process_single_post(self, post_data: Dict) -> Optional[Dict]:
         """
@@ -210,10 +258,20 @@ class SEOOptimizer:
             if not optimized_data:
                 raise ValueError("Falha na otimização com Gemini")
             
-            # 5. Atualiza post no WordPress
-            self.logger.info("Atualizando post no WordPress...")
-            update_success = wordpress_client.update_post_complete(post_id, optimized_data)
+            # 5. Calcula o SEO Score
+            focus_keyword = wordpress_client._extract_focus_keyword(
+                optimized_data.get('title', ''),
+                optimized_data.get('content', '')
+            )
+            seo_score = self._calculate_seo_score(optimized_data, focus_keyword)
+            optimized_data['seo_score'] = seo_score
             
+            # 6. Atualiza post no WordPress
+            self.logger.info("Atualizando post no WordPress...")
+            update_success = wordpress_client.update_post_complete(
+                post_id, optimized_data, focus_keyword
+            )
+
             if not update_success:
                 raise ValueError("Falha ao atualizar post no WordPress")
             
@@ -341,9 +399,12 @@ class SEOOptimizer:
             
             # 4. Processa o post
             self.logger.info("Etapa 4: Processando o post...")
-            if success:
+            optimized_result = self._process_single_post(post_data)
+            
+            if optimized_result:
                 result['success'] = True
-                self.logger.info(f"✅ Post processado com sucesso!")
+                result['after'] = optimized_result
+                self.logger.info(f"✅ Post processado com sucesso! Score: {optimized_result.get('seo_score')}")
             else:
                 raise Exception("Falha no processamento do post")
                 

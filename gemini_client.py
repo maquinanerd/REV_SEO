@@ -106,8 +106,6 @@ Responda exatamente no seguinte formato:
 ## Novo Conteúdo:
 (conteúdo reestruturado com parágrafos curtos, <b>negrito</b> e <a href="">links internos</a>)
 
-## SEO Score:
-(Nota de 0 a 100 avaliando: uso de palavras-chave, legibilidade, estrutura e escaneabilidade)
 """
         return prompt
     
@@ -121,8 +119,7 @@ Responda exatamente no seguinte formato:
             Dict com: {
                 'title': str,
                 'excerpt': str, 
-                'content': str,
-                'seo_score': int
+                'content': str
             }
         """
         
@@ -219,17 +216,6 @@ Responda exatamente no seguinte formato:
                         result[current_section] = '\n'.join(current_content).strip()
                     current_section = 'content'
                     current_content = [line.replace('## Novo Conteúdo:', '').strip()]
-                
-                elif line.startswith('## SEO Score:'):
-                    if current_section:
-                        result[current_section] = '\n'.join(current_content).strip()
-                    current_section = 'seo_score'
-                    score_text = line.replace('## SEO Score:', '').strip()
-                    # Extrai apenas números do score
-                    import re
-                    score_match = re.search(r'\d+', score_text)
-                    result['seo_score'] = int(score_match.group()) if score_match else 0
-                    current_content = []
                 
                 elif current_section and line:
                     current_content.append(line)

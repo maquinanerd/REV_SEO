@@ -3931,3 +3931,77 @@ message: "API key not valid. Please pass a valid API key."
 2025-07-31 17:38:06 - __main__ - INFO - Erros: 0
 2025-07-31 17:38:06 - __main__ - INFO - Tempo total: 77.96s
 2025-07-31 17:38:06 - __main__ - INFO - Teste concluído com sucesso!
+2025-07-31 17:48:13 - config - INFO - Configuração validada com sucesso
+2025-07-31 17:48:13 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 17:48:13 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 17:48:13 - config - INFO - TMDB configurado: Sim
+2025-07-31 17:48:13 - database - INFO - Banco de dados inicializado com sucesso
+2025-07-31 17:48:14 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-07-31 17:48:14 - __main__ - INFO - WordPress SEO Optimizer - Modo TESTE
+2025-07-31 17:48:14 - __main__ - INFO - ==================================================
+2025-07-31 17:48:14 - __main__ - INFO - Validando configuração...
+2025-07-31 17:48:14 - config - INFO - Configuração validada com sucesso
+2025-07-31 17:48:14 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 17:48:14 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 17:48:14 - config - INFO - TMDB configurado: Sim
+2025-07-31 17:48:14 - seo_optimizer - INFO - Executando otimização em modo TESTE (uma vez apenas)
+2025-07-31 17:48:14 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-07-31 17:48:17 - wordpress_client - INFO - Conectado como: Abel
+2025-07-31 17:48:17 - seo_optimizer - INFO - Último post processado: 10601
+2025-07-31 17:48:17 - wordpress_client - INFO - Buscando posts novos desde ID 10601
+2025-07-31 17:48:38 - wordpress_client - INFO - Encontrados 4 posts novos
+2025-07-31 17:48:38 - seo_optimizer - INFO - Verificando 4 posts por duplicatas...
+2025-07-31 17:48:38 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: 'Revelado o Nome da Nova Slayer no Reboot de **Buffy, a Caça-Vampiros**: Conheça Nova e Seu Significado Profundo'
+2025-07-31 17:48:38 - seo_optimizer - INFO - Mantendo post ID 10611 e removendo os outros.
+2025-07-31 17:48:38 - seo_optimizer - INFO - Movendo post duplicado ID 10610 para a lixeira...
+2025-07-31 17:48:41 - seo_optimizer - INFO - Post ID 10610 movido para a lixeira com sucesso.
+2025-07-31 17:48:41 - seo_optimizer - INFO - Post otimizável encontrado: 10611 - Revelado o Nome da Nova Slayer no Reboot de **Buffy, a Caça-Vampiros**: Conheça Nova e Seu Significado Profundo
+2025-07-31 17:48:41 - seo_optimizer - INFO - Post otimizável encontrado: 10608 - O Vingador Tóxico: Diretor Macon Blair Revela Por Que o Novo Filme é um Reboot e Não Uma Sequência
+2025-07-31 17:48:41 - seo_optimizer - INFO - Post otimizável encontrado: 10603 - Fantastic Four: First Steps &#8211; Franklin Storm e o Futuro de Avengers: Secret Wars
+2025-07-31 17:48:41 - seo_optimizer - INFO - --- Processando post 10611: Revelado o Nome da Nova Slayer no Reboot de **Buffy, a Caça-Vampiros**: Conheça Nova e Seu Significado Profundo ---
+2025-07-31 17:48:41 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-07-31 17:48:41 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-07-31 17:48:41 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-07-31 17:48:48 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-07-31 17:48:48 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-07-31 17:48:48 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-07-31 17:48:48 - wordpress_client - INFO - Excerpt truncado: 335 → 177 caracteres
+2025-07-31 17:48:48 - wordpress_client - INFO - Atualizando conteúdo do post 10611
+2025-07-31 17:48:50 - wordpress_client - INFO - Post 10611 atualizado com sucesso
+2025-07-31 17:48:50 - wordpress_client - INFO - Meta description truncada: 335 → 177 caracteres
+2025-07-31 17:48:50 - wordpress_client - INFO - Atualizando meta Yoast do post 10611
+2025-07-31 17:48:52 - wordpress_client - INFO - Meta Yoast do post 10611 atualizada
+2025-07-31 17:48:52 - database - INFO - Log registrado: optimization - success para post 10611
+2025-07-31 17:48:52 - database - INFO - Último post processado atualizado para ID: 10611
+2025-07-31 17:48:52 - seo_optimizer - INFO - Post 10611 otimizado com sucesso em 10.31s
+2025-07-31 17:48:52 - seo_optimizer - INFO - SEO Score: 0
+2025-07-31 17:48:52 - seo_optimizer - INFO - --- Processando post 10608: O Vingador Tóxico: Diretor Macon Blair Revela Por Que o Novo Filme é um Reboot e Não Uma Sequência ---
+2025-07-31 17:48:52 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-07-31 17:48:52 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-07-31 17:48:52 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-07-31 17:49:00 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-07-31 17:49:00 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-07-31 17:49:00 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-07-31 17:49:00 - wordpress_client - INFO - Excerpt truncado: 330 → 174 caracteres
+2025-07-31 17:49:00 - wordpress_client - INFO - Atualizando conteúdo do post 10608
+2025-07-31 17:49:01 - wordpress_client - INFO - Post 10608 atualizado com sucesso
+2025-07-31 17:49:01 - wordpress_client - INFO - Meta description truncada: 330 → 174 caracteres
+2025-07-31 17:49:01 - wordpress_client - INFO - Atualizando meta Yoast do post 10608
+2025-07-31 17:49:02 - wordpress_client - INFO - Meta Yoast do post 10608 atualizada
+2025-07-31 17:49:02 - database - INFO - Log registrado: optimization - success para post 10608
+2025-07-31 17:49:03 - database - INFO - Último post processado atualizado para ID: 10608
+2025-07-31 17:49:03 - seo_optimizer - INFO - Post 10608 otimizado com sucesso em 10.66s
+2025-07-31 17:49:03 - seo_optimizer - INFO - SEO Score: 0
+2025-07-31 17:49:03 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 48.28s ===
+2025-07-31 17:49:03 - seo_optimizer - INFO - Posts encontrados: 3
+2025-07-31 17:49:03 - seo_optimizer - INFO - Posts processados: 2
+2025-07-31 17:49:03 - seo_optimizer - INFO - Sucessos: 2
+2025-07-31 17:49:03 - seo_optimizer - INFO - Erros: 0
+2025-07-31 17:49:03 - __main__ - INFO - ==================================================
+2025-07-31 17:49:03 - __main__ - INFO - RESULTADOS DO TESTE:
+2025-07-31 17:49:03 - __main__ - INFO - Posts encontrados: 3
+2025-07-31 17:49:03 - __main__ - INFO - Posts processados: 2
+2025-07-31 17:49:03 - __main__ - INFO - Sucessos: 2
+2025-07-31 17:49:03 - __main__ - INFO - Erros: 0
+2025-07-31 17:49:03 - __main__ - INFO - Tempo total: 48.28s
+2025-07-31 17:49:03 - __main__ - INFO - Teste concluído com sucesso!

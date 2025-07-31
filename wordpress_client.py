@@ -227,20 +227,23 @@ class WordPressClient:
             self.logger.error(f"Erro ao atualizar meta Yoast do post {post_id}: {e}")
             return False
     
-    def update_post_complete(self, post_id: int, optimized_data: Dict) -> bool:
+    def update_post_complete(self, post_id: int, optimized_data: Dict, 
+                             focus_keyword: Optional[str] = None) -> bool:
         """
         Atualização completa do post incluindo conteúdo e meta Yoast
         
         Args:
             post_id: ID do post
             optimized_data: Dict com title, excerpt, content, focus_keyword
+            focus_keyword: Palavra-chave foco (opcional, será extraída se não fornecida)
         """
         
-        # Extrai palavra-chave foco do título
-        focus_keyword = self._extract_focus_keyword(
-            optimized_data.get('title', ''),
-            optimized_data.get('content', '')
-        )
+        # Extrai palavra-chave foco do título se não for fornecida
+        if not focus_keyword:
+            focus_keyword = self._extract_focus_keyword(
+                optimized_data.get('title', ''),
+                optimized_data.get('content', '')
+            )
         
         # Atualiza conteúdo básico
         content_updated = self.update_post_content(
