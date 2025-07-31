@@ -1,0 +1,12 @@
+# Frameworks Web
+Flask==3.0.3
+
+# Requisições HTTP
+requests==2.32.3
+
+# Cliente Google Gemini AI
+google-generativeai==0.7.1
+
+# Utilitários
+python-dotenv==1.0.1
+schedule==1.2.2
