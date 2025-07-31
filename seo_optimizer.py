@@ -59,8 +59,8 @@ class SEOOptimizer:
             
             for post in posts_to_process:
                 try:
-                    success = self._process_single_post(post)
-                    if success:
+                    optimized_result = self._process_single_post(post)
+                    if optimized_result:
                         stats['posts_success'] += 1
                     else:
                         stats['posts_error'] += 1
@@ -164,7 +164,7 @@ class SEOOptimizer:
             self.logger.error(f"Erro ao buscar posts novos: {e}")
             return []
     
-    def _process_single_post(self, post_data: Dict) -> bool:
+    def _process_single_post(self, post_data: Dict) -> Optional[Dict]:
         """
         Processa um único post
         
@@ -172,7 +172,7 @@ class SEOOptimizer:
             post_data: Dados completos do post
             
         Returns:
-            True se processado com sucesso
+            Dict com dados otimizados em caso de sucesso, None caso contrário.
         """
         post_id = post_data['id']
         post_title = post_data.get('title', {}).get('rendered', 'N/A')
@@ -235,7 +235,7 @@ class SEOOptimizer:
             self.logger.info(f"Post {post_id} otimizado com sucesso em {processing_time:.2f}s")
             self.logger.info(f"SEO Score: {optimized_data.get('seo_score', 'N/A')}")
             
-            return True
+            return optimized_data
             
         except Exception as e:
             processing_time = time.time() - process_start
@@ -250,7 +250,7 @@ class SEOOptimizer:
                 processing_time
             )
             
-            return False
+            return None
     
     def get_system_status(self) -> Dict:
         """Retorna status atual do sistema"""
@@ -302,7 +302,8 @@ class SEOOptimizer:
             'success': False,
             'error': None,
             'processing_time': 0,
-            'post_data': None
+            'before': None,
+            'after': None
         }
         
         try:
@@ -320,18 +321,19 @@ class SEOOptimizer:
             
             self.logger.info(f"✅ Post encontrado: ID {post_data['id']}")
             
-            result['post_data'] = {
-                'id': post_data['id'],
-                'title': post_data.get('title', {}).get('rendered', 'N/A'),
-                'author': post_data.get('author', 'N/A')
+            result['before'] = {
+                'title': post_data.get('title', {}).get('rendered', ''),
+                'excerpt': post_data.get('excerpt', {}).get('rendered', ''),
+                'content': post_data.get('content', {}).get('rendered', '')
             }
             
             # 3. Verifica se o post é otimizável
             self.logger.info("Etapa 3: Verificando se o post é otimizável...")
             if not wordpress_client.is_post_optimizable(post_data):
                 # Vamos ver as categorias para debug
-                categories = post_data.get('categories', [])
-                cat_names = [cat.get('name', f'ID:{cat.get("id")}') for cat in categories]
+                embedded_terms = post_data.get('_embedded', {}).get('wp:term', [[]])
+                categories = embedded_terms[0] if len(embedded_terms) > 0 else []
+                cat_names = [cat.get('name', f"ID:{cat.get('id')}") for cat in categories]
                 self.logger.warning(f"Post não é otimizável. Categorias: {cat_names}")
                 raise Exception("Post não é otimizável (não é filme/série)")
             
@@ -339,8 +341,6 @@ class SEOOptimizer:
             
             # 4. Processa o post
             self.logger.info("Etapa 4: Processando o post...")
-            success = self._process_single_post(post_data)
-            
             if success:
                 result['success'] = True
                 self.logger.info(f"✅ Post processado com sucesso!")
