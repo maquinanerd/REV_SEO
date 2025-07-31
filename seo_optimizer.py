@@ -1,5 +1,6 @@
 import logging
 import time
+import re
 from datetime import datetime
 from typing import Dict, List, Optional
 from config import config
@@ -94,24 +95,65 @@ class SEOOptimizer:
         return stats
     
     def _find_new_posts(self) -> List[Dict]:
-        """Encontra posts novos para processar"""
+        """Encontra posts novos para processar e remove duplicados."""
         try:
             last_processed_id = db.get_last_processed_post_id()
             self.logger.info(f"Último post processado: {last_processed_id}")
             
             # Busca posts novos do autor alvo (João - ID 6)
-            new_posts = wordpress_client.get_new_posts_since_id(
+            # Aumentamos a busca para ter mais chance de encontrar duplicatas no mesmo ciclo
+            new_posts_raw = wordpress_client.get_new_posts_since_id(
                 self.target_author_id, 
                 last_processed_id,
-                per_page=20  # Busca mais posts para ter opções
+                per_page=50
             )
+
+            if not new_posts_raw:
+                return []
+
+            # --- Lógica de de-duplicação ---
+            self.logger.info(f"Verificando {len(new_posts_raw)} posts por duplicatas...")
+            posts_by_title = {}
             
+            def normalize_title(title):
+                # Remove entidades HTML, pontuação e converte para minúsculas
+                title = re.sub(r'&#\d+;', '', title)
+                title = re.sub(r'[^\w\s]', '', title).lower().strip()
+                return title
+
+            for post in new_posts_raw:
+                title = post.get('title', {}).get('rendered', '')
+                norm_title = normalize_title(title)
+                if norm_title not in posts_by_title:
+                    posts_by_title[norm_title] = []
+                posts_by_title[norm_title].append(post)
+
+            unique_posts = []
+            for norm_title, post_group in posts_by_title.items():
+                if len(post_group) > 1:
+                    self.logger.warning(f"Encontrado grupo de {len(post_group)} posts duplicados com título: '{post_group[0]['title']['rendered']}'")
+                    post_group.sort(key=lambda p: p['id'], reverse=True)
+                    post_to_keep = post_group[0]
+                    posts_to_delete = post_group[1:]
+                    
+                    unique_posts.append(post_to_keep)
+                    self.logger.info(f"Mantendo post ID {post_to_keep['id']} e removendo os outros.")
+                    
+                    for post_to_del in posts_to_delete:
+                        self.logger.info(f"Movendo post duplicado ID {post_to_del['id']} para a lixeira...")
+                        deleted = wordpress_client.delete_post(post_to_del['id'], force=False)
+                        if deleted:
+                            self.logger.info(f"Post ID {post_to_del['id']} movido para a lixeira com sucesso.")
+                        else:
+                            self.logger.error(f"Falha ao mover post ID {post_to_del['id']} para a lixeira.")
+                else:
+                    unique_posts.append(post_group[0])
+
             # Filtra apenas posts otimizáveis (filmes/séries)
             optimizable_posts = []
-            for post in new_posts:
-                post_data = wordpress_client.get_post_full_data(post['id'])
-                if post_data and wordpress_client.is_post_optimizable(post_data):
-                    optimizable_posts.append(post_data)
+            for post in unique_posts:
+                if wordpress_client.is_post_optimizable(post):
+                    optimizable_posts.append(post)
                     self.logger.info(f"Post otimizável encontrado: {post['id']} - {post.get('title', {}).get('rendered', 'N/A')}")
                 else:
                     self.logger.info(f"Post {post['id']} não é otimizável (não é filme/série)")

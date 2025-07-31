@@ -262,6 +262,27 @@ class WordPressClient:
         )
         
         return meta_updated
+
+    def delete_post(self, post_id: int, force: bool = False) -> bool:
+        """
+        Move um post para a lixeira ou o deleta permanentemente.
+
+        Args:
+            post_id: ID do post a ser deletado.
+            force: Se True, deleta permanentemente. Se False, move para a lixeira.
+
+        Returns:
+            True se a operação foi bem-sucedida, False caso contrário.
+        """
+        try:
+            url = f"{self.base_url}/wp-json/wp/v2/posts/{post_id}"
+            params = {'force': str(force).lower()}
+            response = self.session.delete(url, params=params)
+            response.raise_for_status()
+            return True
+        except Exception as e:
+            self.logger.error(f"Erro ao deletar post {post_id}: {e}")
+            return False
     
     def _truncate_excerpt_intelligently(self, excerpt: str, max_length: int = 180) -> str:
         """
@@ -362,7 +383,8 @@ class WordPressClient:
     
     def is_post_optimizable(self, post_data: Dict) -> bool:
         """
-        Verifica se um post pode ser otimizado baseado nas categorias
+        Verifica se um post pode ser otimizado baseado nas categorias.
+        Extrai categorias dos dados '_embedded' se disponíveis.
         
         Args:
             post_data: Dados do post
@@ -370,8 +392,14 @@ class WordPressClient:
         Returns:
             True se o post é de filme ou série
         """
-        categories = post_data.get('categories', [])
-        
+        # Check if categories are already extracted
+        categories = post_data.get('categories')
+
+        # If not, extract from embedded data
+        if categories is None:
+            embedded_terms = post_data.get('_embedded', {}).get('wp:term', [[]])
+            categories = embedded_terms[0] if len(embedded_terms) > 0 else []
+
         # Verifica se tem categoria de filme ou série
         movie_category = any(cat.get('id') == config.movie_category_id for cat in categories)
         series_category = any(cat.get('id') == config.series_category_id for cat in categories)

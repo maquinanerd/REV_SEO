@@ -3711,3 +3711,73 @@ message: "API key not valid. Please pass a valid API key."
 2025-07-31 16:25:36 - __main__ - INFO - Erros: 0
 2025-07-31 16:25:36 - __main__ - INFO - Tempo total: 69.30s
 2025-07-31 16:25:36 - __main__ - INFO - Teste concluído com sucesso!
+2025-07-31 16:44:25 - config - INFO - Configuração validada com sucesso
+2025-07-31 16:44:25 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 16:44:25 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 16:44:25 - config - INFO - TMDB configurado: Sim
+2025-07-31 16:44:25 - database - INFO - Banco de dados inicializado com sucesso
+2025-07-31 16:44:26 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-07-31 16:44:26 - __main__ - INFO - WordPress SEO Optimizer - Modo TESTE
+2025-07-31 16:44:26 - __main__ - INFO - ==================================================
+2025-07-31 16:44:26 - __main__ - INFO - Validando configuração...
+2025-07-31 16:44:26 - config - INFO - Configuração validada com sucesso
+2025-07-31 16:44:26 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-07-31 16:44:26 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-07-31 16:44:26 - config - INFO - TMDB configurado: Sim
+2025-07-31 16:44:26 - seo_optimizer - INFO - Executando otimização em modo TESTE (uma vez apenas)
+2025-07-31 16:44:26 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-07-31 16:44:28 - wordpress_client - INFO - Conectado como: Abel
+2025-07-31 16:44:28 - seo_optimizer - INFO - Último post processado: 10581
+2025-07-31 16:44:28 - wordpress_client - INFO - Buscando posts novos desde ID 10581
+2025-07-31 16:44:36 - wordpress_client - INFO - Encontrados 4 posts novos
+2025-07-31 16:44:37 - seo_optimizer - INFO - Post otimizável encontrado: 10591 - Os Maiores Vilões de The Flash: Um Ranking Definitivo dos Antagonistas de Barry Allen
+2025-07-31 16:44:38 - seo_optimizer - INFO - Post otimizável encontrado: 10589 - O Verdadeiro Desperdício do DCU: A Supergirl de Sasha Calle Foi Mais Maltratada que o Superman de Henry Cavill?
+2025-07-31 16:44:40 - seo_optimizer - INFO - Post otimizável encontrado: 10587 - Os Maiores Vilões de The Flash: Um Ranking Definitivo da Série do Arrowverse
+2025-07-31 16:44:41 - seo_optimizer - INFO - Post otimizável encontrado: 10583 - Assista V/H/S Grátis no Tubi: Antologia de Terror Found Footage que Redefiniu o Gênero
+2025-07-31 16:44:41 - seo_optimizer - INFO - --- Processando post 10591: Os Maiores Vilões de The Flash: Um Ranking Definitivo dos Antagonistas de Barry Allen ---
+2025-07-31 16:44:41 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-07-31 16:44:41 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-07-31 16:44:41 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-07-31 16:44:49 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-07-31 16:44:49 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-07-31 16:44:49 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-07-31 16:44:49 - wordpress_client - INFO - Excerpt truncado: 255 → 182 caracteres
+2025-07-31 16:44:49 - wordpress_client - INFO - Atualizando conteúdo do post 10591
+2025-07-31 16:44:51 - wordpress_client - INFO - Post 10591 atualizado com sucesso
+2025-07-31 16:44:51 - wordpress_client - INFO - Meta description truncada: 255 → 182 caracteres
+2025-07-31 16:44:51 - wordpress_client - INFO - Atualizando meta Yoast do post 10591
+2025-07-31 16:44:52 - wordpress_client - INFO - Meta Yoast do post 10591 atualizada
+2025-07-31 16:44:52 - database - INFO - Log registrado: optimization - success para post 10591
+2025-07-31 16:44:52 - database - INFO - Último post processado atualizado para ID: 10591
+2025-07-31 16:44:52 - seo_optimizer - INFO - Post 10591 otimizado com sucesso em 11.15s
+2025-07-31 16:44:52 - seo_optimizer - INFO - SEO Score: 0
+2025-07-31 16:44:52 - seo_optimizer - INFO - --- Processando post 10589: O Verdadeiro Desperdício do DCU: A Supergirl de Sasha Calle Foi Mais Maltratada que o Superman de Henry Cavill? ---
+2025-07-31 16:44:52 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-07-31 16:44:52 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-07-31 16:44:52 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-07-31 16:44:59 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-07-31 16:44:59 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-07-31 16:44:59 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-07-31 16:44:59 - wordpress_client - INFO - Excerpt truncado: 380 → 180 caracteres
+2025-07-31 16:44:59 - wordpress_client - INFO - Atualizando conteúdo do post 10589
+2025-07-31 16:45:01 - wordpress_client - INFO - Post 10589 atualizado com sucesso
+2025-07-31 16:45:01 - wordpress_client - INFO - Meta description truncada: 380 → 180 caracteres
+2025-07-31 16:45:01 - wordpress_client - INFO - Atualizando meta Yoast do post 10589
+2025-07-31 16:45:05 - wordpress_client - INFO - Meta Yoast do post 10589 atualizada
+2025-07-31 16:45:05 - database - INFO - Log registrado: optimization - success para post 10589
+2025-07-31 16:45:05 - database - INFO - Último post processado atualizado para ID: 10589
+2025-07-31 16:45:05 - seo_optimizer - INFO - Post 10589 otimizado com sucesso em 12.35s
+2025-07-31 16:45:05 - seo_optimizer - INFO - SEO Score: 0
+2025-07-31 16:45:05 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 38.57s ===
+2025-07-31 16:45:05 - seo_optimizer - INFO - Posts encontrados: 4
+2025-07-31 16:45:05 - seo_optimizer - INFO - Posts processados: 2
+2025-07-31 16:45:05 - seo_optimizer - INFO - Sucessos: 2
+2025-07-31 16:45:05 - seo_optimizer - INFO - Erros: 0
+2025-07-31 16:45:05 - __main__ - INFO - ==================================================
+2025-07-31 16:45:05 - __main__ - INFO - RESULTADOS DO TESTE:
+2025-07-31 16:45:05 - __main__ - INFO - Posts encontrados: 4
+2025-07-31 16:45:05 - __main__ - INFO - Posts processados: 2
+2025-07-31 16:45:05 - __main__ - INFO - Sucessos: 2
+2025-07-31 16:45:05 - __main__ - INFO - Erros: 0
+2025-07-31 16:45:05 - __main__ - INFO - Tempo total: 38.57s
+2025-07-31 16:45:05 - __main__ - INFO - Teste concluído com sucesso!
