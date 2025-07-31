@@ -1,0 +1,219 @@
+OBJETIVO DO PROJETO
+Preciso que você me ajude a criar um sistema em Python chamado WordPress SEO Optimizer para rodar no Replit.
+Este sistema fará otimização SEO automática em posts do WordPress usando Google Gemini AI, TMDB API, atualização de campos do plugin Yoast SEO via REST API e um painel Flask para monitoramento em tempo real.
+
+✅ FUNCIONALIDADES JÁ PLANEJADAS
+🔹 Integrações:
+WordPress REST API (com autenticação por App Password)
+
+Google Gemini 1.5 Flash (com alternância entre múltiplas chaves quando a quota estourar)
+
+TMDB API (para obter imagens, trailers, e detalhes de filmes/séries)
+
+Yoast SEO (via REST API + register_meta() no WordPress)
+
+🔹 Recursos do sistema:
+Agendamento periódico (ex.: a cada 60 minutos)
+
+Apenas 2 posts otimizados por ciclo (para controle de quota)
+
+Extração de título do post
+
+Identificação da categoria (Filme = ID 24 | Série = ID 21)
+
+Otimização do conteúdo com AI usando prompt para Google News
+
+Atualização no WordPress do:
+
+título
+
+excerpt
+
+conteúdo
+
+e campos de SEO do Yoast:
+
+_yoast_wpseo_title
+
+_yoast_wpseo_metadesc
+
+_yoast_wpseo_focuskw
+
+🔹 Painel Flask:
+Exibe status do sistema
+
+Logs de execução
+
+Estatísticas salvas em banco SQLite
+
+Interface web (usar dashboard.py)
+
+✅ MELHORIAS JÁ IMPLEMENTADAS
+Alternância automática entre múltiplas chaves da API Gemini
+
+Retry com backoff exponencial
+
+Logs e controle de quota em gemini_quota.json
+
+Extração de título mais precisa com filtros
+
+Busca melhorada por categoria na TMDB
+
+Plugin (ou snippet) no WordPress com register_meta() para os campos do Yoast estarem acessíveis via API
+
+Atualização completa de posts (incluindo metadados Yoast)
+
+📁 ARQUITETURA DO SISTEMA (módulos esperados)
+main.py
+Classe: SEOOptimizer
+
+Responsável por:
+
+Orquestrar execução periódica
+
+Verificar quota
+
+Buscar posts do autor João (ID 6)
+
+Rodar o ciclo de otimização
+
+gemini_client.py
+Classe: GeminiClient
+
+Usa Google Gemini 1.5 Flash
+
+Alterna entre chaves automaticamente
+
+Retry inteligente com logs de erro
+
+Recebe conteúdo e retorna título, descrição, texto otimizado
+
+wordpress_client.py
+Classe: WordPressClient
+
+Funções:
+
+Buscar posts recentes de um autor
+
+Atualizar conteúdo via REST
+
+Atualizar campos do Yoast via meta
+
+get_post_categories() para identificar categoria (ID 21 ou 24)
+
+tmdb_client.py
+Classe: TMDBClient
+
+Busca informações baseadas em:
+
+Categoria (filme ou série)
+
+Tags do post (ator, nome da obra, etc.)
+
+Retorna poster, backdrop, trailer do YouTube
+
+dashboard.py
+Flask app
+
+Exibe:
+
+Status do sistema
+
+Uso de quota
+
+Posts otimizados
+
+Logs
+
+(corrigido: erro JS de redeclaração)
+
+config.py
+Classe: Config
+
+Carrega .env
+
+Valida chaves e domínio
+
+Suporte a múltiplas chaves de API
+
+📦 ESTRUTURA DE ARQUIVOS
+main.py
+
+gemini_client.py
+
+wordpress_client.py
+
+tmdb_client.py
+
+dashboard.py
+
+config.py
+
+seo_optimizer.log
+
+gemini_quota.json
+
+seo_dashboard.db
+
+🧠 PROMPT SEO USADO NA IA (GEMINI)
+O conteúdo gerado pela IA deve:
+
+Otimizar o post para Google News
+
+Usar tom jornalístico
+
+Adicionar negrito em termos importantes
+
+Inserir links internos baseados nas tags do post
+
+Incluir mídia da TMDB (poster, trailer)
+
+Escrever em parágrafos curtos e bem estruturados
+
+⚙️ EXECUÇÃO
+Rodar apenas uma vez (teste):
+bash
+Copiar
+Editar
+python main.py --once
+Rodar continuamente (produção):
+bash
+Copiar
+Editar
+python main.py
+Acessar o painel:
+bash
+Copiar
+Editar
+python dashboard.py
+🔐 .env (exemplo)
+env
+Copiar
+Editar
+# WordPress
+WORDPRESS_URL=https://www.maquinanerd.com.br/
+WORDPRESS_USERNAME=Abel
+WORDPRESS_PASSWORD=Hl7M 5ZOE hMNQ M7A9 gFVy IEsB
+WORDPRESS_DOMAIN=https://www.maquinanerd.com.br/
+
+# Google Gemini
+GEMINI_API_KEY=AIzaSyD7X2_8KPNZrnQnQ_643TjIJ2tpbkuRSms
+GEMINI_API_KEY_1=AIzaSyDDkQ-htQ1WsNL-i6d_a9bwACL6cez8Cjs
+GEMINI_API_KEY_2=AIzaSyDIV2OX6OujMmXzVaxMOREjJ3tGC8DP7wg
+
+# TMDB
+TMDB_API_KEY=cb60717161e33e2972bd217aabaa27f4
+TMDB_READ_TOKEN=eyJhbGciOiJIUzI1NiJ9...
+TMDB_BASE_URL=https://api.themoviedb.org/3
+TMDB_IMAGE_URL=https://image.tmdb.org/t/p
+
+# Flask
+SESSION_SECRET=5SFn/MRA2tlJluiogVz0oSef30ctJdaCSEG0vQRZrvY6SseayTbK05tQ+prPiLWRBiiQSjbm3p13vybLtvos0Q==
+📎 Requisitos técnicos
+Python 3.10+
+
+requests, flask, schedule, dotenv, sqlite3
+
+Suporte a Threads ou Async opcional para otimização futura
+
+Replit com Deploy Always On (ou cron externo se necessário)
