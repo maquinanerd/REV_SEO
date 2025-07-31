@@ -42,6 +42,34 @@ def api_status():
             'error': str(e)
         }), 500
 
+@app.route('/api/process-post', methods=['POST'])
+def api_process_post():
+    """API endpoint para processar um post específico"""
+    try:
+        data = request.get_json()
+        post_url = data.get('url', '').strip()
+        
+        if not post_url:
+            return jsonify({
+                'success': False,
+                'error': 'URL do post é obrigatória'
+            }), 400
+        
+        logger.info(f"Processando post específico: {post_url}")
+        result = seo_optimizer.process_post_by_url(post_url)
+        
+        return jsonify({
+            'success': True,
+            'data': result
+        })
+        
+    except Exception as e:
+        logger.error(f"Erro ao processar post específico: {e}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
 @app.route('/api/statistics')
 def api_statistics():
     """API endpoint para estatísticas detalhadas"""

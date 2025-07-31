@@ -94,10 +94,6 @@ class WordPressClient:
                 '_embed': 1
             }
             
-            # Se temos um último post processado, busca apenas os mais novos
-            if last_post_id > 0:
-                params['after'] = f"{last_post_id}"
-            
             self.logger.info(f"Buscando posts novos desde ID {last_post_id}")
             response = self.session.get(url, params=params)
             response.raise_for_status()
@@ -323,6 +319,60 @@ class WordPressClient:
         series_category = any(cat.get('id') == config.series_category_id for cat in categories)
         
         return movie_category or series_category
+    
+    def get_post_by_url(self, post_url: str) -> Optional[Dict]:
+        """
+        Obtém dados de um post específico pela URL
+        
+        Args:
+            post_url: URL do post
+            
+        Returns:
+            Dict com dados do post ou None
+        """
+        try:
+            # Extrai o slug do post da URL
+            import re
+            slug_match = re.search(r'/([^/]+)/?$', post_url.rstrip('/'))
+            if not slug_match:
+                self.logger.error(f"Não foi possível extrair slug da URL: {post_url}")
+                return None
+            
+            slug = slug_match.group(1)
+            
+            url = f"{self.base_url}/wp-json/wp/v2/posts"
+            params = {
+                'slug': slug,
+                '_embed': 1
+            }
+            
+            self.logger.info(f"Buscando post pelo slug: {slug}")
+            response = self.session.get(url, params=params)
+            response.raise_for_status()
+            
+            posts = response.json()
+            
+            if posts:
+                post_data = posts[0]
+                
+                # Extrai categorias e tags dos dados embedded
+                embedded_terms = post_data.get('_embedded', {}).get('wp:term', [[], []])
+                categories = embedded_terms[0] if len(embedded_terms) > 0 else []
+                tags = embedded_terms[1] if len(embedded_terms) > 1 else []
+                
+                # Adiciona categorias e tags ao post data
+                post_data['categories'] = categories
+                post_data['tags'] = tags
+                
+                self.logger.info(f"Post encontrado: {post_data['id']} - {post_data.get('title', {}).get('rendered', 'N/A')}")
+                return post_data
+            else:
+                self.logger.warning(f"Nenhum post encontrado para o slug: {slug}")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Erro ao buscar post pela URL {post_url}: {e}")
+            return None
 
 # Instância global do cliente WordPress
 wordpress_client = WordPressClient()

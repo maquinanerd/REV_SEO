@@ -12,13 +12,13 @@ class SEODashboard {
 
     init() {
         console.log('🚀 Inicializando WordPress SEO Optimizer Dashboard');
-        
+
         // Bind event listeners
         this.bindEvents();
-        
+
         // Initial data load
         this.loadAllData();
-        
+
         // Start auto-refresh
         this.startAutoRefresh();
     }
@@ -47,10 +47,10 @@ class SEODashboard {
 
     async loadAllData() {
         console.log('📊 Carregando dados do dashboard...');
-        
+
         // Show loading states
         this.showLoadingStates();
-        
+
         try {
             // Load data in parallel
             await Promise.all([
@@ -59,7 +59,7 @@ class SEODashboard {
                 this.loadConfiguration(),
                 this.loadLogs()
             ]);
-            
+
             console.log('✅ Dados carregados com sucesso');
         } catch (error) {
             console.error('❌ Erro ao carregar dados:', error);
@@ -71,7 +71,7 @@ class SEODashboard {
         try {
             const response = await fetch('/api/status');
             const result = await response.json();
-            
+
             if (result.success) {
                 this.updateSystemStatus(result.data);
             } else {
@@ -87,7 +87,7 @@ class SEODashboard {
         try {
             const response = await fetch('/api/statistics');
             const result = await response.json();
-            
+
             if (result.success) {
                 this.updateStatistics(result.data);
                 this.updateChart(result.data.daily_stats);
@@ -103,7 +103,7 @@ class SEODashboard {
         try {
             const response = await fetch('/api/config');
             const result = await response.json();
-            
+
             if (result.success) {
                 this.updateConfiguration(result.data);
             } else {
@@ -118,7 +118,7 @@ class SEODashboard {
         try {
             const response = await fetch(`/api/logs?limit=${limit}`);
             const result = await response.json();
-            
+
             if (result.success) {
                 this.updateLogs(result.data);
             } else {
@@ -184,12 +184,12 @@ class SEODashboard {
 
     updateStatistics(data) {
         const general = data.general || {};
-        
+
         // Update numeric statistics
         document.getElementById('totalProcessed').textContent = general.total_processed || 0;
         document.getElementById('todayProcessed').textContent = general.today_processed || 0;
         document.getElementById('todayErrors').textContent = general.today_errors || 0;
-        
+
         // Last processed post ID from system status
         const lastPostElement = document.getElementById('lastPostId');
         if (lastPostElement) {
@@ -199,7 +199,7 @@ class SEODashboard {
 
     updateConfiguration(data) {
         const configContainer = document.getElementById('configInfo');
-        
+
         const configHtml = `
             <div class="config-item">
                 <span class="config-label">WordPress:</span>
@@ -230,13 +230,13 @@ class SEODashboard {
                 <span class="config-value">${data.tmdb_configured ? 'Configurado' : 'Não configurado'}</span>
             </div>
         `;
-        
+
         configContainer.innerHTML = configHtml;
     }
 
     updateLogs(logs) {
         const container = document.getElementById('logsContainer');
-        
+
         if (!logs || logs.length === 0) {
             container.innerHTML = `
                 <div class="text-center text-muted">
@@ -266,7 +266,7 @@ class SEODashboard {
                 </table>
             </div>
         `;
-        
+
         container.innerHTML = tableHtml;
     }
 
@@ -274,10 +274,10 @@ class SEODashboard {
         const date = new Date(log.created_at);
         const timeString = date.toLocaleString('pt-BR');
         const processingTime = log.processing_time ? `${log.processing_time.toFixed(2)}s` : '-';
-        
+
         const statusClass = log.status === 'success' ? 'status-success' : 
                            log.status === 'error' ? 'status-error' : 'status-warning';
-        
+
         const statusIcon = log.status === 'success' ? 'fa-check' : 
                           log.status === 'error' ? 'fa-times' : 'fa-exclamation';
 
@@ -379,17 +379,17 @@ class SEODashboard {
     async runTest() {
         const testBtn = document.getElementById('testBtn');
         const originalText = testBtn.innerHTML;
-        
+
         testBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Executando...';
         testBtn.disabled = true;
 
         try {
             const response = await fetch('/api/run-test');
             const result = await response.json();
-            
+
             if (result.success) {
                 this.showSuccess('Teste executado com sucesso!');
-                
+
                 // Show test results
                 const data = result.data;
                 const message = `
@@ -399,9 +399,9 @@ class SEODashboard {
                     Erros: ${data.posts_error}<br>
                     Tempo: ${data.processing_time?.toFixed(2)}s
                 `;
-                
+
                 this.showInfo('Resultados do Teste', message);
-                
+
                 // Refresh data after test
                 setTimeout(() => this.loadAllData(), 2000);
             } else {
@@ -419,14 +419,14 @@ class SEODashboard {
     async resetQuota() {
         const resetBtn = document.getElementById('resetQuotaBtn');
         const original = resetBtn.innerHTML;
-        
+
         resetBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Resetando...';
         resetBtn.disabled = true;
 
         try {
             const response = await fetch('/api/reset-quota');
             const result = await response.json();
-            
+
             if (result.success) {
                 this.showSuccess('Quota do Gemini resetada!');
                 this.loadSystemStatus(); // Refresh status
@@ -446,12 +446,12 @@ class SEODashboard {
         // System status
         const statusIcon = document.getElementById('systemStatusIcon');
         statusIcon.innerHTML = '<i class="fas fa-circle-notch fa-spin fa-2x text-warning"></i>';
-        
+
         document.getElementById('systemStatus').textContent = 'Carregando...';
         document.getElementById('wordpressStatus').textContent = 'Verificando...';
         document.getElementById('geminiStatus').textContent = 'Verificando...';
         document.getElementById('tmdbStatus').textContent = 'Verificando...';
-        
+
         // Statistics
         document.getElementById('totalProcessed').textContent = '-';
         document.getElementById('todayProcessed').textContent = '-';
@@ -465,7 +465,7 @@ class SEODashboard {
             this.loadSystemStatus();
             this.loadStatistics();
         }, 30000);
-        
+
         console.log('🔄 Auto-refresh ativado (30 segundos)');
     }
 
@@ -552,6 +552,64 @@ class SEODashboard {
         toastElement.addEventListener('hidden.bs.toast', () => {
             toastElement.remove();
         });
+    }
+
+    async processSpecificPost() {
+        const postUrl = document.getElementById('postUrl').value.trim();
+        const btn = document.getElementById('processPostBtn');
+
+        if (!postUrl) {
+            this.showAlert('Por favor, insira a URL do post', 'warning');
+            return;
+        }
+
+        // Validation
+        if (!postUrl.includes('maquinanerd.com.br')) {
+            this.showAlert('URL deve ser do site maquinanerd.com.br', 'warning');
+            return;
+        }
+
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Processando...';
+
+        try {
+            const response = await fetch('/api/process-post', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ url: postUrl })
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                const result = data.data;
+                if (result.success) {
+                    this.showAlert(
+                        `✅ Post processado com sucesso em ${result.processing_time.toFixed(2)}s!`, 
+                        'success'
+                    );
+
+                    // Clear URL input
+                    document.getElementById('postUrl').value = '';
+
+                    // Reload data
+                    this.loadAllData();
+                } else {
+                    this.showAlert(`❌ Erro: ${result.error}`, 'danger');
+                }
+            } else {
+                this.showAlert(`❌ Erro: ${data.error}`, 'danger');
+            }
+
+        } catch (error) {
+            console.error('Erro ao processar post:', error);
+            this.showAlert('❌ Erro na comunicação com o servidor', 'danger');
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fas fa-magic me-1"></i>Processar Post';
+        }
     }
 }
 

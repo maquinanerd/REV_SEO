@@ -243,6 +243,67 @@ class SEOOptimizer:
         """Executa otimização uma única vez (modo teste)"""
         self.logger.info("Executando otimização em modo TESTE (uma vez apenas)")
         return self.run_optimization_cycle()
+    
+    def process_post_by_url(self, post_url: str) -> Dict:
+        """
+        Processa um post específico pela URL
+        
+        Args:
+            post_url: URL do post a ser processado
+            
+        Returns:
+            Dict com resultado do processamento
+        """
+        process_start = time.time()
+        
+        self.logger.info(f"=== PROCESSANDO POST ESPECÍFICO: {post_url} ===")
+        
+        result = {
+            'url': post_url,
+            'success': False,
+            'error': None,
+            'processing_time': 0,
+            'post_data': None
+        }
+        
+        try:
+            # 1. Testa conexão com WordPress
+            if not wordpress_client.test_connection():
+                raise Exception("Falha na conexão com WordPress")
+            
+            # 2. Busca post pela URL
+            post_data = wordpress_client.get_post_by_url(post_url)
+            if not post_data:
+                raise Exception("Post não encontrado ou não acessível")
+            
+            result['post_data'] = {
+                'id': post_data['id'],
+                'title': post_data.get('title', {}).get('rendered', 'N/A'),
+                'author': post_data.get('author', 'N/A')
+            }
+            
+            # 3. Verifica se o post é otimizável
+            if not wordpress_client.is_post_optimizable(post_data):
+                raise Exception("Post não é otimizável (não é filme/série)")
+            
+            # 4. Processa o post
+            success = self._process_single_post(post_data)
+            
+            if success:
+                result['success'] = True
+                self.logger.info(f"✅ Post processado com sucesso!")
+            else:
+                raise Exception("Falha no processamento do post")
+                
+        except Exception as e:
+            error_msg = str(e)
+            self.logger.error(f"❌ Erro ao processar post: {error_msg}")
+            result['error'] = error_msg
+        
+        result['processing_time'] = time.time() - process_start
+        self.logger.info(f"=== PROCESSAMENTO CONCLUÍDO EM {result['processing_time']:.2f}s ===")
+        
+        return result
 
 # Instância global do otimizador
 seo_optimizer = SEOOptimizer()
