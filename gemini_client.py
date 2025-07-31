@@ -80,6 +80,8 @@ class GeminiClient:
 
 **Conteúdo:**
 - Reestruture os parágrafos longos em blocos mais curtos e escaneáveis.
+- ⚠️ IMPORTANTE: Envolva cada parágrafo individualmente com a tag HTML <p>. Exemplo: <p>Primeiro parágrafo.</p><p>Segundo parágrafo.</p>
+- Não use <br> para criar parágrafos.
 - Mantenha o tom jornalístico e objetivo.
 - Não altere o sentido da informação.
 
