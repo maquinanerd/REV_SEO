@@ -258,17 +258,11 @@ class Database:
                 cursor.execute('''
                     INSERT OR REPLACE INTO statistics (key, value, updated_at)
                     VALUES (?, ?, ?)
-                ''', (key, str(value), datetime.now().isoformat()))
+                ''', (key, json.dumps(value), datetime.now().isoformat()))
                 conn.commit()
                 self.logger.info(f"Estatística definida: {key} = {value}")
         except Exception as e:
-            self.logger.error(f"Erro ao definir estatística {key}: {e}")ion() as conn:
-            cursor = conn.cursor()
-            cursor.execute('''
-                INSERT OR REPLACE INTO statistics (key, value, updated_at)
-                VALUES (?, ?, ?)
-            ''', (key, json.dumps(value), datetime.now().isoformat()))
-            conn.commit()
+            self.logger.error(f"Erro ao definir estatística {key}: {e}")
 
     def get_statistic(self, key: str) -> Any:
         """Retorna uma estatística personalizada"""
