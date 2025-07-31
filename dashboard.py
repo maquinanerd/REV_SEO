@@ -168,6 +168,24 @@ def api_reset_quota():
             'error': str(e)
         }), 500
 
+@app.route('/api/auto-process')
+def api_auto_process():
+    """API endpoint para executar automação João→Abel"""
+    try:
+        logger.info("Executando automação João→Abel via dashboard")
+        result = seo_optimizer.run_optimization_cycle()
+
+        return jsonify({
+            'success': True,
+            'data': result
+        })
+    except Exception as e:
+        logger.error(f"Erro ao executar automação: {e}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
 @app.route('/api/config')
 def api_config():
     """API endpoint para informações de configuração"""

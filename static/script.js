@@ -34,6 +34,11 @@ class SEODashboard {
             this.runTest();
         });
 
+        // Auto process button
+        document.getElementById('autoProcessBtn').addEventListener('click', () => {
+            this.runAutoProcessing();
+        });
+
         // Reset quota button
         document.getElementById('resetQuotaBtn').addEventListener('click', () => {
             this.resetQuota();
@@ -439,6 +444,47 @@ class SEODashboard {
         } finally {
             resetBtn.innerHTML = original;
             resetBtn.disabled = false;
+        }
+    }
+
+    async runAutoProcessing() {
+        const autoBtn = document.getElementById('autoProcessBtn');
+        const originalText = autoBtn.innerHTML;
+
+        autoBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Executando Automação...';
+        autoBtn.disabled = true;
+
+        try {
+            const response = await fetch('/api/auto-process');
+            const result = await response.json();
+
+            if (result.success) {
+                this.showSuccess('Automação executada com sucesso!');
+
+                // Show automation results
+                const data = result.data;
+                const message = `
+                    <strong>Automação João → Abel</strong><br>
+                    Posts do João encontrados: ${data.posts_found}<br>
+                    Posts processados: ${data.posts_processed}<br>
+                    Sucessos: ${data.posts_success}<br>
+                    Erros: ${data.posts_error}<br>
+                    Tempo total: ${data.processing_time?.toFixed(2)}s
+                `;
+
+                this.showInfo('Resultados da Automação', message);
+
+                // Refresh data after automation
+                setTimeout(() => this.loadAllData(), 2000);
+            } else {
+                throw new Error(result.error);
+            }
+        } catch (error) {
+            console.error('Erro na automação:', error);
+            this.showError(`Erro ao executar automação: ${error.message}`);
+        } finally {
+            autoBtn.innerHTML = originalText;
+            autoBtn.disabled = false;
         }
     }
 
