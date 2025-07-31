@@ -70,6 +70,9 @@ class GeminiClient:
 - Reescreva o título original tornando-o mais atrativo e claro.
 - Inclua palavras-chave relevantes para melhorar o SEO.
 - Mantenha foco no tema, sem clickbait exagerado.
+- ⚠️ IMPORTANTE: O título deve ser APENAS TEXTO PURO, sem HTML, tags ou formatação.
+- Não use <b>, <a>, <i>, <span> ou qualquer tag HTML no título.
+- O título será usado em meta tags, RSS feeds e Google News onde HTML causa erros.
 
 **Resumo (Excerpt):**
 - Reescreva o resumo para ser mais chamativo e informativo.
@@ -200,6 +203,15 @@ Responda exatamente no seguinte formato:
         self.logger.error("Todas as tentativas de otimização falharam")
         return None
     
+    def _strip_html_from_title(self, title: str) -> str:
+        """Remove qualquer HTML do título para garantir texto puro"""
+        import re
+        # Remove todas as tags HTML
+        clean_title = re.sub(r'<[^>]+>', '', title)
+        # Remove múltiplos espaços
+        clean_title = re.sub(r'\s+', ' ', clean_title)
+        return clean_title.strip()
+
     def _parse_gemini_response(self, response_text: str) -> Optional[Dict]:
         """Faz parse da resposta estruturada do Gemini"""
         try:
@@ -215,7 +227,10 @@ Responda exatamente no seguinte formato:
                     if current_section:
                         result[current_section] = '\n'.join(current_content).strip()
                     current_section = 'title'
-                    current_content = [line.replace('## Novo Título:', '').strip()]
+                    title_text = line.replace('## Novo Título:', '').strip()
+                    # Remove qualquer HTML do título
+                    title_text = self._strip_html_from_title(title_text)
+                    current_content = [title_text]
                 
                 elif line.startswith('## Novo Resumo:'):
                     if current_section:

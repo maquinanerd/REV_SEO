@@ -8,6 +8,7 @@ WordPress SEO Optimizer is a Python-based system that automatically optimizes Wo
 
 Preferred communication style: Simple, everyday language.
 Content Management: User ID 9 edits posts from User ID 6 (João).
+SEO Rules: Titles must be plain text only (no HTML tags) for meta tags, RSS, and Google News compatibility.
 
 ## System Architecture
 
