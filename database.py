@@ -209,9 +209,8 @@ class Database:
                 cursor = conn.cursor()
 
                 # Total de posts processados
-                cursor.execute('SELECT total_posts_processed FROM processing_control WHERE id = 1')
-                result = cursor.fetchone()
-                total_processed = result[0] if result else 0
+                cursor.execute('SELECT COUNT(*) FROM processing_logs WHERE status = "success"')
+                total_processed = cursor.fetchone()[0]
 
                 # Posts processados hoje
                 cursor.execute('''

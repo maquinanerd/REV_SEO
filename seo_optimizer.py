@@ -268,13 +268,18 @@ class SEOOptimizer:
         
         try:
             # 1. Testa conexão com WordPress
+            self.logger.info("Etapa 1: Testando conexão com WordPress...")
             if not wordpress_client.test_connection():
                 raise Exception("Falha na conexão com WordPress")
+            self.logger.info("✅ Conexão com WordPress OK")
             
             # 2. Busca post pela URL
+            self.logger.info("Etapa 2: Buscando post pela URL...")
             post_data = wordpress_client.get_post_by_url(post_url)
             if not post_data:
                 raise Exception("Post não encontrado ou não acessível")
+            
+            self.logger.info(f"✅ Post encontrado: ID {post_data['id']}")
             
             result['post_data'] = {
                 'id': post_data['id'],
@@ -283,10 +288,18 @@ class SEOOptimizer:
             }
             
             # 3. Verifica se o post é otimizável
+            self.logger.info("Etapa 3: Verificando se o post é otimizável...")
             if not wordpress_client.is_post_optimizable(post_data):
+                # Vamos ver as categorias para debug
+                categories = post_data.get('categories', [])
+                cat_names = [cat.get('name', f'ID:{cat.get("id")}') for cat in categories]
+                self.logger.warning(f"Post não é otimizável. Categorias: {cat_names}")
                 raise Exception("Post não é otimizável (não é filme/série)")
             
+            self.logger.info("✅ Post é otimizável")
+            
             # 4. Processa o post
+            self.logger.info("Etapa 4: Processando o post...")
             success = self._process_single_post(post_data)
             
             if success:
@@ -297,7 +310,7 @@ class SEOOptimizer:
                 
         except Exception as e:
             error_msg = str(e)
-            self.logger.error(f"❌ Erro ao processar post: {error_msg}")
+            self.logger.error(f"❌ Erro ao processar post: {error_msg}", exc_info=True)
             result['error'] = error_msg
         
         result['processing_time'] = time.time() - process_start

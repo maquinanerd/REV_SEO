@@ -46,25 +46,30 @@ def api_status():
 def api_process_post():
     """API endpoint para processar um post específico"""
     try:
+        logger.info("=== INICIANDO PROCESSAMENTO VIA DASHBOARD ===")
+
         data = request.get_json()
         post_url = data.get('url', '').strip()
-        
+
+        logger.info(f"URL recebida: {post_url}")
+
         if not post_url:
-            return jsonify({
-                'success': False,
-                'error': 'URL do post é obrigatória'
-            }), 400
-        
-        logger.info(f"Processando post específico: {post_url}")
+            logger.error("URL não fornecida")
+            return jsonify({'success': False, 'error': 'URL é obrigatória'}), 400
+
+        # Processa o post
+        logger.info("Chamando seo_optimizer.process_post_by_url...")
         result = seo_optimizer.process_post_by_url(post_url)
-        
+
+        logger.info(f"Resultado do processamento: {result}")
+
         return jsonify({
             'success': True,
             'data': result
         })
-        
+
     except Exception as e:
-        logger.error(f"Erro ao processar post específico: {e}")
+        logger.error(f"Erro no endpoint process-post: {e}", exc_info=True)
         return jsonify({
             'success': False,
             'error': str(e)
@@ -76,10 +81,10 @@ def api_statistics():
     try:
         stats = db.get_statistics()
         quota_info = db.get_gemini_quota_info()
-        
+
         # Estatísticas por período
         recent_logs = db.get_recent_logs(100)
-        
+
         # Agrupa logs por data
         daily_stats = {}
         for log in recent_logs:
@@ -87,7 +92,7 @@ def api_statistics():
             if date not in daily_stats:
                 daily_stats[date] = {'success': 0, 'error': 0}
             daily_stats[date][log['status']] += 1
-        
+
         return jsonify({
             'success': True,
             'data': {
@@ -110,7 +115,7 @@ def api_logs():
     try:
         limit = int(request.args.get('limit', 50))
         logs = db.get_recent_logs(limit)
-        
+
         return jsonify({
             'success': True,
             'data': logs
@@ -128,7 +133,7 @@ def api_run_test():
     try:
         logger.info("Executando teste manual via dashboard")
         result = seo_optimizer.run_once()
-        
+
         return jsonify({
             'success': True,
             'data': result
@@ -145,13 +150,13 @@ def api_reset_quota():
     """API endpoint para resetar quota do Gemini"""
     try:
         db.reset_gemini_quota()
-        
+
         # Reinicializa cliente Gemini
         gemini_client.current_key_index = 0
         gemini_client.initialize_client()
-        
+
         logger.info("Quota do Gemini resetada via dashboard")
-        
+
         return jsonify({
             'success': True,
             'message': 'Quota resetada com sucesso'
@@ -179,7 +184,7 @@ def api_config():
             'gemini_keys_count': len(config.gemini_api_keys),
             'tmdb_configured': bool(config.tmdb_api_key)
         }
-        
+
         return jsonify({
             'success': True,
             'data': config_info
@@ -217,7 +222,7 @@ def main():
     print("💡 Para executar otimização: python main.py")
     print("🛑 Para parar: Ctrl+C")
     print("="*50)
-    
+
     # Inicia servidor Flask
     app.run(
         host='0.0.0.0',
