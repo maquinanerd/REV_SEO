@@ -79,19 +79,59 @@ def api_process_post():
 def api_statistics():
     """API endpoint para estatísticas detalhadas"""
     try:
-        stats = db.get_statistics()
-        quota_info = db.get_gemini_quota_info()
-
-        # Estatísticas por período
-        recent_logs = db.get_recent_logs(100)
-
-        # Agrupa logs por data
+        logger.debug("Obtendo estatísticas...")
+        
+        # Inicializa valores padrão
+        stats = {
+            'total_processed': 0,
+            'today_processed': 0,
+            'today_errors': 0,
+            'last_processed_post_id': 0
+        }
+        
+        quota_info = {
+            'requests_made': 0,
+            'quota_exceeded': False,
+            'current_key_index': 0,
+            'total_keys': len(config.gemini_api_keys)
+        }
+        
         daily_stats = {}
-        for log in recent_logs:
-            date = log['created_at'][:10]  # YYYY-MM-DD
-            if date not in daily_stats:
-                daily_stats[date] = {'success': 0, 'error': 0}
-            daily_stats[date][log['status']] += 1
+        
+        try:
+            # Tenta obter estatísticas do banco
+            db_stats = db.get_statistics()
+            if db_stats:
+                stats.update(db_stats)
+        except Exception as e:
+            logger.warning(f"Erro ao obter estatísticas do banco: {e}")
+        
+        try:
+            # Tenta obter informações de quota
+            db_quota = db.get_gemini_quota_info()
+            if db_quota:
+                quota_info.update(db_quota)
+        except Exception as e:
+            logger.warning(f"Erro ao obter quota do banco: {e}")
+        
+        try:
+            # Estatísticas por período
+            recent_logs = db.get_recent_logs(100)
+            
+            # Agrupa logs por data
+            for log in recent_logs:
+                date = log['created_at'][:10]  # YYYY-MM-DD
+                if date not in daily_stats:
+                    daily_stats[date] = {'success': 0, 'error': 0}
+                
+                status = log.get('status', 'error')
+                if status in daily_stats[date]:
+                    daily_stats[date][status] += 1
+                    
+        except Exception as e:
+            logger.warning(f"Erro ao processar logs: {e}")
+
+        logger.debug(f"Estatísticas preparadas: {stats}")
 
         return jsonify({
             'success': True,
@@ -99,11 +139,13 @@ def api_statistics():
                 'general': stats,
                 'quota': quota_info,
                 'daily_stats': daily_stats,
-                'total_api_keys': len(config.gemini_api_keys)
+                'total_api_keys': len(config.gemini_api_keys),
+                'last_processed_post_id': stats.get('last_processed_post_id', 0)
             }
         })
+        
     except Exception as e:
-        logger.error(f"Erro ao obter estatísticas: {e}")
+        logger.error(f"Erro ao obter estatísticas: {e}", exc_info=True)
         return jsonify({
             'success': False,
             'error': str(e)

@@ -143,34 +143,39 @@ class Database:
             return [dict(row) for row in cursor.fetchall()]
 
     def get_gemini_quota_info(self) -> Dict:
-        """Retorna informações sobre quota do Gemini"""
+        """Obtém informações sobre o uso de quota do Gemini"""
         try:
             with self.get_connection() as conn:
                 cursor = conn.cursor()
-                cursor.execute('SELECT * FROM gemini_quota WHERE id = 1')
+
+                # Quota atual
+                cursor.execute("SELECT requests_made, quota_exceeded, api_key_index FROM gemini_quota WHERE id = 1")
                 result = cursor.fetchone()
 
+                quota_info = {
+                    'requests_made': 0,
+                    'quota_exceeded': False,
+                    'api_key_index': 0,
+                    'total_keys': 0
+                }
+
                 if result:
-                    return {
-                        'api_key_index': result['api_key_index'],
-                        'requests_made': result['requests_made'],
+                    quota_info.update({
+                        'requests_made': result['requests_made'] or 0,
                         'quota_exceeded': bool(result['quota_exceeded']),
-                        'last_reset_date': result['last_reset_date']
-                    }
-                else:
-                    return {
-                        'api_key_index': 0,
-                        'requests_made': 0,
-                        'quota_exceeded': False,
-                        'last_reset_date': None
-                    }
+                        'api_key_index': result['api_key_index'] or 0
+                    })
+
+                self.logger.debug(f"Quota info obtida: {quota_info}")
+                return quota_info
+
         except Exception as e:
-            self.logger.error(f"Erro ao obter quota do Gemini: {e}")
+            self.logger.error(f"Erro ao obter quota info: {e}", exc_info=True)
             return {
-                'api_key_index': 0,
                 'requests_made': 0,
                 'quota_exceeded': False,
-                'last_reset_date': None
+                'api_key_index': 0,
+                'total_keys': 0
             }
 
     def update_gemini_quota(self, api_key_index: int, requests_made: int, quota_exceeded: bool = False):
@@ -210,38 +215,44 @@ class Database:
 
                 # Total de posts processados
                 cursor.execute('SELECT COUNT(*) FROM processing_logs WHERE status = "success"')
-                total_processed = cursor.fetchone()[0]
+                result = cursor.fetchone()
+                total_processed = result[0] if result else 0
 
                 # Posts processados hoje
                 cursor.execute('''
                     SELECT COUNT(*) FROM processing_logs 
                     WHERE DATE(created_at) = DATE('now') AND status = 'success'
                 ''')
-                today_processed = cursor.fetchone()[0]
+                result = cursor.fetchone()
+                today_processed = result[0] if result else 0
 
                 # Posts com erro hoje
                 cursor.execute('''
                     SELECT COUNT(*) FROM processing_logs 
                     WHERE DATE(created_at) = DATE('now') AND status = 'error'
                 ''')
-                today_errors = cursor.fetchone()[0]
+                result = cursor.fetchone()
+                today_errors = result[0] if result else 0
 
                 # Último processamento
                 cursor.execute('''
                     SELECT created_at FROM processing_logs 
                     ORDER BY created_at DESC LIMIT 1
                 ''')
-                last_processing = cursor.fetchone()
-                last_processing = last_processing[0] if last_processing else None
+                last_processing_result = cursor.fetchone()
+                last_processing = last_processing_result[0] if last_processing_result else None
 
-                return {
+                stats = {
                     'total_processed': total_processed,
                     'today_processed': today_processed,
                     'today_errors': today_errors,
                     'last_processing': last_processing
                 }
+
+                self.logger.debug(f"Estatísticas obtidas: {stats}")
+                return stats
         except Exception as e:
-            self.logger.error(f"Erro ao obter estatísticas: {e}")
+            self.logger.error(f"Erro ao obter estatísticas: {e}", exc_info=True)
             return {
                 'total_processed': 0,
                 'today_processed': 0,
