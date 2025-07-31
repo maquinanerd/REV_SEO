@@ -37,7 +37,7 @@ class SEOOptimizerApp:
     
     def run_once(self):
         """Executa otimização uma única vez"""
-        self.logger.info("🚀 WordPress SEO Optimizer - Modo TESTE")
+        self.logger.info("WordPress SEO Optimizer - Modo TESTE")
         self.logger.info("="*50)
         
         try:
@@ -50,7 +50,7 @@ class SEOOptimizerApp:
             
             # Exibe resultados
             self.logger.info("="*50)
-            self.logger.info("📊 RESULTADOS DO TESTE:")
+            self.logger.info("RESULTADOS DO TESTE:")
             self.logger.info(f"Posts encontrados: {result.get('posts_found', 0)}")
             self.logger.info(f"Posts processados: {result.get('posts_processed', 0)}")
             self.logger.info(f"Sucessos: {result.get('posts_success', 0)}")
@@ -58,22 +58,22 @@ class SEOOptimizerApp:
             self.logger.info(f"Tempo total: {result.get('processing_time', 0):.2f}s")
             
             if result.get('errors'):
-                self.logger.error("❌ ERROS ENCONTRADOS:")
+                self.logger.error("ERROS ENCONTRADOS:")
                 for error in result['errors']:
                     self.logger.error(f"  - {error}")
             
             if result.get('posts_success', 0) > 0:
-                self.logger.info("✅ Teste concluído com sucesso!")
+                self.logger.info("Teste concluído com sucesso!")
             else:
-                self.logger.warning("⚠️  Teste concluído, mas nenhum post foi otimizado")
+                self.logger.warning("Teste concluído, mas nenhum post foi otimizado")
                 
         except Exception as e:
-            self.logger.error(f"❌ Erro durante o teste: {e}")
+            self.logger.error(f"Erro durante o teste: {e}")
             sys.exit(1)
     
     def run_continuous(self):
         """Executa otimização continuamente"""
-        self.logger.info("🚀 WordPress SEO Optimizer - Modo PRODUÇÃO")
+        self.logger.info("WordPress SEO Optimizer - Modo PRODUÇÃO")
         self.logger.info("="*50)
         
         try:
@@ -92,7 +92,7 @@ class SEOOptimizerApp:
             self._scheduled_optimization()
             
             self.running = True
-            self.logger.info("✅ Sistema iniciado! Pressione Ctrl+C para parar")
+            self.logger.info("Sistema iniciado! Pressione Ctrl+C para parar")
             self.logger.info(f"⏰ Próxima execução em {interval_minutes} minutos")
             
             # Loop principal
@@ -101,19 +101,19 @@ class SEOOptimizerApp:
                 time.sleep(30)  # Verifica a cada 30 segundos
                 
         except Exception as e:
-            self.logger.error(f"❌ Erro durante execução contínua: {e}")
+            self.logger.error(f"Erro durante execução contínua: {e}")
             sys.exit(1)
         
-        self.logger.info("👋 Sistema encerrado")
+        self.logger.info("Sistema encerrado")
     
     def _scheduled_optimization(self):
         """Função chamada pelo agendador"""
         try:
-            self.logger.info("⏰ Executando otimização agendada...")
+            self.logger.info("Executando otimização agendada...")
             result = seo_optimizer.run_optimization_cycle()
             
             # Log resumido dos resultados
-            self.logger.info(f"📈 Resumo: {result.get('posts_success', 0)} sucessos, "
+            self.logger.info(f"Resumo: {result.get('posts_success', 0)} sucessos, "
                            f"{result.get('posts_error', 0)} erros em "
                            f"{result.get('processing_time', 0):.2f}s")
             
@@ -122,10 +122,10 @@ class SEOOptimizerApp:
             
             if result.get('posts_success', 0) > 0:
                 next_run = datetime.now().strftime("%H:%M")
-                self.logger.info(f"✅ Otimização concluída. Próxima execução: {next_run}")
+                self.logger.info(f"Otimização concluída. Próxima execução: {next_run}")
             
         except Exception as e:
-            self.logger.error(f"❌ Erro na otimização agendada: {e}")
+            self.logger.error(f"Erro na otimização agendada: {e}")
             db.log_processing(0, "Sistema", "scheduled_optimization", "error", str(e))
 
 def main():

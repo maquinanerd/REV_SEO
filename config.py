@@ -37,15 +37,15 @@ class Config:
         for handler in root_logger.handlers[:]:
             root_logger.removeHandler(handler)
         
-        # Configura novos handlers com o formatter correto
-        file_handler = logging.FileHandler('seo_optimizer.log')
+        # Configura novos handlers com o formatter correto e encoding UTF-8
+        file_handler = logging.FileHandler('seo_optimizer.log', encoding='utf-8')
         file_handler.setFormatter(formatter)
         
         stream_handler = logging.StreamHandler()
         stream_handler.setFormatter(formatter)
         
         logging.basicConfig(
-            level=logging.DEBUG,
+            level=logging.INFO,
             handlers=[file_handler, stream_handler]
         )
         self.logger = logging.getLogger(__name__)
