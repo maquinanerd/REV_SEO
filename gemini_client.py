@@ -35,29 +35,8 @@ class GeminiClient:
         self.initialize_client()
         self.logger.info(f"Alternado para chave API {self.current_key_index + 1}")
     
-    def _format_media_data(self, media_data: Optional[Dict]) -> str:
-        """Formata dados de mídia para o prompt"""
-        if not media_data:
-            return "Nenhuma mídia encontrada"
-        
-        formatted = []
-        
-        if media_data.get('poster_url'):
-            formatted.append(f"**Poster:** {media_data['poster_url']}")
-        
-        if media_data.get('backdrop_url'):
-            formatted.append(f"**Backdrop:** {media_data['backdrop_url']}")
-        
-        if media_data.get('trailer_url'):
-            formatted.append(f"**Trailer YouTube:** {media_data['trailer_url']}")
-        
-        if media_data.get('overview'):
-            formatted.append(f"**Sinopse TMDB:** {media_data['overview']}")
-        
-        return "\n".join(formatted) if formatted else "Mídia encontrada mas sem detalhes"
-    
     def create_seo_prompt(self, title: str, excerpt: str, content: str, 
-                         tags_text: str, media_data: Optional[Dict] = None) -> str:
+                         tags_text: str) -> str:
         """Cria o prompt otimizado para SEO jornalístico"""
         
         domain = config.wordpress_domain.rstrip('/')
@@ -95,22 +74,13 @@ class GeminiClient:
 - Quando possível, aplique negrito combinado com link:
   <b><a href="{domain}/tag/stranger-things">Stranger Things</a></b>
 
-**Mídia (quando disponível):**
-- Imagens:
-  <img src="URL_DA_IMAGEM" alt="Descrição da imagem" style="width:100%;max-width:500px;height:auto;margin:10px 0;">
-- Trailers (YouTube) — Responsivo (sem fixar tamanho):
-  <iframe src="https://www.youtube.com/embed/ID_DO_VIDEO" frameborder="0" allowfullscreen style="width:100%;aspect-ratio:16/9;margin:10px 0;"></iframe>
-
 ⚠️ **Regras Técnicas:**
-- Use somente HTML puro: <b>, <a>, <img>, <iframe>.
+- Use somente HTML puro: <b>, <a>.
 - Não utilize Markdown (**texto** ou [link](url)).
 - Não adicione informações novas que não estejam no texto original ou na mídia fornecida.
 - Utilize o conteúdo do campo Tags para decidir onde inserir links internos relevantes.
 
 🔽 **DADOS DISPONÍVEIS PARA OTIMIZAÇÃO**
-
-**Mídia (imagens e trailer):**
-{self._format_media_data(media_data)}
 
 **Conteúdo original:**
 
@@ -141,7 +111,7 @@ Responda exatamente no seguinte formato:
         return prompt
     
     def optimize_content(self, title: str, excerpt: str, content: str, 
-                        tags_text: str, media_data: Optional[Dict] = None,
+                        tags_text: str,
                         max_retries: int = 3) -> Optional[Dict]:
         """
         Otimiza conteúdo usando Gemini AI com retry e alternância de chaves
@@ -155,7 +125,7 @@ Responda exatamente no seguinte formato:
             }
         """
         
-        prompt = self.create_seo_prompt(title, excerpt, content, tags_text, media_data)
+        prompt = self.create_seo_prompt(title, excerpt, content, tags_text)
         
         for attempt in range(max_retries):
             try:

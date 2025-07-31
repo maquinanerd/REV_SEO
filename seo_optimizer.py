@@ -148,14 +148,9 @@ class SEOOptimizer:
             if not title or not content:
                 raise ValueError("Post sem título ou conteúdo")
             
-            # 2. Busca mídia no TMDB
-            self.logger.info("Buscando mídia no TMDB...")
-            media_data = tmdb_client.get_media_for_post(post_data)
-            
-            if media_data:
-                self.logger.info(f"Mídia encontrada: {media_data.get('title', 'N/A')}")
-            else:
-                self.logger.warning("Nenhuma mídia encontrada no TMDB")
+            # 2. Busca de mídia no TMDB desativada temporariamente
+            self.logger.info("Busca de mídia no TMDB desativada para simplificar a otimização.")
+            media_data = None
             
             # 3. Prepara tags para o prompt
             tags_text = ", ".join([tag.get('name', '') for tag in tags])
@@ -165,7 +160,7 @@ class SEOOptimizer:
             # 4. Otimiza conteúdo com Gemini
             self.logger.info("Otimizando conteúdo com Gemini...")
             optimized_data = gemini_client.optimize_content(
-                title, excerpt, content, tags_text, media_data
+                title, excerpt, content, tags_text
             )
             
             if not optimized_data:
