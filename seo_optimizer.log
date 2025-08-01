@@ -4818,3 +4818,229 @@ message: "API key not valid. Please pass a valid API key."
 2025-08-01 17:44:58 - wordpress_client - INFO - Conectado como: Abel
 2025-08-01 17:45:58 - wordpress_client - INFO - Conectado como: Abel
 2025-08-01 17:45:59 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:46:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:46:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:47:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:47:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:48:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:48:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:49:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:49:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:50:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:50:59 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:51:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:51:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:52:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:52:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:53:29 - __main__ - INFO - Executando otimização agendada...
+2025-08-01 17:53:29 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-01 17:53:30 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:53:30 - seo_optimizer - INFO - Último post processado: 10731
+2025-08-01 17:53:30 - wordpress_client - INFO - Buscando posts novos desde ID 10731
+2025-08-01 17:53:50 - wordpress_client - INFO - Encontrados 1 posts novos
+2025-08-01 17:53:50 - seo_optimizer - INFO - Verificando 1 posts por duplicatas...
+2025-08-01 17:53:50 - seo_optimizer - INFO - Post otimizável encontrado: 10734 - Anthony Mackie: A Surpreendente Jornada para se Tornar o Capitão América do MCU
+2025-08-01 17:53:50 - seo_optimizer - INFO - --- Processando post 10734: Anthony Mackie: A Surpreendente Jornada para se Tornar o Capitão América do MCU ---
+2025-08-01 17:53:50 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 17:53:50 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 17:53:50 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 17:53:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:53:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:53:59 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 17:53:59 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 17:53:59 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 17:53:59 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 17:53:59 - wordpress_client - INFO - Excerpt truncado: 391 → 129 caracteres
+2025-08-01 17:53:59 - wordpress_client - INFO - Atualizando conteúdo do post 10734
+2025-08-01 17:54:01 - wordpress_client - INFO - Post 10734 atualizado com sucesso
+2025-08-01 17:54:01 - wordpress_client - INFO - Meta description truncada: 391 → 129 caracteres
+2025-08-01 17:54:01 - wordpress_client - INFO - Atualizando meta Yoast do post 10734
+2025-08-01 17:54:02 - wordpress_client - INFO - Meta Yoast do post 10734 atualizada
+2025-08-01 17:54:02 - database - INFO - Log registrado: optimization - success para post 10734
+2025-08-01 17:54:02 - database - INFO - Último post processado atualizado para ID: 10734
+2025-08-01 17:54:02 - seo_optimizer - INFO - Post 10734 otimizado com sucesso em 12.07s
+2025-08-01 17:54:02 - seo_optimizer - INFO - SEO Score: 80
+2025-08-01 17:54:02 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 33.60s ===
+2025-08-01 17:54:02 - seo_optimizer - INFO - Posts encontrados: 1
+2025-08-01 17:54:02 - seo_optimizer - INFO - Posts processados: 1
+2025-08-01 17:54:02 - seo_optimizer - INFO - Sucessos: 1
+2025-08-01 17:54:02 - seo_optimizer - INFO - Erros: 0
+2025-08-01 17:54:02 - __main__ - INFO - Resumo: 1 sucessos, 0 erros em 33.60s
+2025-08-01 17:54:02 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-01T17:53:29.179483', 'posts_found': 1, 'posts_processed': 1, 'posts_success': 1, 'posts_error': 0, 'processing_time': 33.6021203994751, 'errors': []}
+2025-08-01 17:54:02 - __main__ - INFO - Otimização concluída. Próxima execução: 17:54
+2025-08-01 17:54:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:54:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:55:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:55:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:56:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:56:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:57:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:57:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:58:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:58:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:59:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:59:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:00:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:00:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:01:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:01:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:02:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:02:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:03:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:03:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:04:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:04:59 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:05:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:05:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:06:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:06:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:07:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:07:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:08:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:08:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:09:02 - __main__ - INFO - Executando otimização agendada...
+2025-08-01 18:09:02 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-01 18:09:04 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:09:04 - seo_optimizer - INFO - Último post processado: 10734
+2025-08-01 18:09:04 - wordpress_client - INFO - Buscando posts novos desde ID 10734
+2025-08-01 18:09:24 - wordpress_client - INFO - Encontrados 3 posts novos
+2025-08-01 18:09:24 - seo_optimizer - INFO - Verificando 3 posts por duplicatas...
+2025-08-01 18:09:24 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: 'Um Lugar Silencioso 3: John Krasinski Retorna para Concluir a Aclamada Trilogia de Horror com Data de Lançamento!'
+2025-08-01 18:09:24 - seo_optimizer - INFO - Mantendo post ID 10741 e removendo os outros.
+2025-08-01 18:09:24 - seo_optimizer - INFO - Movendo post duplicado ID 10740 para a lixeira...
+2025-08-01 18:09:27 - seo_optimizer - INFO - Post ID 10740 movido para a lixeira com sucesso.
+2025-08-01 18:09:27 - seo_optimizer - INFO - Post otimizável encontrado: 10741 - Um Lugar Silencioso 3: John Krasinski Retorna para Concluir a Aclamada Trilogia de Horror com Data de Lançamento!
+2025-08-01 18:09:27 - seo_optimizer - INFO - Post otimizável encontrado: 10737 - Terror de Relacionamento: 5 Filmes Essenciais para Maratonar Após &#8216;Together&#8217;
+2025-08-01 18:09:27 - seo_optimizer - INFO - --- Processando post 10741: Um Lugar Silencioso 3: John Krasinski Retorna para Concluir a Aclamada Trilogia de Horror com Data de Lançamento! ---
+2025-08-01 18:09:27 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 18:09:27 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 18:09:27 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 18:09:37 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 18:09:37 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 18:09:37 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 18:09:37 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 18:09:37 - wordpress_client - INFO - Excerpt truncado: 351 → 175 caracteres
+2025-08-01 18:09:37 - wordpress_client - INFO - Atualizando conteúdo do post 10741
+2025-08-01 18:09:39 - wordpress_client - INFO - Post 10741 atualizado com sucesso
+2025-08-01 18:09:39 - wordpress_client - INFO - Meta description truncada: 351 → 175 caracteres
+2025-08-01 18:09:39 - wordpress_client - INFO - Atualizando meta Yoast do post 10741
+2025-08-01 18:09:40 - wordpress_client - INFO - Meta Yoast do post 10741 atualizada
+2025-08-01 18:09:40 - database - INFO - Log registrado: optimization - success para post 10741
+2025-08-01 18:09:40 - database - INFO - Último post processado atualizado para ID: 10741
+2025-08-01 18:09:40 - seo_optimizer - INFO - Post 10741 otimizado com sucesso em 13.29s
+2025-08-01 18:09:40 - seo_optimizer - INFO - SEO Score: 60
+2025-08-01 18:09:40 - seo_optimizer - INFO - --- Processando post 10737: Terror de Relacionamento: 5 Filmes Essenciais para Maratonar Após &#8216;Together&#8217; ---
+2025-08-01 18:09:40 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 18:09:40 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 18:09:40 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 18:09:54 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 18:09:54 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 18:09:54 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 18:09:54 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 18:09:54 - wordpress_client - INFO - Excerpt truncado: 330 → 178 caracteres
+2025-08-01 18:09:54 - wordpress_client - INFO - Atualizando conteúdo do post 10737
+2025-08-01 18:09:56 - wordpress_client - INFO - Post 10737 atualizado com sucesso
+2025-08-01 18:09:56 - wordpress_client - INFO - Meta description truncada: 330 → 178 caracteres
+2025-08-01 18:09:56 - wordpress_client - INFO - Atualizando meta Yoast do post 10737
+2025-08-01 18:09:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:09:57 - wordpress_client - INFO - Meta Yoast do post 10737 atualizada
+2025-08-01 18:09:58 - database - INFO - Log registrado: optimization - success para post 10737
+2025-08-01 18:09:58 - database - INFO - Último post processado atualizado para ID: 10737
+2025-08-01 18:09:58 - seo_optimizer - INFO - Post 10737 otimizado com sucesso em 16.95s
+2025-08-01 18:09:58 - seo_optimizer - INFO - SEO Score: 80
+2025-08-01 18:09:58 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 55.25s ===
+2025-08-01 18:09:58 - seo_optimizer - INFO - Posts encontrados: 2
+2025-08-01 18:09:58 - seo_optimizer - INFO - Posts processados: 2
+2025-08-01 18:09:58 - seo_optimizer - INFO - Sucessos: 2
+2025-08-01 18:09:58 - seo_optimizer - INFO - Erros: 0
+2025-08-01 18:09:58 - __main__ - INFO - Resumo: 2 sucessos, 0 erros em 55.25s
+2025-08-01 18:09:58 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-01T18:09:02.866599', 'posts_found': 2, 'posts_processed': 2, 'posts_success': 2, 'posts_error': 0, 'processing_time': 55.250244140625, 'errors': []}
+2025-08-01 18:09:58 - __main__ - INFO - Otimização concluída. Próxima execução: 18:09
+2025-08-01 18:09:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:10:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:10:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:11:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:11:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:12:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:12:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:13:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:13:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:14:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:14:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:15:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:15:59 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:16:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:17:00 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:17:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:17:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:18:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:18:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:19:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:19:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:20:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:20:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:21:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:21:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:22:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:22:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:23:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:23:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:24:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:24:58 - __main__ - INFO - Executando otimização agendada...
+2025-08-01 18:24:58 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-01 18:24:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:24:59 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:24:59 - seo_optimizer - INFO - Último post processado: 10737
+2025-08-01 18:24:59 - wordpress_client - INFO - Buscando posts novos desde ID 10737
+2025-08-01 18:25:19 - wordpress_client - INFO - Encontrados 2 posts novos
+2025-08-01 18:25:19 - seo_optimizer - INFO - Verificando 2 posts por duplicatas...
+2025-08-01 18:25:19 - seo_optimizer - INFO - Post otimizável encontrado: 10746 - Theater Camp: Por Que Esta Comédia de 2023 Underrated Merece Sua Atenção!
+2025-08-01 18:25:19 - seo_optimizer - INFO - Post otimizável encontrado: 10741 - Um Lugar Silencioso 3: Data de Lançamento, John Krasinski de Volta e o Fim da Trilogia
+2025-08-01 18:25:19 - seo_optimizer - INFO - --- Processando post 10746: Theater Camp: Por Que Esta Comédia de 2023 Underrated Merece Sua Atenção! ---
+2025-08-01 18:25:19 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 18:25:19 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 18:25:19 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 18:25:30 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 18:25:30 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 18:25:30 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 18:25:30 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 18:25:30 - wordpress_client - INFO - Excerpt truncado: 435 → 108 caracteres
+2025-08-01 18:25:30 - wordpress_client - INFO - Atualizando conteúdo do post 10746
+2025-08-01 18:25:33 - wordpress_client - INFO - Post 10746 atualizado com sucesso
+2025-08-01 18:25:33 - wordpress_client - INFO - Meta description truncada: 435 → 108 caracteres
+2025-08-01 18:25:33 - wordpress_client - INFO - Atualizando meta Yoast do post 10746
+2025-08-01 18:25:34 - wordpress_client - INFO - Meta Yoast do post 10746 atualizada
+2025-08-01 18:25:34 - database - INFO - Log registrado: optimization - success para post 10746
+2025-08-01 18:25:34 - database - INFO - Último post processado atualizado para ID: 10746
+2025-08-01 18:25:34 - seo_optimizer - INFO - Post 10746 otimizado com sucesso em 14.96s
+2025-08-01 18:25:34 - seo_optimizer - INFO - SEO Score: 80
+2025-08-01 18:25:34 - seo_optimizer - INFO - --- Processando post 10741: Um Lugar Silencioso 3: Data de Lançamento, John Krasinski de Volta e o Fim da Trilogia ---
+2025-08-01 18:25:34 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 18:25:34 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 18:25:34 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 18:25:42 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 18:25:42 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 18:25:42 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 18:25:42 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 18:25:42 - wordpress_client - INFO - Excerpt truncado: 333 → 132 caracteres
+2025-08-01 18:25:42 - wordpress_client - INFO - Atualizando conteúdo do post 10741
+2025-08-01 18:25:44 - wordpress_client - INFO - Post 10741 atualizado com sucesso
+2025-08-01 18:25:44 - wordpress_client - INFO - Meta description truncada: 333 → 132 caracteres
+2025-08-01 18:25:44 - wordpress_client - INFO - Atualizando meta Yoast do post 10741
+2025-08-01 18:25:45 - wordpress_client - INFO - Meta Yoast do post 10741 atualizada
+2025-08-01 18:25:45 - database - INFO - Log registrado: optimization - success para post 10741
+2025-08-01 18:25:45 - database - INFO - Último post processado atualizado para ID: 10741
+2025-08-01 18:25:45 - seo_optimizer - INFO - Post 10741 otimizado com sucesso em 11.02s
+2025-08-01 18:25:45 - seo_optimizer - INFO - SEO Score: 60
+2025-08-01 18:25:45 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 47.50s ===
+2025-08-01 18:25:45 - seo_optimizer - INFO - Posts encontrados: 2
+2025-08-01 18:25:45 - seo_optimizer - INFO - Posts processados: 2
+2025-08-01 18:25:45 - seo_optimizer - INFO - Sucessos: 2
+2025-08-01 18:25:45 - seo_optimizer - INFO - Erros: 0
+2025-08-01 18:25:45 - __main__ - INFO - Resumo: 2 sucessos, 0 erros em 47.50s
+2025-08-01 18:25:45 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-01T18:24:58.186970', 'posts_found': 2, 'posts_processed': 2, 'posts_success': 2, 'posts_error': 0, 'processing_time': 47.50376319885254, 'errors': []}
+2025-08-01 18:25:45 - __main__ - INFO - Otimização concluída. Próxima execução: 18:25
+2025-08-01 18:25:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:25:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 18:26:43 - __main__ - INFO - Recebido sinal 2, encerrando...
+2025-08-01 18:26:45 - __main__ - INFO - Sistema encerrado
