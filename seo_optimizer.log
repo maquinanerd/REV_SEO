@@ -4160,3 +4160,330 @@ message: "API key not valid. Please pass a valid API key."
 2025-08-01 16:29:21 - config - INFO - Gemini API Keys: 3 chaves configuradas
 2025-08-01 16:29:21 - config - INFO - TMDB configurado: Sim
 2025-08-01 16:29:22 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-01 16:30:40 - config - INFO - Configuração validada com sucesso
+2025-08-01 16:30:40 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-01 16:30:40 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-01 16:30:40 - config - INFO - TMDB configurado: Sim
+2025-08-01 16:30:40 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-01 16:30:44 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-08-01 16:30:44 - waitress - INFO - Serving on http://0.0.0.0:5000
+2025-08-01 16:31:43 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:31:49 - __main__ - INFO - Executando automação João→Abel via dashboard
+2025-08-01 16:31:49 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-01 16:31:50 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:31:50 - seo_optimizer - INFO - Último post processado: 10632
+2025-08-01 16:31:50 - wordpress_client - INFO - Buscando posts novos desde ID 10632
+2025-08-01 16:32:03 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:32:09 - __main__ - INFO - Executando automação João→Abel via dashboard
+2025-08-01 16:32:09 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-01 16:32:09 - wordpress_client - INFO - Encontrados 37 posts novos
+2025-08-01 16:32:09 - seo_optimizer - INFO - Verificando 37 posts por duplicatas...
+2025-08-01 16:32:09 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: 'Franklin Richards: O Novo Poder Supremo do MCU que Faz as Joias do Infinito Parecerem Fracas'
+2025-08-01 16:32:09 - seo_optimizer - INFO - Mantendo post ID 10700 e removendo os outros.
+2025-08-01 16:32:09 - seo_optimizer - INFO - Movendo post duplicado ID 10699 para a lixeira...
+2025-08-01 16:32:10 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:32:10 - seo_optimizer - INFO - Último post processado: 10632
+2025-08-01 16:32:10 - wordpress_client - INFO - Buscando posts novos desde ID 10632
+2025-08-01 16:32:13 - seo_optimizer - INFO - Post ID 10699 movido para a lixeira com sucesso.
+2025-08-01 16:32:13 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: 'Choque no MCU: O Único Filme da Saga do Infinito com CinemaScore Abaixo de A- Revelado!'
+2025-08-01 16:32:13 - seo_optimizer - INFO - Mantendo post ID 10694 e removendo os outros.
+2025-08-01 16:32:13 - seo_optimizer - INFO - Movendo post duplicado ID 10693 para a lixeira...
+2025-08-01 16:32:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:32:16 - seo_optimizer - INFO - Post ID 10693 movido para a lixeira com sucesso.
+2025-08-01 16:32:16 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: '**Star Wars: Uma Nova Esperança** Retorna Aos Cinemas em 2027 para Celebrar 50 Anos da Saga!'
+2025-08-01 16:32:16 - seo_optimizer - INFO - Mantendo post ID 10690 e removendo os outros.
+2025-08-01 16:32:16 - seo_optimizer - INFO - Movendo post duplicado ID 10689 para a lixeira...
+2025-08-01 16:32:19 - seo_optimizer - INFO - Post ID 10689 movido para a lixeira com sucesso.
+2025-08-01 16:32:19 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: 'Saved by the Bell: A Sitcom Clássica dos Anos 90 Agora Totalmente Grátis no Streaming!'
+2025-08-01 16:32:19 - seo_optimizer - INFO - Mantendo post ID 10672 e removendo os outros.
+2025-08-01 16:32:19 - seo_optimizer - INFO - Movendo post duplicado ID 10671 para a lixeira...
+2025-08-01 16:32:20 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:32:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post ID 10671 movido para a lixeira com sucesso.
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10712 - A Saga de South Park: Deixando a HBO Max para se Consolidar na Paramount+
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10710 - Twisted Metal Temporada 2: A Adaptação de Videogame Mais Aclamada Retorna no Peacock!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10708 - Adeus HBO Max: South Park Agora Exclusivo no Paramount+ Após Mega Acordo
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10706 - Taron Egerton Aborda Rumores Sobre Interpretar Wolverine no MCU: Por Que Ele Não Aceitaria o Papel
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10704 - Reboots Urgentes: 7 Séries de Ficção Científica Canceladas que Clamam por uma Segunda Chance
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10702 - MCU Desafia Lógica: Como &#8216;Loki&#8217; e &#8216;Olhos de Wakanda&#8217; Contradizem as Regras de Viagem no Tempo de &#8216;Vingadores: Ultimato&#8217;
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10700 - Franklin Richards: O Novo Poder Supremo do MCU que Faz as Joias do Infinito Parecerem Fracas
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10696 - Quarteto Fantástico: Primeiros Passos – A Inesperada Mudança no Romance do Coisa e o Futuro de Alicia Masters no MCU
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10694 - Choque no MCU: O Único Filme da Saga do Infinito com CinemaScore Abaixo de A- Revelado!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10690 - **Star Wars: Uma Nova Esperança** Retorna Aos Cinemas em 2027 para Celebrar 50 Anos da Saga!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10687 - Corra Que a Polícia Vem Aí: Reboot com Liam Neeson Estreia e Originais de Graça Surpreendem Fãs
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10684 - Explorando as Melhores Franquias de Terror dos Anos 90
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10682 - A Horda Chega ao MCU em Eyes of Wakanda: Uma Ameaça Sem Precedentes aos Celestiais!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10680 - O Inesperado Motivo por Trás da Remoção do Episódio Bluey &#8216;Hammerbarn&#8217; do Streaming Australiano
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10678 - Os 7 Personagens Mais Poderosos de Star Wars Revelados nas Séries de TV: Uma Análise Imperdível!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10677 - Controvérsia em Bluey: O Episódio &#8220;Hammerbarn&#8221; Removido do Streaming na Austrália – Entenda o Motivo
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10674 - Os Clássicos de Batman de Michael Keaton Voltam aos Cinemas: Uma Experiência Dolby Imperdível!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10672 - Saved by the Bell: A Sitcom Clássica dos Anos 90 Agora Totalmente Grátis no Streaming!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10669 - Avaliação de Eyes of Wakanda: O Spinoff Animado de Pantera Negra que Você Precisa Conhecer
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10666 - Erik Killmonger: O Retorno Surpreendente de um dos Maiores Vilões do MCU em Nova Série do Disney+
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10664 - As Melhores Séries de TV de 2025 (Até Agora): Destaques Imperdíveis da Cultura Pop
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10661 - Fire Country: A Aguardada 2ª Temporada Chega à Netflix e Incendeia o Catálogo!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10659 - Eyes of Wakanda: Como a Nova Série Animada da Marvel Expande a Linha do Tempo do MCU com 11 Novos Personagens de Black Panther
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10657 - Revelado o Primeiro Visível do **Novo Traje do Homem-Aranha** em *Brand New Day*!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10655 - **Eyes of Wakanda**: Os 11 Personagens Essenciais de **Black Panther** que Expandem o MCU
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10653 - HBO Max Remove Clássicos do Cartoon Network: Onde Assistir &#8216;Coragem, o Cão Covarde&#8217; e &#8216;Scooby-Doo&#8217; Agora?
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10651 - Harry Potter e a Pedra Filosofal: 7 Erros Hilários que Você Nunca Mais Conseguirá Ignorar
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10649 - Star Trek: Strange New Worlds Finalmente Revela o Mistério de Décadas do Holodeck da Enterprise
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10647 - Stillwater Apple TV+: A Série Animada Aclamada como &#8216;Obra-Prima&#8217; Retorna Após Dois Anos!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10645 - Lançamentos Streaming Imperdíveis: Filmes e Séries Para Assistir Neste Fim de Semana (1º de Agosto)
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10641 - Revelado: A Nova Pantera Negra do MCU Chega com Poderes Nunca Vistos e Viagens no Tempo!
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10639 - Retorno Triunfal de A Casa do Mickey Mouse+ Domina o Disney+: Um Fenômeno no Streaming Infantil
+2025-08-01 16:32:22 - seo_optimizer - INFO - Post otimizável encontrado: 10634 - James Bond: Steven Knight (Peaky Blinders) Escreve o Roteiro do Reboot da Amazon MGM
+2025-08-01 16:32:22 - seo_optimizer - INFO - --- Processando post 10712: A Saga de South Park: Deixando a HBO Max para se Consolidar na Paramount+ ---
+2025-08-01 16:32:22 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 16:32:22 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 16:32:22 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 16:32:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:32:30 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 16:32:30 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 16:32:30 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 16:32:30 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 16:32:30 - wordpress_client - INFO - Excerpt truncado: 326 → 120 caracteres
+2025-08-01 16:32:30 - wordpress_client - INFO - Atualizando conteúdo do post 10712
+2025-08-01 16:32:31 - wordpress_client - INFO - Encontrados 37 posts novos
+2025-08-01 16:32:31 - seo_optimizer - INFO - Verificando 37 posts por duplicatas...
+2025-08-01 16:32:31 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: 'Franklin Richards: O Novo Poder Supremo do MCU que Faz as Joias do Infinito Parecerem Fracas'
+2025-08-01 16:32:31 - seo_optimizer - INFO - Mantendo post ID 10700 e removendo os outros.
+2025-08-01 16:32:31 - seo_optimizer - INFO - Movendo post duplicado ID 10699 para a lixeira...
+2025-08-01 16:32:32 - wordpress_client - ERROR - Erro ao deletar post 10699: 410 Client Error: Gone for url: https://www.maquinanerd.com.br/wp-json/wp/v2/posts/10699?force=false
+2025-08-01 16:32:32 - seo_optimizer - ERROR - Falha ao mover post ID 10699 para a lixeira.
+2025-08-01 16:32:32 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: 'Choque no MCU: O Único Filme da Saga do Infinito com CinemaScore Abaixo de A- Revelado!'
+2025-08-01 16:32:32 - seo_optimizer - INFO - Mantendo post ID 10694 e removendo os outros.
+2025-08-01 16:32:32 - seo_optimizer - INFO - Movendo post duplicado ID 10693 para a lixeira...
+2025-08-01 16:32:32 - wordpress_client - INFO - Post 10712 atualizado com sucesso
+2025-08-01 16:32:32 - wordpress_client - INFO - Meta description truncada: 326 → 120 caracteres
+2025-08-01 16:32:32 - wordpress_client - INFO - Atualizando meta Yoast do post 10712
+2025-08-01 16:32:32 - wordpress_client - ERROR - Erro ao deletar post 10693: 410 Client Error: Gone for url: https://www.maquinanerd.com.br/wp-json/wp/v2/posts/10693?force=false
+2025-08-01 16:32:32 - seo_optimizer - ERROR - Falha ao mover post ID 10693 para a lixeira.
+2025-08-01 16:32:32 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: '**Star Wars: Uma Nova Esperança** Retorna Aos Cinemas em 2027 para Celebrar 50 Anos da Saga!'
+2025-08-01 16:32:32 - seo_optimizer - INFO - Mantendo post ID 10690 e removendo os outros.
+2025-08-01 16:32:32 - seo_optimizer - INFO - Movendo post duplicado ID 10689 para a lixeira...
+2025-08-01 16:32:33 - wordpress_client - ERROR - Erro ao deletar post 10689: 410 Client Error: Gone for url: https://www.maquinanerd.com.br/wp-json/wp/v2/posts/10689?force=false
+2025-08-01 16:32:33 - seo_optimizer - ERROR - Falha ao mover post ID 10689 para a lixeira.
+2025-08-01 16:32:33 - seo_optimizer - WARNING - Encontrado grupo de 2 posts duplicados com título: 'Saved by the Bell: A Sitcom Clássica dos Anos 90 Agora Totalmente Grátis no Streaming!'
+2025-08-01 16:32:33 - seo_optimizer - INFO - Mantendo post ID 10672 e removendo os outros.
+2025-08-01 16:32:33 - seo_optimizer - INFO - Movendo post duplicado ID 10671 para a lixeira...
+2025-08-01 16:32:34 - wordpress_client - INFO - Meta Yoast do post 10712 atualizada
+2025-08-01 16:32:34 - database - INFO - Log registrado: optimization - success para post 10712
+2025-08-01 16:32:34 - database - INFO - Último post processado atualizado para ID: 10712
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post 10712 otimizado com sucesso em 11.84s
+2025-08-01 16:32:34 - seo_optimizer - INFO - SEO Score: 80
+2025-08-01 16:32:34 - seo_optimizer - INFO - --- Processando post 10710: Twisted Metal Temporada 2: A Adaptação de Videogame Mais Aclamada Retorna no Peacock! ---
+2025-08-01 16:32:34 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 16:32:34 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 16:32:34 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 16:32:34 - wordpress_client - ERROR - Erro ao deletar post 10671: 410 Client Error: Gone for url: https://www.maquinanerd.com.br/wp-json/wp/v2/posts/10671?force=false
+2025-08-01 16:32:34 - seo_optimizer - ERROR - Falha ao mover post ID 10671 para a lixeira.
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10712 - A Saga de South Park: Deixando a HBO Max para se Consolidar na Paramount+
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10710 - Twisted Metal Temporada 2: A Adaptação de Videogame Mais Aclamada Retorna no Peacock!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10708 - Adeus HBO Max: South Park Agora Exclusivo no Paramount+ Após Mega Acordo
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10706 - Taron Egerton Aborda Rumores Sobre Interpretar Wolverine no MCU: Por Que Ele Não Aceitaria o Papel
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10704 - Reboots Urgentes: 7 Séries de Ficção Científica Canceladas que Clamam por uma Segunda Chance
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10702 - MCU Desafia Lógica: Como &#8216;Loki&#8217; e &#8216;Olhos de Wakanda&#8217; Contradizem as Regras de Viagem no Tempo de &#8216;Vingadores: Ultimato&#8217;
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10700 - Franklin Richards: O Novo Poder Supremo do MCU que Faz as Joias do Infinito Parecerem Fracas
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10696 - Quarteto Fantástico: Primeiros Passos – A Inesperada Mudança no Romance do Coisa e o Futuro de Alicia Masters no MCU
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10694 - Choque no MCU: O Único Filme da Saga do Infinito com CinemaScore Abaixo de A- Revelado!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10690 - **Star Wars: Uma Nova Esperança** Retorna Aos Cinemas em 2027 para Celebrar 50 Anos da Saga!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10687 - Corra Que a Polícia Vem Aí: Reboot com Liam Neeson Estreia e Originais de Graça Surpreendem Fãs
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10684 - Explorando as Melhores Franquias de Terror dos Anos 90
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10682 - A Horda Chega ao MCU em Eyes of Wakanda: Uma Ameaça Sem Precedentes aos Celestiais!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10680 - O Inesperado Motivo por Trás da Remoção do Episódio Bluey &#8216;Hammerbarn&#8217; do Streaming Australiano
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10678 - Os 7 Personagens Mais Poderosos de Star Wars Revelados nas Séries de TV: Uma Análise Imperdível!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10677 - Controvérsia em Bluey: O Episódio &#8220;Hammerbarn&#8221; Removido do Streaming na Austrália – Entenda o Motivo
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10674 - Os Clássicos de Batman de Michael Keaton Voltam aos Cinemas: Uma Experiência Dolby Imperdível!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10672 - Saved by the Bell: A Sitcom Clássica dos Anos 90 Agora Totalmente Grátis no Streaming!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10669 - Avaliação de Eyes of Wakanda: O Spinoff Animado de Pantera Negra que Você Precisa Conhecer
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10666 - Erik Killmonger: O Retorno Surpreendente de um dos Maiores Vilões do MCU em Nova Série do Disney+
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10664 - As Melhores Séries de TV de 2025 (Até Agora): Destaques Imperdíveis da Cultura Pop
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10661 - Fire Country: A Aguardada 2ª Temporada Chega à Netflix e Incendeia o Catálogo!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10659 - Eyes of Wakanda: Como a Nova Série Animada da Marvel Expande a Linha do Tempo do MCU com 11 Novos Personagens de Black Panther
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10657 - Revelado o Primeiro Visível do **Novo Traje do Homem-Aranha** em *Brand New Day*!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10655 - **Eyes of Wakanda**: Os 11 Personagens Essenciais de **Black Panther** que Expandem o MCU
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10653 - HBO Max Remove Clássicos do Cartoon Network: Onde Assistir &#8216;Coragem, o Cão Covarde&#8217; e &#8216;Scooby-Doo&#8217; Agora?
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10651 - Harry Potter e a Pedra Filosofal: 7 Erros Hilários que Você Nunca Mais Conseguirá Ignorar
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10649 - Star Trek: Strange New Worlds Finalmente Revela o Mistério de Décadas do Holodeck da Enterprise
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10647 - Stillwater Apple TV+: A Série Animada Aclamada como &#8216;Obra-Prima&#8217; Retorna Após Dois Anos!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10645 - Lançamentos Streaming Imperdíveis: Filmes e Séries Para Assistir Neste Fim de Semana (1º de Agosto)
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10641 - Revelado: A Nova Pantera Negra do MCU Chega com Poderes Nunca Vistos e Viagens no Tempo!
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10639 - Retorno Triunfal de A Casa do Mickey Mouse+ Domina o Disney+: Um Fenômeno no Streaming Infantil
+2025-08-01 16:32:34 - seo_optimizer - INFO - Post otimizável encontrado: 10634 - James Bond: Steven Knight (Peaky Blinders) Escreve o Roteiro do Reboot da Amazon MGM
+2025-08-01 16:32:34 - seo_optimizer - INFO - --- Processando post 10712: A Saga de South Park: Deixando a HBO Max para se Consolidar na Paramount+ ---
+2025-08-01 16:32:34 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 16:32:34 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 16:32:34 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 16:32:41 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 16:32:41 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 16:32:41 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 16:32:41 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 16:32:41 - wordpress_client - INFO - Excerpt truncado: 379 → 161 caracteres
+2025-08-01 16:32:41 - wordpress_client - INFO - Atualizando conteúdo do post 10710
+2025-08-01 16:32:44 - wordpress_client - INFO - Post 10710 atualizado com sucesso
+2025-08-01 16:32:44 - wordpress_client - INFO - Meta description truncada: 379 → 161 caracteres
+2025-08-01 16:32:44 - wordpress_client - INFO - Atualizando meta Yoast do post 10710
+2025-08-01 16:32:44 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 16:32:44 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 16:32:44 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 16:32:44 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 16:32:44 - wordpress_client - INFO - Excerpt truncado: 345 → 181 caracteres
+2025-08-01 16:32:44 - wordpress_client - INFO - Atualizando conteúdo do post 10712
+2025-08-01 16:32:45 - wordpress_client - INFO - Meta Yoast do post 10710 atualizada
+2025-08-01 16:32:45 - database - INFO - Log registrado: optimization - success para post 10710
+2025-08-01 16:32:45 - database - INFO - Último post processado atualizado para ID: 10710
+2025-08-01 16:32:45 - seo_optimizer - INFO - Post 10710 otimizado com sucesso em 10.97s
+2025-08-01 16:32:45 - seo_optimizer - INFO - SEO Score: 80
+2025-08-01 16:32:45 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 56.24s ===
+2025-08-01 16:32:45 - seo_optimizer - INFO - Posts encontrados: 33
+2025-08-01 16:32:45 - seo_optimizer - INFO - Posts processados: 2
+2025-08-01 16:32:45 - seo_optimizer - INFO - Sucessos: 2
+2025-08-01 16:32:45 - seo_optimizer - INFO - Erros: 0
+2025-08-01 16:32:46 - wordpress_client - INFO - Post 10712 atualizado com sucesso
+2025-08-01 16:32:46 - wordpress_client - INFO - Meta description truncada: 345 → 181 caracteres
+2025-08-01 16:32:46 - wordpress_client - INFO - Atualizando meta Yoast do post 10712
+2025-08-01 16:32:47 - wordpress_client - INFO - Meta Yoast do post 10712 atualizada
+2025-08-01 16:32:47 - waitress.queue - WARNING - Task queue depth is 1
+2025-08-01 16:32:47 - database - INFO - Log registrado: optimization - success para post 10712
+2025-08-01 16:32:47 - database - INFO - Último post processado atualizado para ID: 10712
+2025-08-01 16:32:47 - seo_optimizer - INFO - Post 10712 otimizado com sucesso em 13.13s
+2025-08-01 16:32:47 - seo_optimizer - INFO - SEO Score: 100
+2025-08-01 16:32:47 - seo_optimizer - INFO - --- Processando post 10710: Twisted Metal Temporada 2: A Adaptação de Videogame Mais Aclamada Retorna no Peacock! ---
+2025-08-01 16:32:47 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 16:32:47 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 16:32:47 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 16:32:49 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:32:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:32:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:32:55 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 16:32:55 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 16:32:55 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 16:32:55 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 16:32:55 - wordpress_client - INFO - Excerpt truncado: 451 → 178 caracteres
+2025-08-01 16:32:55 - wordpress_client - INFO - Atualizando conteúdo do post 10710
+2025-08-01 16:32:57 - wordpress_client - INFO - Post 10710 atualizado com sucesso
+2025-08-01 16:32:57 - wordpress_client - INFO - Meta description truncada: 451 → 178 caracteres
+2025-08-01 16:32:57 - wordpress_client - INFO - Atualizando meta Yoast do post 10710
+2025-08-01 16:32:58 - wordpress_client - INFO - Meta Yoast do post 10710 atualizada
+2025-08-01 16:32:58 - database - INFO - Log registrado: optimization - success para post 10710
+2025-08-01 16:32:58 - database - INFO - Último post processado atualizado para ID: 10710
+2025-08-01 16:32:58 - seo_optimizer - INFO - Post 10710 otimizado com sucesso em 10.56s
+2025-08-01 16:32:58 - seo_optimizer - INFO - SEO Score: 80
+2025-08-01 16:32:58 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 49.21s ===
+2025-08-01 16:32:58 - seo_optimizer - INFO - Posts encontrados: 33
+2025-08-01 16:32:58 - seo_optimizer - INFO - Posts processados: 2
+2025-08-01 16:32:58 - seo_optimizer - INFO - Sucessos: 2
+2025-08-01 16:32:58 - seo_optimizer - INFO - Erros: 0
+2025-08-01 16:33:01 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:33:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:33:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:33:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:33:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:34:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:34:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:34:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:34:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:35:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:35:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:35:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:35:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:36:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:36:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:36:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:36:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:37:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:37:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:37:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:37:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:38:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:38:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:38:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:38:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:39:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:39:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:39:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:39:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:40:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:40:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:40:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:40:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:41:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:41:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:41:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:41:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:42:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:42:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:42:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:42:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:43:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:43:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:43:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:43:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:44:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:44:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:45:10 - wordpress_client - ERROR - Erro ao testar conexão: HTTPSConnectionPool(host='www.maquinanerd.com.br', port=443): Read timed out. (read timeout=None)
+2025-08-01 16:45:33 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:45:33 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:45:34 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:45:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:45:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:46:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:46:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:46:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:46:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:47:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:47:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:47:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:47:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:48:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:48:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:48:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:48:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:49:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:49:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:49:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:49:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:50:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:50:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:50:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:50:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:51:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:51:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:51:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:51:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:52:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:52:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:52:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:52:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:53:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:53:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:53:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:53:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:54:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:54:24 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:54:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:54:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:55:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:55:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:55:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:55:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:56:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:56:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:56:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:56:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:57:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:57:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:57:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:57:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:58:21 - config - INFO - Configuração validada com sucesso
+2025-08-01 16:58:21 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-01 16:58:21 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-01 16:58:21 - config - INFO - TMDB configurado: Sim
+2025-08-01 16:58:21 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-01 16:58:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:58:22 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-08-01 16:58:22 - waitress - INFO - Serving on http://0.0.0.0:5000
+2025-08-01 16:58:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:58:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:58:46 - wordpress_client - INFO - Conectado como: Abel

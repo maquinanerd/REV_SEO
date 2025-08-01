@@ -138,6 +138,11 @@ class Config:
         """Intervalo entre verificações em minutos"""
         return int(os.getenv("CHECK_INTERVAL_MINUTES", "20"))
     
+    @property
+    def wordpress_fetch_limit(self) -> int:
+        """Número de posts a buscar do WordPress por ciclo (para encontrar novos)"""
+        return int(os.getenv("WORDPRESS_FETCH_LIMIT", "50"))
+    
     def validate_config(self):
         """Valida se todas as configurações necessárias estão presentes"""
         errors = []

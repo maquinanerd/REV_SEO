@@ -105,7 +105,7 @@ class SEOOptimizer:
             new_posts_raw = wordpress_client.get_new_posts_since_id(
                 self.target_author_id, 
                 last_processed_id,
-                per_page=50
+                per_page=config.wordpress_fetch_limit
             )
 
             if not new_posts_raw:
