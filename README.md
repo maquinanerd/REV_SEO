@@ -82,7 +82,7 @@
  SESSION_SECRET=5SFn/MRA2tlJluiogVz0oSef30ctJdaCSEG0vQRZrvY6SseayTbK05tQ+prPiLWRBiiQSjbm3p13vybLtvos0Q==
  
  # Configurações do Otimizador
- MAX_POSTS_PER_CYCLE=2
+ MAX_POSTS_PER_CYCLE=10
  SCHEDULE_INTERVAL_MINUTES=60
  ```
  

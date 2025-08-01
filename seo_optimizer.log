@@ -4155,3 +4155,8 @@ message: "API key not valid. Please pass a valid API key."
 2025-07-31 23:15:37 - __main__ - INFO - Erros: 0
 2025-07-31 23:15:37 - __main__ - INFO - Tempo total: 49.63s
 2025-07-31 23:15:37 - __main__ - INFO - Teste concluído com sucesso!
+2025-08-01 16:29:21 - config - INFO - Configuração validada com sucesso
+2025-08-01 16:29:21 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-01 16:29:21 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-01 16:29:21 - config - INFO - TMDB configurado: Sim
+2025-08-01 16:29:22 - database - INFO - Banco de dados inicializado com sucesso
