@@ -464,5 +464,34 @@ class WordPressClient:
             self.logger.error(f"Erro ao buscar post pela URL {post_url}: {e}")
             return None
 
+    def submit_to_instant_indexing(self, post_url: str) -> bool:
+        """
+        Submete uma URL para a API de Indexação Instantânea do Rank Math.
+
+        Args:
+            post_url: A URL completa do post a ser indexado.
+
+        Returns:
+            True se a submissão foi bem-sucedida, False caso contrário.
+        """
+        # Endpoint fornecido pelo plugin Rank Math
+        indexing_endpoint = f"{self.base_url}/wp-json/rankmath/v1/instantIndexing"
+        
+        data = {
+            'url': post_url
+        }
+        
+        try:
+            self.logger.info(f"Enviando URL para o Rank Math Instant Indexing: {post_url}")
+            response = self.session.post(indexing_endpoint, json=data)
+            response.raise_for_status()
+            
+            self.logger.info(f"URL {post_url} submetida com sucesso para indexação. Resposta: {response.json()}")
+            return True
+            
+        except Exception as e:
+            self.logger.error(f"Erro ao submeter URL para indexação instantânea: {e}")
+            return False
+
 # Instância global do cliente WordPress
 wordpress_client = WordPressClient()

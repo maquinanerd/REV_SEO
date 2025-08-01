@@ -290,6 +290,20 @@ class SEOOptimizer:
             # Atualiza último post processado
             db.update_last_processed_post_id(post_id)
             
+            # 7. Submete para Indexação Instantânea
+            self.logger.info(f"Submetendo post {post_id} para a API de Indexação Instantânea...")
+            indexing_success = wordpress_client.submit_to_instant_indexing(post_data['link'])
+            if indexing_success:
+                db.log_processing(
+                    post_id, post_title, 'instant_indexing', 'success', 
+                    "URL enviada para a API do Rank Math."
+                )
+            else:
+                db.log_processing(
+                    post_id, post_title, 'instant_indexing', 'error', 
+                    "Falha ao enviar URL para a API do Rank Math."
+                )
+
             self.logger.info(f"Post {post_id} otimizado com sucesso em {processing_time:.2f}s")
             self.logger.info(f"SEO Score: {optimized_data.get('seo_score', 'N/A')}")
             

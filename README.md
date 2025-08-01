@@ -29,6 +29,7 @@
  4.  **Otimização com IA**: O conteúdo do post é enviado para o Google Gemini, que o reescreve seguindo um prompt focado em SEO para notícias.
  5.  **Atualização no WordPress**: O post original é atualizado com o novo título, resumo (excerpt), conteúdo e metadados do Yoast SEO (título SEO, meta descrição e palavra-chave em foco). A edição é atribuída ao usuário editor (ID 9).
  6.  **Log e Controle**: Todas as operações são registradas no banco de dados SQLite, e o ID do último post processado é salvo para o próximo ciclo.
+ 7.  **Indexação Instantânea**: Após a atualização bem-sucedida, a URL do post é enviada para o endpoint da API do plugin Rank Math, que utiliza a Google Indexing API para solicitar um rastreamento rápido.
  
  ## 3. Estrutura de Arquivos
  

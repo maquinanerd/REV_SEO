@@ -4487,3 +4487,334 @@ message: "API key not valid. Please pass a valid API key."
 2025-08-01 16:58:22 - wordpress_client - INFO - Conectado como: Abel
 2025-08-01 16:58:46 - wordpress_client - INFO - Conectado como: Abel
 2025-08-01 16:58:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:59:09 - config - INFO - Configuração validada com sucesso
+2025-08-01 16:59:09 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-01 16:59:09 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-01 16:59:09 - config - INFO - TMDB configurado: Sim
+2025-08-01 16:59:09 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-01 16:59:10 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-08-01 16:59:10 - __main__ - INFO - WordPress SEO Optimizer - Modo PRODUÇÃO
+2025-08-01 16:59:10 - __main__ - INFO - ==================================================
+2025-08-01 16:59:10 - __main__ - INFO - Validando configuração...
+2025-08-01 16:59:10 - config - INFO - Configuração validada com sucesso
+2025-08-01 16:59:10 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-01 16:59:10 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-01 16:59:10 - config - INFO - TMDB configurado: Sim
+2025-08-01 16:59:10 - __main__ - INFO - Agendando execução a cada 20 minutos
+2025-08-01 16:59:10 - __main__ - INFO - Executando primeira otimização...
+2025-08-01 16:59:10 - __main__ - INFO - Executando otimização agendada...
+2025-08-01 16:59:10 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-01 16:59:11 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:59:11 - seo_optimizer - INFO - Último post processado: 10710
+2025-08-01 16:59:11 - wordpress_client - INFO - Buscando posts novos desde ID 10710
+2025-08-01 16:59:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:59:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:59:30 - wordpress_client - INFO - Encontrados 2 posts novos
+2025-08-01 16:59:30 - seo_optimizer - INFO - Verificando 2 posts por duplicatas...
+2025-08-01 16:59:30 - seo_optimizer - INFO - Post otimizável encontrado: 10718 - DCU de James Gunn: Ranking dos Super-Heróis Confirmados – Do Mais Fraco ao Mais Forte
+2025-08-01 16:59:30 - seo_optimizer - INFO - Post otimizável encontrado: 10712 - South Park Sai da HBO Max e Se Torna Exclusivo na Paramount+: Entenda a Mudança
+2025-08-01 16:59:30 - seo_optimizer - INFO - --- Processando post 10718: DCU de James Gunn: Ranking dos Super-Heróis Confirmados – Do Mais Fraco ao Mais Forte ---
+2025-08-01 16:59:30 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 16:59:30 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 16:59:30 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 16:59:42 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 16:59:42 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 16:59:42 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 16:59:42 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 16:59:42 - wordpress_client - INFO - Excerpt truncado: 261 → 174 caracteres
+2025-08-01 16:59:42 - wordpress_client - INFO - Atualizando conteúdo do post 10718
+2025-08-01 16:59:45 - wordpress_client - INFO - Post 10718 atualizado com sucesso
+2025-08-01 16:59:45 - wordpress_client - INFO - Meta description truncada: 261 → 174 caracteres
+2025-08-01 16:59:45 - wordpress_client - INFO - Atualizando meta Yoast do post 10718
+2025-08-01 16:59:46 - wordpress_client - INFO - Meta Yoast do post 10718 atualizada
+2025-08-01 16:59:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:59:46 - database - INFO - Log registrado: optimization - success para post 10718
+2025-08-01 16:59:46 - database - INFO - Último post processado atualizado para ID: 10718
+2025-08-01 16:59:46 - seo_optimizer - INFO - Post 10718 otimizado com sucesso em 15.31s
+2025-08-01 16:59:46 - seo_optimizer - INFO - SEO Score: 80
+2025-08-01 16:59:46 - seo_optimizer - INFO - --- Processando post 10712: South Park Sai da HBO Max e Se Torna Exclusivo na Paramount+: Entenda a Mudança ---
+2025-08-01 16:59:46 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 16:59:46 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 16:59:46 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 16:59:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 16:59:55 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 16:59:55 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 16:59:55 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 16:59:55 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 16:59:55 - wordpress_client - INFO - Excerpt truncado: 346 → 112 caracteres
+2025-08-01 16:59:55 - wordpress_client - INFO - Atualizando conteúdo do post 10712
+2025-08-01 16:59:57 - wordpress_client - INFO - Post 10712 atualizado com sucesso
+2025-08-01 16:59:57 - wordpress_client - INFO - Meta description truncada: 346 → 112 caracteres
+2025-08-01 16:59:57 - wordpress_client - INFO - Atualizando meta Yoast do post 10712
+2025-08-01 16:59:59 - wordpress_client - INFO - Meta Yoast do post 10712 atualizada
+2025-08-01 16:59:59 - database - INFO - Log registrado: optimization - success para post 10712
+2025-08-01 16:59:59 - database - INFO - Último post processado atualizado para ID: 10712
+2025-08-01 16:59:59 - seo_optimizer - INFO - Post 10712 otimizado com sucesso em 12.83s
+2025-08-01 16:59:59 - seo_optimizer - INFO - SEO Score: 100
+2025-08-01 16:59:59 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 48.90s ===
+2025-08-01 16:59:59 - seo_optimizer - INFO - Posts encontrados: 2
+2025-08-01 16:59:59 - seo_optimizer - INFO - Posts processados: 2
+2025-08-01 16:59:59 - seo_optimizer - INFO - Sucessos: 2
+2025-08-01 16:59:59 - seo_optimizer - INFO - Erros: 0
+2025-08-01 16:59:59 - __main__ - INFO - Resumo: 2 sucessos, 0 erros em 48.90s
+2025-08-01 16:59:59 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-01T16:59:10.309771', 'posts_found': 2, 'posts_processed': 2, 'posts_success': 2, 'posts_error': 0, 'processing_time': 48.903120040893555, 'errors': []}
+2025-08-01 16:59:59 - __main__ - INFO - Otimização concluída. Próxima execução: 16:59
+2025-08-01 16:59:59 - __main__ - INFO - Sistema iniciado! Pressione Ctrl+C para parar
+2025-08-01 16:59:59 - __main__ - INFO - ⏰ Próxima execução em 20 minutos
+2025-08-01 17:00:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:00:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:00:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:00:47 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:01:15 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:01:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:01:45 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:01:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:02:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:02:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:02:45 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:02:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:03:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:03:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:03:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:03:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:04:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:04:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:04:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:04:47 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:05:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:05:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:05:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:05:47 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:05:59 - __main__ - INFO - Recebido sinal 2, encerrando...
+2025-08-01 17:06:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:06:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:06:29 - __main__ - INFO - Sistema encerrado
+2025-08-01 17:06:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:06:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:06:53 - config - INFO - Configuração validada com sucesso
+2025-08-01 17:06:53 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-01 17:06:53 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-01 17:06:53 - config - INFO - TMDB configurado: Sim
+2025-08-01 17:06:53 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-01 17:06:54 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-08-01 17:06:54 - waitress - INFO - Serving on http://0.0.0.0:5000
+2025-08-01 17:07:00 - config - INFO - Configuração validada com sucesso
+2025-08-01 17:07:00 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-01 17:07:00 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-01 17:07:00 - config - INFO - TMDB configurado: Sim
+2025-08-01 17:07:00 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-01 17:07:01 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-08-01 17:07:01 - __main__ - INFO - WordPress SEO Optimizer - Modo PRODUÇÃO
+2025-08-01 17:07:01 - __main__ - INFO - ==================================================
+2025-08-01 17:07:01 - __main__ - INFO - Validando configuração...
+2025-08-01 17:07:01 - config - INFO - Configuração validada com sucesso
+2025-08-01 17:07:01 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-01 17:07:01 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-01 17:07:01 - config - INFO - TMDB configurado: Sim
+2025-08-01 17:07:01 - __main__ - INFO - Agendando execução a cada 15 minutos
+2025-08-01 17:07:01 - __main__ - INFO - Executando primeira otimização...
+2025-08-01 17:07:01 - __main__ - INFO - Executando otimização agendada...
+2025-08-01 17:07:01 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-01 17:07:03 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:07:03 - seo_optimizer - INFO - Último post processado: 10712
+2025-08-01 17:07:03 - wordpress_client - INFO - Buscando posts novos desde ID 10712
+2025-08-01 17:07:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:07:16 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:07:22 - wordpress_client - INFO - Encontrados 2 posts novos
+2025-08-01 17:07:22 - seo_optimizer - INFO - Verificando 2 posts por duplicatas...
+2025-08-01 17:07:22 - seo_optimizer - INFO - Post otimizável encontrado: 10726 - Liam Neeson Critica a Morte de Qui-Gon Jinn em Star Wars: A Ameaça Fantasma – &#8216;Mal um Mestre Jedi&#8217;
+2025-08-01 17:07:22 - seo_optimizer - INFO - Post otimizável encontrado: 10718 - Ranking de Poder: Super-Heróis do Novo DCU de James Gunn &#8211; Do Mais Fraco ao Mais Forte
+2025-08-01 17:07:22 - seo_optimizer - INFO - --- Processando post 10726: Liam Neeson Critica a Morte de Qui-Gon Jinn em Star Wars: A Ameaça Fantasma – &#8216;Mal um Mestre Jedi&#8217; ---
+2025-08-01 17:07:22 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 17:07:22 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 17:07:22 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 17:07:33 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 17:07:33 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 17:07:33 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 17:07:33 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 17:07:33 - wordpress_client - INFO - Excerpt truncado: 358 → 132 caracteres
+2025-08-01 17:07:33 - wordpress_client - INFO - Atualizando conteúdo do post 10726
+2025-08-01 17:07:35 - wordpress_client - INFO - Post 10726 atualizado com sucesso
+2025-08-01 17:07:35 - wordpress_client - INFO - Meta description truncada: 358 → 132 caracteres
+2025-08-01 17:07:35 - wordpress_client - INFO - Atualizando meta Yoast do post 10726
+2025-08-01 17:07:36 - wordpress_client - INFO - Meta Yoast do post 10726 atualizada
+2025-08-01 17:07:36 - database - INFO - Log registrado: optimization - success para post 10726
+2025-08-01 17:07:36 - database - INFO - Último post processado atualizado para ID: 10726
+2025-08-01 17:07:36 - seo_optimizer - INFO - Post 10726 otimizado com sucesso em 13.28s
+2025-08-01 17:07:36 - seo_optimizer - INFO - SEO Score: 100
+2025-08-01 17:07:36 - seo_optimizer - INFO - --- Processando post 10718: Ranking de Poder: Super-Heróis do Novo DCU de James Gunn &#8211; Do Mais Fraco ao Mais Forte ---
+2025-08-01 17:07:36 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 17:07:36 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 17:07:36 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 17:07:46 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:07:47 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:07:48 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 17:07:48 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 17:07:48 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 17:07:48 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 17:07:48 - wordpress_client - INFO - Excerpt truncado: 335 → 172 caracteres
+2025-08-01 17:07:48 - wordpress_client - INFO - Atualizando conteúdo do post 10718
+2025-08-01 17:07:49 - wordpress_client - INFO - Post 10718 atualizado com sucesso
+2025-08-01 17:07:49 - wordpress_client - INFO - Meta description truncada: 335 → 172 caracteres
+2025-08-01 17:07:49 - wordpress_client - INFO - Atualizando meta Yoast do post 10718
+2025-08-01 17:07:51 - wordpress_client - INFO - Meta Yoast do post 10718 atualizada
+2025-08-01 17:07:51 - database - INFO - Log registrado: optimization - success para post 10718
+2025-08-01 17:07:51 - database - INFO - Último post processado atualizado para ID: 10718
+2025-08-01 17:07:51 - seo_optimizer - INFO - Post 10718 otimizado com sucesso em 14.83s
+2025-08-01 17:07:51 - seo_optimizer - INFO - SEO Score: 100
+2025-08-01 17:07:51 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 49.66s ===
+2025-08-01 17:07:51 - seo_optimizer - INFO - Posts encontrados: 2
+2025-08-01 17:07:51 - seo_optimizer - INFO - Posts processados: 2
+2025-08-01 17:07:51 - seo_optimizer - INFO - Sucessos: 2
+2025-08-01 17:07:51 - seo_optimizer - INFO - Erros: 0
+2025-08-01 17:07:51 - __main__ - INFO - Resumo: 2 sucessos, 0 erros em 49.66s
+2025-08-01 17:07:51 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-01T17:07:01.541684', 'posts_found': 2, 'posts_processed': 2, 'posts_success': 2, 'posts_error': 0, 'processing_time': 49.66203832626343, 'errors': []}
+2025-08-01 17:07:51 - __main__ - INFO - Otimização concluída. Próxima execução: 17:07
+2025-08-01 17:07:51 - __main__ - INFO - Sistema iniciado! Pressione Ctrl+C para parar
+2025-08-01 17:07:51 - __main__ - INFO - ⏰ Próxima execução em 15 minutos
+2025-08-01 17:08:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:08:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:08:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:08:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:09:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:09:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:10:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:10:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:11:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:11:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:12:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:12:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:13:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:13:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:14:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:14:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:15:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:15:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:16:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:16:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:17:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:17:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:18:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:18:59 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:19:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:19:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:20:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:20:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:21:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:21:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:22:21 - __main__ - INFO - Executando otimização agendada...
+2025-08-01 17:22:21 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-01 17:22:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:22:22 - seo_optimizer - INFO - Último post processado: 10718
+2025-08-01 17:22:22 - wordpress_client - INFO - Buscando posts novos desde ID 10718
+2025-08-01 17:22:41 - wordpress_client - INFO - Encontrados 1 posts novos
+2025-08-01 17:22:41 - seo_optimizer - INFO - Verificando 1 posts por duplicatas...
+2025-08-01 17:22:41 - seo_optimizer - INFO - Post otimizável encontrado: 10726 - Liam Neeson Critica Morte de Qui-Gon Jinn em Star Wars: A Ameaça Fantasma &#8211; &#8220;Dificilmente um Mestre Jedi&#8221;
+2025-08-01 17:22:41 - seo_optimizer - INFO - --- Processando post 10726: Liam Neeson Critica Morte de Qui-Gon Jinn em Star Wars: A Ameaça Fantasma &#8211; &#8220;Dificilmente um Mestre Jedi&#8221; ---
+2025-08-01 17:22:41 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 17:22:41 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 17:22:41 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 17:22:51 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 17:22:51 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 17:22:51 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 17:22:51 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 17:22:51 - wordpress_client - INFO - Excerpt truncado: 407 → 131 caracteres
+2025-08-01 17:22:51 - wordpress_client - INFO - Atualizando conteúdo do post 10726
+2025-08-01 17:22:53 - wordpress_client - INFO - Post 10726 atualizado com sucesso
+2025-08-01 17:22:53 - wordpress_client - INFO - Meta description truncada: 407 → 131 caracteres
+2025-08-01 17:22:53 - wordpress_client - INFO - Atualizando meta Yoast do post 10726
+2025-08-01 17:22:54 - wordpress_client - INFO - Meta Yoast do post 10726 atualizada
+2025-08-01 17:22:54 - database - INFO - Log registrado: optimization - success para post 10726
+2025-08-01 17:22:54 - database - INFO - Último post processado atualizado para ID: 10726
+2025-08-01 17:22:54 - seo_optimizer - INFO - Post 10726 otimizado com sucesso em 13.01s
+2025-08-01 17:22:54 - seo_optimizer - INFO - SEO Score: 100
+2025-08-01 17:22:54 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 33.68s ===
+2025-08-01 17:22:54 - seo_optimizer - INFO - Posts encontrados: 1
+2025-08-01 17:22:54 - seo_optimizer - INFO - Posts processados: 1
+2025-08-01 17:22:54 - seo_optimizer - INFO - Sucessos: 1
+2025-08-01 17:22:54 - seo_optimizer - INFO - Erros: 0
+2025-08-01 17:22:54 - __main__ - INFO - Resumo: 1 sucessos, 0 erros em 33.68s
+2025-08-01 17:22:55 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-01T17:22:21.284636', 'posts_found': 1, 'posts_processed': 1, 'posts_success': 1, 'posts_error': 0, 'processing_time': 33.68060564994812, 'errors': []}
+2025-08-01 17:22:55 - __main__ - INFO - Otimização concluída. Próxima execução: 17:22
+2025-08-01 17:22:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:22:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:23:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:23:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:24:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:24:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:25:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:25:59 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:26:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:26:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:27:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:27:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:28:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:28:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:29:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:29:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:30:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:30:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:31:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:31:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:32:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:32:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:33:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:33:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:34:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:34:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:35:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:35:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:36:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:36:59 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:37:55 - __main__ - INFO - Executando otimização agendada...
+2025-08-01 17:37:55 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-01 17:37:56 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:37:56 - seo_optimizer - INFO - Último post processado: 10726
+2025-08-01 17:37:56 - wordpress_client - INFO - Buscando posts novos desde ID 10726
+2025-08-01 17:37:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:37:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:38:18 - wordpress_client - INFO - Encontrados 1 posts novos
+2025-08-01 17:38:18 - seo_optimizer - INFO - Verificando 1 posts por duplicatas...
+2025-08-01 17:38:18 - seo_optimizer - INFO - Post otimizável encontrado: 10731 - Linha do Tempo Oficial do MCU Atualizada: &#8216;Eyes of Wakanda&#8217; É a Nova Origem Cronológica!
+2025-08-01 17:38:18 - seo_optimizer - INFO - --- Processando post 10731: Linha do Tempo Oficial do MCU Atualizada: &#8216;Eyes of Wakanda&#8217; É a Nova Origem Cronológica! ---
+2025-08-01 17:38:18 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-01 17:38:18 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-01 17:38:18 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-01 17:38:25 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-01 17:38:25 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-01 17:38:25 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-01 17:38:25 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-01 17:38:25 - wordpress_client - INFO - Excerpt truncado: 321 → 174 caracteres
+2025-08-01 17:38:25 - wordpress_client - INFO - Atualizando conteúdo do post 10731
+2025-08-01 17:38:27 - wordpress_client - INFO - Post 10731 atualizado com sucesso
+2025-08-01 17:38:27 - wordpress_client - INFO - Meta description truncada: 321 → 174 caracteres
+2025-08-01 17:38:27 - wordpress_client - INFO - Atualizando meta Yoast do post 10731
+2025-08-01 17:38:28 - wordpress_client - INFO - Meta Yoast do post 10731 atualizada
+2025-08-01 17:38:28 - database - INFO - Log registrado: optimization - success para post 10731
+2025-08-01 17:38:29 - database - INFO - Último post processado atualizado para ID: 10731
+2025-08-01 17:38:29 - seo_optimizer - INFO - Post 10731 otimizado com sucesso em 10.88s
+2025-08-01 17:38:29 - seo_optimizer - INFO - SEO Score: 60
+2025-08-01 17:38:29 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 34.02s ===
+2025-08-01 17:38:29 - seo_optimizer - INFO - Posts encontrados: 1
+2025-08-01 17:38:29 - seo_optimizer - INFO - Posts processados: 1
+2025-08-01 17:38:29 - seo_optimizer - INFO - Sucessos: 1
+2025-08-01 17:38:29 - seo_optimizer - INFO - Erros: 0
+2025-08-01 17:38:29 - __main__ - INFO - Resumo: 1 sucessos, 0 erros em 34.02s
+2025-08-01 17:38:29 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-01T17:37:55.036429', 'posts_found': 1, 'posts_processed': 1, 'posts_success': 1, 'posts_error': 0, 'processing_time': 34.02195405960083, 'errors': []}
+2025-08-01 17:38:29 - __main__ - INFO - Otimização concluída. Próxima execução: 17:38
+2025-08-01 17:38:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:38:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:39:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:39:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:40:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:40:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:41:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:41:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:42:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:42:59 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:43:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:43:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:44:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:44:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:45:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-01 17:45:59 - wordpress_client - INFO - Conectado como: Abel
