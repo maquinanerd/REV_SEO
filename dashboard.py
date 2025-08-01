@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 from flask import Flask, render_template, jsonify, request
 from config import config
 from database import db
+from waitress import serve
 from seo_optimizer import seo_optimizer
 from gemini_client import gemini_client
 
@@ -240,14 +241,12 @@ def main():
     print("💡 Para executar otimização: python main.py")
     print("🛑 Para parar: Ctrl+C")
     print("="*50)
-
-    # Inicia servidor Flask
-    app.run(
-        host='0.0.0.0',
-        port=5000,
-        debug=True,
-        use_reloader=False  # Evita problemas com múltiplas instâncias
-    )
+    
+    # Usar um servidor WSGI de produção (Waitress) em vez do servidor de
+    # desenvolvimento do Flask. É mais estável para ambientes como o Replit "Always On".
+    # O modo de debug do Flask pode ser reativado descomentando a linha abaixo.
+    # app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=False)
+    serve(app, host='0.0.0.0', port=5000)
 
 if __name__ == "__main__":
     main()

@@ -10,3 +10,6 @@ google-generativeai==0.7.1
 # Utilitários
 python-dotenv==1.0.1
 schedule==1.2.2
+
+# Servidor WSGI para produção
+waitress==2.1.2
