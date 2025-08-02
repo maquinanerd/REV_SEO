@@ -276,5 +276,23 @@ class Database:
                     return result[0]
             return None
 
+    def get_processed_count_for_date(self, target_date: str) -> int:
+        """
+        Retorna o número de posts otimizados com sucesso em uma data específica.
+
+        Args:
+            target_date: A data no formato 'YYYY-MM-DD'.
+
+        Returns:
+            O número de posts otimizados.
+        """
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+                SELECT COUNT(*) FROM processing_logs 
+                WHERE action = 'optimization' AND status = 'success' AND DATE(created_at) = ?
+            ''', (target_date,))
+            return cursor.fetchone()[0]
+
 # Instância global do banco
 db = Database()

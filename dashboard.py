@@ -110,6 +110,27 @@ def api_statistics():
             'error': str(e)
         }), 500
 
+@app.route('/api/stats-by-date')
+def api_stats_by_date():
+    """API endpoint para obter contagem de posts otimizados em uma data específica."""
+    try:
+        date_str = request.args.get('date') # Espera um parâmetro ?date=YYYY-MM-DD
+        if not date_str:
+            return jsonify({'success': False, 'error': "Parâmetro 'date' (YYYY-MM-DD) é obrigatório."}), 400
+
+        count = db.get_processed_count_for_date(date_str)
+
+        return jsonify({
+            'success': True,
+            'data': {
+                'date': date_str,
+                'processed_count': count
+            }
+        })
+    except Exception as e:
+        logger.error(f"Erro ao obter estatísticas por data: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
 @app.route('/api/logs')
 def api_logs():
     """API endpoint para logs recentes"""

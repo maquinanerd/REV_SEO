@@ -503,8 +503,15 @@ class WordPressClient:
                 
             return True
             
+        except requests.exceptions.HTTPError as e:
+            if e.response.status_code == 404:
+                self.logger.error("Erro 404 (Not Found) ao acessar a API do Rank Math.")
+                self.logger.error("Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.")
+            else:
+                self.logger.error(f"Erro HTTP ao submeter URL para indexação instantânea: {e}")
+            return False
         except Exception as e:
-            self.logger.error(f"Erro ao submeter URL para indexação instantânea: {e}")
+            self.logger.error(f"Erro geral ao submeter URL para indexação instantânea: {e}")
             return False
 
 # Instância global do cliente WordPress
