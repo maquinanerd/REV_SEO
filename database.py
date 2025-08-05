@@ -44,14 +44,16 @@ class Database:
                 )
             ''')
 
-            # Tabela para controle de quota Gemini
+            # Tabela para controle de quota Gemini - Removida a antiga
+            cursor.execute('DROP TABLE IF EXISTS gemini_quota')
+            
+            # Tabela para controle de quota Gemini (NOVO SCHEMA, 1 linha por chave)
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS gemini_quota (
-                    id INTEGER PRIMARY KEY,
-                    api_key_index INTEGER DEFAULT 0,
+                    api_key_index INTEGER PRIMARY KEY,
                     requests_made INTEGER DEFAULT 0,
-                    last_reset_date TEXT,
                     quota_exceeded BOOLEAN DEFAULT 0,
+                    last_used_at TEXT,
                     created_at TEXT DEFAULT CURRENT_TIMESTAMP,
                     updated_at TEXT DEFAULT CURRENT_TIMESTAMP
                 )
@@ -75,12 +77,19 @@ class Database:
                     VALUES (0, ?, 0)
                 ''', (datetime.now().isoformat(),))
 
-            cursor.execute('SELECT COUNT(*) FROM gemini_quota')
-            if cursor.fetchone()[0] == 0:
-                cursor.execute('''
-                    INSERT INTO gemini_quota (api_key_index, requests_made, last_reset_date, quota_exceeded)
-                    VALUES (0, 0, ?, 0)
-                ''', (datetime.now().isoformat(),))
+            # Popula a tabela de quotas com base na configuração
+            from config import config # Import local para evitar dependência circular
+            num_keys = len(config.gemini_api_keys)
+            if num_keys > 0:
+                cursor.execute('SELECT COUNT(*) FROM gemini_quota')
+                if cursor.fetchone()[0] != num_keys:
+                    # Limpa e repopula para garantir consistência
+                    cursor.execute('DELETE FROM gemini_quota')
+                    for i in range(num_keys):
+                        cursor.execute('''
+                            INSERT INTO gemini_quota (api_key_index, last_used_at)
+                            VALUES (?, ?)
+                        ''', (i, datetime.now().isoformat()))
 
             conn.commit()
             self.logger.info("Banco de dados inicializado com sucesso")

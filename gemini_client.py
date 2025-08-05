@@ -7,10 +7,6 @@ import google.generativeai as genai
 from config import config
 from database import db
 
-class GeminiClient:
-    """Cliente para integração com Google Gemini AI"""
-    
-    def __init__(self):
         self.logger = logging.getLogger(__name__)
         self.api_keys = config.gemini_api_keys
         self.current_key_index = db.get_gemini_quota_info().get('api_key_index', 0)
@@ -19,14 +15,8 @@ class GeminiClient:
     
     def initialize_client(self):
         """Inicializa o cliente Gemini com a chave atual"""
-        try:
             current_key = self.api_keys[self.current_key_index]
             genai.configure(api_key=current_key)
-            self.client = genai.GenerativeModel("gemini-1.5-flash")
-            self.logger.info(f"Cliente Gemini inicializado com chave {self.current_key_index + 1}")
-        except Exception as e:
-            self.logger.error(f"Erro ao inicializar cliente Gemini: {e}")
-            raise
     
     def switch_api_key(self):
         """Alterna para a próxima chave API disponível"""
@@ -132,17 +122,12 @@ Responda exatamente no seguinte formato:
                 # Faz a requisição para o Gemini
                 response = self.client.generate_content(prompt)
                 
-                if not response.text:
-                    raise ValueError("Resposta vazia do Gemini")
-                
                 # Atualiza contador de requisições
                 quota_info = db.get_gemini_quota_info()
                 requests_made = quota_info.get('requests_made', 0) + 1
-                db.update_gemini_quota(self.current_key_index, requests_made, False)
-                
                 # Processa a resposta
                 optimized_content = self._parse_gemini_response(response.text)
-                
+                self.logger.info(f"Tentativa {attempt + 1} de otimização com Gemini")
                 if optimized_content:
                     self.logger.info("Conteúdo otimizado com sucesso pelo Gemini")
                     return optimized_content
@@ -162,7 +147,7 @@ Responda exatamente no seguinte formato:
                         db.update_gemini_quota(self.current_key_index, 999999, True)
                         self.switch_api_key()
                         continue  # Tenta novamente com a nova chave
-                    else:
+                    raise ValueError("Erro ao processar resposta do Gemini")
                         self.logger.error("Erro de API e apenas uma chave disponível. Abortando.")
                         db.update_gemini_quota(self.current_key_index, 999999, True)
                         return None # Aborta se não há mais chaves
@@ -172,24 +157,15 @@ Responda exatamente no seguinte formato:
                     wait_time = (2 ** attempt) + random.uniform(0, 1)
                     self.logger.info(f"Aguardando {wait_time:.2f}s antes da próxima tentativa")
                     time.sleep(wait_time)
-        
-        self.logger.error("Todas as tentativas de otimização falharam")
-        return None
-    
-    def _strip_html_from_title(self, title: str) -> str:
-        """Remove qualquer HTML do título para garantir texto puro"""
-        import re
-        # Remove todas as tags HTML
-        clean_title = re.sub(r'<[^>]+>', '', title)
-        # Remove múltiplos espaços
-        clean_title = re.sub(r'\s+', ' ', clean_title)
-        return clean_title.strip()
-
-    def _parse_gemini_response(self, response_text: str) -> Optional[Dict]:
-        """Faz parse da resposta estruturada do Gemini"""
-        try:
-            lines = response_text.strip().split('\n')
+                    if len(self.api_keys) > 1:
+                        self.logger.info("Erro de API (quota/inválida), alternando para a próxima chave...")
+                        db.update_gemini_quota(self.current_key_index, 999999, True)
             result = {}
+                        continue  # Tenta novamente com a nova chave
+                    else:
+                        self.logger.error("Erro de API e apenas uma chave disponível. Abortando.")
+                        db.update_gemini_quota(self.current_key_index, 999999, True)
+                        return None # Aborta se não há mais chaves
             current_section = None
             current_content = []
             
