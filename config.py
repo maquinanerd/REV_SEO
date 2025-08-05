@@ -102,11 +102,6 @@ class Config:
     def tmdb_image_url(self) -> str:
         return os.getenv("TMDB_IMAGE_URL", "https://image.tmdb.org/t/p")
     
-    # Rank Math Configuration
-    @property
-    def rank_math_api_key(self) -> str:
-        return os.getenv("RANK_MATH_API_KEY", "")
-    
     # Flask Configuration
     @property
     def session_secret(self) -> str:
@@ -166,9 +161,6 @@ class Config:
         
         if not self.tmdb_api_key:
             errors.append("TMDB_API_KEY não configurado")
-        
-        if not self.rank_math_api_key or self.rank_math_api_key == "sua_chave_api_do_rank_math_aqui":
-            self.logger.warning("RANK_MATH_API_KEY não configurado ou está com o valor padrão. A indexação instantânea será desativada.")
         
         if errors:
             error_msg = "Configurações faltando:\n" + "\n".join(f"- {error}" for error in errors)

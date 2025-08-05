@@ -464,55 +464,5 @@ class WordPressClient:
             self.logger.error(f"Erro ao buscar post pela URL {post_url}: {e}")
             return None
 
-    def submit_to_instant_indexing(self, post_url: str) -> bool:
-        """
-        Submete uma URL para a API de Indexação Instantânea do Rank Math.
-
-        Args:
-            post_url: A URL completa do post a ser indexado.
-
-        Returns:
-            True se a submissão foi bem-sucedida, False caso contrário.
-        """
-        # Se a chave da API do Rank Math não estiver configurada, desativa a funcionalidade.
-        if not config.rank_math_api_key:
-            self.logger.warning("Chave da API do Rank Math não configurada. Pulando indexação instantânea.")
-            return False
-            
-        # Endpoint fornecido pelo plugin Rank Math
-        indexing_endpoint = f"{self.base_url}/wp-json/rankmath/v1/instantIndexing"
-        
-        # O endpoint do Rank Math requer a URL e a chave da API no corpo da requisição.
-        data = {
-            'url': post_url,
-            'key': config.rank_math_api_key
-        }
-        
-        try:
-            self.logger.info(f"Enviando URL para o Rank Math Instant Indexing: {post_url}")
-            response = self.session.post(indexing_endpoint, json=data)
-            response.raise_for_status()
-            
-            response_data = response.json()
-            self.logger.info(f"URL {post_url} submetida com sucesso para indexação. Resposta: {response_data}")
-            
-            # O Rank Math pode retornar um erro na resposta JSON mesmo com status 200
-            if response_data.get("error"):
-                self.logger.error(f"Erro retornado pela API do Rank Math: {response_data['error']}")
-                return False
-                
-            return True
-            
-        except requests.exceptions.HTTPError as e:
-            if e.response.status_code == 404:
-                self.logger.error("Erro 404 (Not Found) ao acessar a API do Rank Math.")
-                self.logger.error("Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.")
-            else:
-                self.logger.error(f"Erro HTTP ao submeter URL para indexação instantânea: {e}")
-            return False
-        except Exception as e:
-            self.logger.error(f"Erro geral ao submeter URL para indexação instantânea: {e}")
-            return False
-
 # Instância global do cliente WordPress
 wordpress_client = WordPressClient()

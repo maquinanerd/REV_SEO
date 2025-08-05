@@ -36053,3 +36053,1233 @@ message: "API key not valid. Please pass a valid API key."
 2025-08-04 21:15:15 - wordpress_client - INFO - Conectado como: Abel
 2025-08-04 21:16:14 - wordpress_client - INFO - Conectado como: Abel
 2025-08-04 21:16:15 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:17:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:17:15 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:18:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:18:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:18:56 - __main__ - INFO - Executando otimização agendada...
+2025-08-04 21:18:56 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-04 21:18:57 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:18:57 - seo_optimizer - INFO - Último post processado: 11508
+2025-08-04 21:18:57 - wordpress_client - INFO - Buscando posts novos desde ID 11508
+2025-08-04 21:19:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:19:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:19:18 - wordpress_client - INFO - Encontrados 1 posts novos
+2025-08-04 21:19:18 - seo_optimizer - INFO - Verificando 1 posts por duplicatas...
+2025-08-04 21:19:18 - seo_optimizer - INFO - Post otimizável encontrado: 11513 - Manny Jacinto Quer Retornar como Lorde Sith em Star Wars: The Acolyte Após Cancelamento da Disney+
+2025-08-04 21:19:18 - seo_optimizer - INFO - --- Processando post 11513: Manny Jacinto Quer Retornar como Lorde Sith em Star Wars: The Acolyte Após Cancelamento da Disney+ ---
+2025-08-04 21:19:18 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-04 21:19:18 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-04 21:19:18 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-04 21:19:26 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-04 21:19:26 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-04 21:19:26 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-04 21:19:26 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-04 21:19:26 - wordpress_client - INFO - Excerpt truncado: 373 → 130 caracteres
+2025-08-04 21:19:26 - wordpress_client - INFO - Atualizando conteúdo do post 11513
+2025-08-04 21:19:28 - wordpress_client - INFO - Post 11513 atualizado com sucesso
+2025-08-04 21:19:28 - wordpress_client - INFO - Meta description truncada: 373 → 130 caracteres
+2025-08-04 21:19:28 - wordpress_client - INFO - Atualizando meta Yoast do post 11513
+2025-08-04 21:19:29 - wordpress_client - INFO - Meta Yoast do post 11513 atualizada
+2025-08-04 21:19:29 - database - INFO - Log registrado: optimization - success para post 11513
+2025-08-04 21:19:29 - database - INFO - Último post processado atualizado para ID: 11513
+2025-08-04 21:19:29 - seo_optimizer - INFO - Submetendo post 11513 para a API de Indexação Instantânea...
+2025-08-04 21:19:29 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/manny-jacinto-o-desejo-de-retornar-como-vilao-sith-em-star-wars-the-acolyte-apos-cancelamento/
+2025-08-04 21:19:30 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-04 21:19:30 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-04 21:19:30 - database - INFO - Log registrado: instant_indexing - error para post 11513
+2025-08-04 21:19:30 - seo_optimizer - INFO - Post 11513 otimizado com sucesso em 10.92s
+2025-08-04 21:19:30 - seo_optimizer - INFO - SEO Score: 100
+2025-08-04 21:19:30 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 33.72s ===
+2025-08-04 21:19:30 - seo_optimizer - INFO - Posts encontrados: 1
+2025-08-04 21:19:30 - seo_optimizer - INFO - Posts processados: 1
+2025-08-04 21:19:30 - seo_optimizer - INFO - Sucessos: 1
+2025-08-04 21:19:30 - seo_optimizer - INFO - Erros: 0
+2025-08-04 21:19:30 - __main__ - INFO - Resumo: 1 sucessos, 0 erros em 33.72s
+2025-08-04 21:19:30 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-04T21:18:56.512976', 'posts_found': 1, 'posts_processed': 1, 'posts_success': 1, 'posts_error': 0, 'processing_time': 33.71790528297424, 'errors': []}
+2025-08-04 21:19:30 - __main__ - INFO - Otimização concluída. Próxima execução: 21:19
+2025-08-04 21:20:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:20:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:21:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:21:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:22:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:22:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:23:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:23:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:24:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:24:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:25:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:25:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:26:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:26:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:27:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:27:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:28:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:28:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:29:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:29:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:30:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:30:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:31:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:31:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:32:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:32:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:33:35 - config - WARNING - RANK_MATH_API_KEY não configurado ou está com o valor padrão. A indexação instantânea será desativada.
+2025-08-04 21:33:35 - config - INFO - Configuração validada com sucesso
+2025-08-04 21:33:35 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-04 21:33:35 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-04 21:33:35 - config - INFO - TMDB configurado: Sim
+2025-08-04 21:33:35 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-04 21:33:36 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-08-04 21:33:36 - __main__ - INFO - Buscando estatísticas do banco de dados...
+2025-08-05 09:37:29 - config - WARNING - RANK_MATH_API_KEY não configurado ou está com o valor padrão. A indexação instantânea será desativada.
+2025-08-05 09:37:29 - config - INFO - Configuração validada com sucesso
+2025-08-05 09:37:29 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-05 09:37:29 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-05 09:37:29 - config - INFO - TMDB configurado: Sim
+2025-08-05 09:37:29 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-05 09:37:37 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-08-05 09:37:37 - waitress - INFO - Serving on http://0.0.0.0:5000
+2025-08-05 09:38:14 - config - WARNING - RANK_MATH_API_KEY não configurado ou está com o valor padrão. A indexação instantânea será desativada.
+2025-08-05 09:38:14 - config - INFO - Configuração validada com sucesso
+2025-08-05 09:38:14 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-05 09:38:14 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-05 09:38:14 - config - INFO - TMDB configurado: Sim
+2025-08-05 09:38:14 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-05 09:38:15 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-08-05 09:38:15 - __main__ - INFO - WordPress SEO Optimizer - Modo PRODUÇÃO
+2025-08-05 09:38:15 - __main__ - INFO - ==================================================
+2025-08-05 09:38:15 - __main__ - INFO - Validando configuração...
+2025-08-05 09:38:15 - config - WARNING - RANK_MATH_API_KEY não configurado ou está com o valor padrão. A indexação instantânea será desativada.
+2025-08-05 09:38:15 - config - INFO - Configuração validada com sucesso
+2025-08-05 09:38:15 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-05 09:38:15 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-05 09:38:15 - config - INFO - TMDB configurado: Sim
+2025-08-05 09:38:15 - __main__ - INFO - Agendando execução a cada 15 minutos
+2025-08-05 09:38:15 - __main__ - INFO - Executando primeira otimização...
+2025-08-05 09:38:15 - __main__ - INFO - Executando otimização agendada...
+2025-08-05 09:38:15 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-05 09:38:38 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:38:38 - seo_optimizer - INFO - Último post processado: 11513
+2025-08-05 09:38:38 - wordpress_client - INFO - Buscando posts novos desde ID 11513
+2025-08-05 09:38:38 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:38:58 - wordpress_client - INFO - Encontrados 8 posts novos
+2025-08-05 09:38:58 - seo_optimizer - INFO - Verificando 8 posts por duplicatas...
+2025-08-05 09:38:58 - seo_optimizer - INFO - Post otimizável encontrado: 11532 - Vibranium: Olhos de Wakanda Revela 3 Aprimoramentos Chave para o Metal Mais Cobiçado do UCM
+2025-08-05 09:38:58 - seo_optimizer - INFO - Post otimizável encontrado: 11530 - Superman (2025) Voa Alto: Quantas Vezes a DC Superou a Marvel na Bilheteria de Verão?
+2025-08-05 09:38:58 - seo_optimizer - INFO - Post otimizável encontrado: 11528 - Doutor Destino e Franklin Richards no MCU: Entenda a Teoria Chocante do Poder Cósmico
+2025-08-05 09:38:58 - seo_optimizer - INFO - Post otimizável encontrado: 11526 - Chad Michael Murray Revela o Destino Inesperado de Jack Thompson Após o Fim de **Agent Carter**
+2025-08-05 09:38:58 - seo_optimizer - INFO - Post otimizável encontrado: 11524 - O Futuro de Boba Fett em Star Wars: Temuera Morrison Confirma Ausência e Fãs Podem Mudar o Jogo!
+2025-08-05 09:38:58 - seo_optimizer - INFO - Post otimizável encontrado: 11522 - O Retorno Sombrio do **Justiceiro** no MCU: Jon Bernthal Exibe Novo Uniforme e Detalhes Exclusivos
+2025-08-05 09:38:58 - seo_optimizer - INFO - Post otimizável encontrado: 11520 - Análise WWE Raw (4 de Agosto): Destaques, Surpresas e Reviravoltas Pós-SummerSlam
+2025-08-05 09:38:58 - seo_optimizer - INFO - Post otimizável encontrado: 11518 - WWE Raw: Becky Lynch Lança &#8216;Queimada do Ano&#8217; em Nikki Bella e Incendeia Rivalidade
+2025-08-05 09:38:58 - seo_optimizer - INFO - --- Processando post 11532: Vibranium: Olhos de Wakanda Revela 3 Aprimoramentos Chave para o Metal Mais Cobiçado do UCM ---
+2025-08-05 09:38:58 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:38:58 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:38:58 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:38:58 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:39:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:39:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:39:20 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:39:20 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:39:20 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:39:20 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:39:20 - wordpress_client - INFO - Excerpt truncado: 336 → 134 caracteres
+2025-08-05 09:39:20 - wordpress_client - INFO - Atualizando conteúdo do post 11532
+2025-08-05 09:39:22 - wordpress_client - INFO - Post 11532 atualizado com sucesso
+2025-08-05 09:39:22 - wordpress_client - INFO - Meta description truncada: 336 → 134 caracteres
+2025-08-05 09:39:22 - wordpress_client - INFO - Atualizando meta Yoast do post 11532
+2025-08-05 09:39:23 - wordpress_client - INFO - Meta Yoast do post 11532 atualizada
+2025-08-05 09:39:23 - database - INFO - Log registrado: optimization - success para post 11532
+2025-08-05 09:39:23 - database - INFO - Último post processado atualizado para ID: 11532
+2025-08-05 09:39:23 - seo_optimizer - INFO - Submetendo post 11532 para a API de Indexação Instantânea...
+2025-08-05 09:39:23 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/vibranium-olhos-de-wakanda-revela-3-aprimoramentos-chave-para-o-metal-mais-cobicado-do-ucm/
+2025-08-05 09:39:24 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:39:24 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:39:24 - database - INFO - Log registrado: instant_indexing - error para post 11532
+2025-08-05 09:39:24 - seo_optimizer - INFO - Post 11532 otimizado com sucesso em 25.55s
+2025-08-05 09:39:24 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 09:39:24 - seo_optimizer - INFO - --- Processando post 11530: Superman (2025) Voa Alto: Quantas Vezes a DC Superou a Marvel na Bilheteria de Verão? ---
+2025-08-05 09:39:24 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:39:24 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:39:24 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:39:56 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:39:56 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:39:56 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:39:56 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:39:56 - wordpress_client - INFO - Excerpt truncado: 287 → 140 caracteres
+2025-08-05 09:39:56 - wordpress_client - INFO - Atualizando conteúdo do post 11530
+2025-08-05 09:39:59 - wordpress_client - INFO - Post 11530 atualizado com sucesso
+2025-08-05 09:39:59 - wordpress_client - INFO - Meta description truncada: 287 → 140 caracteres
+2025-08-05 09:39:59 - wordpress_client - INFO - Atualizando meta Yoast do post 11530
+2025-08-05 09:40:00 - wordpress_client - INFO - Meta Yoast do post 11530 atualizada
+2025-08-05 09:40:00 - database - INFO - Log registrado: optimization - success para post 11530
+2025-08-05 09:40:00 - database - INFO - Último post processado atualizado para ID: 11530
+2025-08-05 09:40:00 - seo_optimizer - INFO - Submetendo post 11530 para a API de Indexação Instantânea...
+2025-08-05 09:40:00 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/superman-2025-voa-alto-quantas-vezes-a-dc-superou-a-marvel-na-bilheteria-de-verao/
+2025-08-05 09:40:01 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:40:01 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:40:01 - database - INFO - Log registrado: instant_indexing - error para post 11530
+2025-08-05 09:40:01 - seo_optimizer - INFO - Post 11530 otimizado com sucesso em 35.37s
+2025-08-05 09:40:01 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 09:40:01 - seo_optimizer - INFO - --- Processando post 11528: Doutor Destino e Franklin Richards no MCU: Entenda a Teoria Chocante do Poder Cósmico ---
+2025-08-05 09:40:01 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:40:01 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:40:01 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:40:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:40:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:40:52 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:40:52 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:40:52 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:40:52 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:40:52 - wordpress_client - INFO - Excerpt truncado: 325 → 176 caracteres
+2025-08-05 09:40:52 - wordpress_client - INFO - Atualizando conteúdo do post 11528
+2025-08-05 09:40:54 - wordpress_client - INFO - Post 11528 atualizado com sucesso
+2025-08-05 09:40:54 - wordpress_client - INFO - Meta description truncada: 325 → 176 caracteres
+2025-08-05 09:40:54 - wordpress_client - INFO - Atualizando meta Yoast do post 11528
+2025-08-05 09:40:55 - wordpress_client - INFO - Meta Yoast do post 11528 atualizada
+2025-08-05 09:40:55 - database - INFO - Log registrado: optimization - success para post 11528
+2025-08-05 09:40:55 - database - INFO - Último post processado atualizado para ID: 11528
+2025-08-05 09:40:55 - seo_optimizer - INFO - Submetendo post 11528 para a API de Indexação Instantânea...
+2025-08-05 09:40:55 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/doutor-destino-e-franklin-richards-no-mcu-entenda-a-teoria-chocante-do-poder-cosmico/
+2025-08-05 09:40:56 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:40:56 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:40:57 - database - INFO - Log registrado: instant_indexing - error para post 11528
+2025-08-05 09:40:57 - seo_optimizer - INFO - Post 11528 otimizado com sucesso em 54.41s
+2025-08-05 09:40:57 - seo_optimizer - INFO - SEO Score: 60
+2025-08-05 09:40:57 - seo_optimizer - INFO - --- Processando post 11526: Chad Michael Murray Revela o Destino Inesperado de Jack Thompson Após o Fim de **Agent Carter** ---
+2025-08-05 09:40:57 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:40:57 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:40:57 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:41:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:41:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:41:43 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:41:43 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:41:43 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:41:43 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:41:43 - wordpress_client - INFO - Excerpt truncado: 403 → 175 caracteres
+2025-08-05 09:41:43 - wordpress_client - INFO - Atualizando conteúdo do post 11526
+2025-08-05 09:41:45 - wordpress_client - INFO - Post 11526 atualizado com sucesso
+2025-08-05 09:41:45 - wordpress_client - INFO - Meta description truncada: 403 → 175 caracteres
+2025-08-05 09:41:45 - wordpress_client - INFO - Atualizando meta Yoast do post 11526
+2025-08-05 09:41:47 - wordpress_client - INFO - Meta Yoast do post 11526 atualizada
+2025-08-05 09:41:48 - database - INFO - Log registrado: optimization - success para post 11526
+2025-08-05 09:41:48 - database - INFO - Último post processado atualizado para ID: 11526
+2025-08-05 09:41:48 - seo_optimizer - INFO - Submetendo post 11526 para a API de Indexação Instantânea...
+2025-08-05 09:41:48 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/chad-michael-murray-revela-o-destino-inesperado-de-jack-thompson-apos-o-fim-de-agent-carter/
+2025-08-05 09:41:49 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:41:49 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:41:49 - database - INFO - Log registrado: instant_indexing - error para post 11526
+2025-08-05 09:41:49 - seo_optimizer - INFO - Post 11526 otimizado com sucesso em 50.98s
+2025-08-05 09:41:49 - seo_optimizer - INFO - SEO Score: 60
+2025-08-05 09:41:49 - seo_optimizer - INFO - --- Processando post 11524: O Futuro de Boba Fett em Star Wars: Temuera Morrison Confirma Ausência e Fãs Podem Mudar o Jogo! ---
+2025-08-05 09:41:49 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:41:49 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:41:49 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:42:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:42:18 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:42:21 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:42:21 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:42:21 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:42:21 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:42:21 - wordpress_client - INFO - Excerpt truncado: 390 → 111 caracteres
+2025-08-05 09:42:21 - wordpress_client - INFO - Atualizando conteúdo do post 11524
+2025-08-05 09:42:23 - wordpress_client - INFO - Post 11524 atualizado com sucesso
+2025-08-05 09:42:23 - wordpress_client - INFO - Meta description truncada: 390 → 111 caracteres
+2025-08-05 09:42:23 - wordpress_client - INFO - Atualizando meta Yoast do post 11524
+2025-08-05 09:42:24 - wordpress_client - INFO - Meta Yoast do post 11524 atualizada
+2025-08-05 09:42:24 - database - INFO - Log registrado: optimization - success para post 11524
+2025-08-05 09:42:24 - database - INFO - Último post processado atualizado para ID: 11524
+2025-08-05 09:42:24 - seo_optimizer - INFO - Submetendo post 11524 para a API de Indexação Instantânea...
+2025-08-05 09:42:24 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/o-futuro-de-boba-fett-em-star-wars-temuera-morrison-confirma-ausencia-e-fas-podem-mudar-o-jogo/
+2025-08-05 09:42:25 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:42:25 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:42:25 - database - INFO - Log registrado: instant_indexing - error para post 11524
+2025-08-05 09:42:25 - seo_optimizer - INFO - Post 11524 otimizado com sucesso em 35.03s
+2025-08-05 09:42:25 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 09:42:25 - seo_optimizer - INFO - --- Processando post 11522: O Retorno Sombrio do **Justiceiro** no MCU: Jon Bernthal Exibe Novo Uniforme e Detalhes Exclusivos ---
+2025-08-05 09:42:25 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:42:25 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:42:25 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:43:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:43:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:43:48 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:43:48 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:43:48 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:43:48 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:43:48 - wordpress_client - INFO - Excerpt truncado: 320 → 180 caracteres
+2025-08-05 09:43:48 - wordpress_client - INFO - Atualizando conteúdo do post 11522
+2025-08-05 09:43:51 - wordpress_client - INFO - Post 11522 atualizado com sucesso
+2025-08-05 09:43:51 - wordpress_client - INFO - Meta description truncada: 320 → 180 caracteres
+2025-08-05 09:43:51 - wordpress_client - INFO - Atualizando meta Yoast do post 11522
+2025-08-05 09:43:52 - wordpress_client - INFO - Meta Yoast do post 11522 atualizada
+2025-08-05 09:43:52 - database - INFO - Log registrado: optimization - success para post 11522
+2025-08-05 09:43:52 - database - INFO - Último post processado atualizado para ID: 11522
+2025-08-05 09:43:52 - seo_optimizer - INFO - Submetendo post 11522 para a API de Indexação Instantânea...
+2025-08-05 09:43:52 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/o-retorno-sombrio-do-justiceiro-no-mcu-jon-bernthal-exibe-novo-uniforme-e-detalhes-exclusivos/
+2025-08-05 09:43:53 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:43:53 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:43:53 - database - INFO - Log registrado: instant_indexing - error para post 11522
+2025-08-05 09:43:53 - seo_optimizer - INFO - Post 11522 otimizado com sucesso em 86.53s
+2025-08-05 09:43:53 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 09:43:53 - seo_optimizer - INFO - --- Processando post 11520: Análise WWE Raw (4 de Agosto): Destaques, Surpresas e Reviravoltas Pós-SummerSlam ---
+2025-08-05 09:43:53 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:43:53 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:43:53 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:44:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:44:18 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:44:28 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:44:28 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:44:28 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:44:28 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:44:28 - wordpress_client - INFO - Excerpt truncado: 343 → 181 caracteres
+2025-08-05 09:44:28 - wordpress_client - INFO - Atualizando conteúdo do post 11520
+2025-08-05 09:44:30 - wordpress_client - INFO - Post 11520 atualizado com sucesso
+2025-08-05 09:44:30 - wordpress_client - INFO - Meta description truncada: 343 → 181 caracteres
+2025-08-05 09:44:30 - wordpress_client - INFO - Atualizando meta Yoast do post 11520
+2025-08-05 09:44:31 - wordpress_client - INFO - Meta Yoast do post 11520 atualizada
+2025-08-05 09:44:31 - database - INFO - Log registrado: optimization - success para post 11520
+2025-08-05 09:44:31 - database - INFO - Último post processado atualizado para ID: 11520
+2025-08-05 09:44:31 - seo_optimizer - INFO - Submetendo post 11520 para a API de Indexação Instantânea...
+2025-08-05 09:44:31 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/analise-wwe-raw-4-de-agosto-destaques-surpresas-e-reviravoltas-pos-summerslam/
+2025-08-05 09:44:32 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:44:32 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:44:32 - database - INFO - Log registrado: instant_indexing - error para post 11520
+2025-08-05 09:44:32 - seo_optimizer - INFO - Post 11520 otimizado com sucesso em 37.76s
+2025-08-05 09:44:32 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 09:44:32 - seo_optimizer - INFO - --- Processando post 11518: WWE Raw: Becky Lynch Lança &#8216;Queimada do Ano&#8217; em Nikki Bella e Incendeia Rivalidade ---
+2025-08-05 09:44:32 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:44:32 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:44:32 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:45:09 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:45:09 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:45:09 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:45:09 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:45:09 - wordpress_client - INFO - Excerpt truncado: 490 → 143 caracteres
+2025-08-05 09:45:09 - wordpress_client - INFO - Atualizando conteúdo do post 11518
+2025-08-05 09:45:12 - wordpress_client - INFO - Post 11518 atualizado com sucesso
+2025-08-05 09:45:12 - wordpress_client - INFO - Meta description truncada: 490 → 143 caracteres
+2025-08-05 09:45:12 - wordpress_client - INFO - Atualizando meta Yoast do post 11518
+2025-08-05 09:45:13 - wordpress_client - INFO - Meta Yoast do post 11518 atualizada
+2025-08-05 09:45:13 - database - INFO - Log registrado: optimization - success para post 11518
+2025-08-05 09:45:13 - database - INFO - Último post processado atualizado para ID: 11518
+2025-08-05 09:45:13 - seo_optimizer - INFO - Submetendo post 11518 para a API de Indexação Instantânea...
+2025-08-05 09:45:13 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/wwe-raw-becky-lynch-lanca-queimada-do-ano-em-nikki-bella-e-incendeia-rivalidade/
+2025-08-05 09:45:16 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:45:16 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:45:16 - database - INFO - Log registrado: instant_indexing - error para post 11518
+2025-08-05 09:45:16 - seo_optimizer - INFO - Post 11518 otimizado com sucesso em 40.50s
+2025-08-05 09:45:16 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 09:45:16 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 420.75s ===
+2025-08-05 09:45:16 - seo_optimizer - INFO - Posts encontrados: 8
+2025-08-05 09:45:16 - seo_optimizer - INFO - Posts processados: 8
+2025-08-05 09:45:16 - seo_optimizer - INFO - Sucessos: 8
+2025-08-05 09:45:16 - seo_optimizer - INFO - Erros: 0
+2025-08-05 09:45:16 - __main__ - INFO - Resumo: 8 sucessos, 0 erros em 420.75s
+2025-08-05 09:45:16 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-05T09:38:15.710225', 'posts_found': 8, 'posts_processed': 8, 'posts_success': 8, 'posts_error': 0, 'processing_time': 420.7458791732788, 'errors': []}
+2025-08-05 09:45:16 - __main__ - INFO - Otimização concluída. Próxima execução: 09:45
+2025-08-05 09:45:16 - __main__ - INFO - Sistema iniciado! Pressione Ctrl+C para parar
+2025-08-05 09:45:16 - __main__ - INFO - ⏰ Próxima execução em 15 minutos
+2025-08-05 09:53:16 - __main__ - INFO - Executando otimização agendada...
+2025-08-05 09:53:16 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-05 09:53:17 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 09:53:17 - seo_optimizer - INFO - Último post processado: 11518
+2025-08-05 09:53:17 - wordpress_client - INFO - Buscando posts novos desde ID 11518
+2025-08-05 09:53:38 - wordpress_client - INFO - Encontrados 7 posts novos
+2025-08-05 09:53:38 - seo_optimizer - INFO - Verificando 7 posts por duplicatas...
+2025-08-05 09:53:38 - seo_optimizer - INFO - Post otimizável encontrado: 11532 - Olhos de Wakanda: 3 Novos Usos do Vibranium que Mudam o UCM para Sempre
+2025-08-05 09:53:38 - seo_optimizer - INFO - Post otimizável encontrado: 11530 - Superman (2025) Domina a Bilheteria de Verão: DC Supera a Marvel em Raros Triunfos
+2025-08-05 09:53:38 - seo_optimizer - INFO - Post otimizável encontrado: 11528 - Doutor Destino e Franklin Richards: Teoria Chocante do Poder Cósmico no MCU
+2025-08-05 09:53:38 - seo_optimizer - INFO - Post otimizável encontrado: 11526 - Chad Michael Murray revela o destino de Jack Thompson em Agent Carter: Uma possível volta ao MCU?
+2025-08-05 09:53:38 - seo_optimizer - INFO - Post otimizável encontrado: 11524 - Boba Fett em Star Wars: Futuro Incerto Após Declaração de Temuera Morrison
+2025-08-05 09:53:38 - seo_optimizer - INFO - Post otimizável encontrado: 11522 - Retorno Sombrio do Justiceiro no MCU: Novo Uniforme, Data e Detalhes Exclusivos de Jon Bernthal
+2025-08-05 09:53:38 - seo_optimizer - INFO - Post otimizável encontrado: 11520 - Análise WWE Raw (4 de Agosto): Resultados, Destaques e Rivalidades Após o SummerSlam
+2025-08-05 09:53:38 - seo_optimizer - INFO - --- Processando post 11532: Olhos de Wakanda: 3 Novos Usos do Vibranium que Mudam o UCM para Sempre ---
+2025-08-05 09:53:38 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:53:38 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:53:38 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:54:03 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:54:03 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:54:03 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:54:03 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:54:03 - wordpress_client - INFO - Excerpt truncado: 287 → 170 caracteres
+2025-08-05 09:54:03 - wordpress_client - INFO - Atualizando conteúdo do post 11532
+2025-08-05 09:54:06 - wordpress_client - INFO - Post 11532 atualizado com sucesso
+2025-08-05 09:54:06 - wordpress_client - INFO - Meta description truncada: 287 → 170 caracteres
+2025-08-05 09:54:06 - wordpress_client - INFO - Atualizando meta Yoast do post 11532
+2025-08-05 09:54:07 - wordpress_client - INFO - Meta Yoast do post 11532 atualizada
+2025-08-05 09:54:07 - database - INFO - Log registrado: optimization - success para post 11532
+2025-08-05 09:54:07 - database - INFO - Último post processado atualizado para ID: 11532
+2025-08-05 09:54:07 - seo_optimizer - INFO - Submetendo post 11532 para a API de Indexação Instantânea...
+2025-08-05 09:54:07 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/vibranium-olhos-de-wakanda-revela-3-aprimoramentos-chave-para-o-metal-mais-cobicado-do-ucm/
+2025-08-05 09:54:08 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:54:08 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:54:08 - database - INFO - Log registrado: instant_indexing - error para post 11532
+2025-08-05 09:54:08 - seo_optimizer - INFO - Post 11532 otimizado com sucesso em 29.12s
+2025-08-05 09:54:08 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 09:54:08 - seo_optimizer - INFO - --- Processando post 11530: Superman (2025) Domina a Bilheteria de Verão: DC Supera a Marvel em Raros Triunfos ---
+2025-08-05 09:54:08 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:54:08 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:54:08 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:54:42 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:54:42 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:54:42 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:54:42 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:54:42 - wordpress_client - INFO - Excerpt truncado: 336 → 180 caracteres
+2025-08-05 09:54:42 - wordpress_client - INFO - Atualizando conteúdo do post 11530
+2025-08-05 09:54:45 - wordpress_client - INFO - Post 11530 atualizado com sucesso
+2025-08-05 09:54:45 - wordpress_client - INFO - Meta description truncada: 336 → 180 caracteres
+2025-08-05 09:54:45 - wordpress_client - INFO - Atualizando meta Yoast do post 11530
+2025-08-05 09:54:46 - wordpress_client - INFO - Meta Yoast do post 11530 atualizada
+2025-08-05 09:54:46 - database - INFO - Log registrado: optimization - success para post 11530
+2025-08-05 09:54:46 - database - INFO - Último post processado atualizado para ID: 11530
+2025-08-05 09:54:46 - seo_optimizer - INFO - Submetendo post 11530 para a API de Indexação Instantânea...
+2025-08-05 09:54:46 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/superman-2025-voa-alto-quantas-vezes-a-dc-superou-a-marvel-na-bilheteria-de-verao/
+2025-08-05 09:54:47 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:54:47 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:54:47 - database - INFO - Log registrado: instant_indexing - error para post 11530
+2025-08-05 09:54:47 - seo_optimizer - INFO - Post 11530 otimizado com sucesso em 37.86s
+2025-08-05 09:54:47 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 09:54:47 - seo_optimizer - INFO - --- Processando post 11528: Doutor Destino e Franklin Richards: Teoria Chocante do Poder Cósmico no MCU ---
+2025-08-05 09:54:47 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:54:47 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:54:47 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:55:03 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:55:03 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:55:03 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:55:03 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:55:03 - wordpress_client - INFO - Excerpt truncado: 293 → 177 caracteres
+2025-08-05 09:55:03 - wordpress_client - INFO - Atualizando conteúdo do post 11528
+2025-08-05 09:55:06 - wordpress_client - INFO - Post 11528 atualizado com sucesso
+2025-08-05 09:55:06 - wordpress_client - INFO - Meta description truncada: 293 → 177 caracteres
+2025-08-05 09:55:06 - wordpress_client - INFO - Atualizando meta Yoast do post 11528
+2025-08-05 09:55:07 - wordpress_client - INFO - Meta Yoast do post 11528 atualizada
+2025-08-05 09:55:08 - database - INFO - Log registrado: optimization - success para post 11528
+2025-08-05 09:55:08 - database - INFO - Último post processado atualizado para ID: 11528
+2025-08-05 09:55:08 - seo_optimizer - INFO - Submetendo post 11528 para a API de Indexação Instantânea...
+2025-08-05 09:55:08 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/doutor-destino-e-franklin-richards-no-mcu-entenda-a-teoria-chocante-do-poder-cosmico/
+2025-08-05 09:55:08 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:55:08 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:55:08 - database - INFO - Log registrado: instant_indexing - error para post 11528
+2025-08-05 09:55:08 - seo_optimizer - INFO - Post 11528 otimizado com sucesso em 20.19s
+2025-08-05 09:55:08 - seo_optimizer - INFO - SEO Score: 60
+2025-08-05 09:55:08 - seo_optimizer - INFO - --- Processando post 11526: Chad Michael Murray revela o destino de Jack Thompson em Agent Carter: Uma possível volta ao MCU? ---
+2025-08-05 09:55:08 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:55:08 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:55:08 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:55:24 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:55:24 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:55:24 - seo_optimizer - INFO - Cálculo do SEO Score: 40/100. Fatores: Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:55:24 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:55:24 - wordpress_client - INFO - Excerpt truncado: 441 → 155 caracteres
+2025-08-05 09:55:24 - wordpress_client - INFO - Atualizando conteúdo do post 11526
+2025-08-05 09:55:26 - wordpress_client - INFO - Post 11526 atualizado com sucesso
+2025-08-05 09:55:26 - wordpress_client - INFO - Meta description truncada: 441 → 155 caracteres
+2025-08-05 09:55:26 - wordpress_client - INFO - Atualizando meta Yoast do post 11526
+2025-08-05 09:55:27 - wordpress_client - INFO - Meta Yoast do post 11526 atualizada
+2025-08-05 09:55:27 - database - INFO - Log registrado: optimization - success para post 11526
+2025-08-05 09:55:27 - database - INFO - Último post processado atualizado para ID: 11526
+2025-08-05 09:55:27 - seo_optimizer - INFO - Submetendo post 11526 para a API de Indexação Instantânea...
+2025-08-05 09:55:27 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/chad-michael-murray-revela-o-destino-inesperado-de-jack-thompson-apos-o-fim-de-agent-carter/
+2025-08-05 09:55:28 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:55:28 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:55:28 - database - INFO - Log registrado: instant_indexing - error para post 11526
+2025-08-05 09:55:28 - seo_optimizer - INFO - Post 11526 otimizado com sucesso em 18.75s
+2025-08-05 09:55:28 - seo_optimizer - INFO - SEO Score: 40
+2025-08-05 09:55:28 - seo_optimizer - INFO - --- Processando post 11524: Boba Fett em Star Wars: Futuro Incerto Após Declaração de Temuera Morrison ---
+2025-08-05 09:55:28 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:55:28 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:55:28 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:55:45 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:55:45 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:55:45 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:55:45 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:55:45 - wordpress_client - INFO - Excerpt truncado: 271 → 113 caracteres
+2025-08-05 09:55:45 - wordpress_client - INFO - Atualizando conteúdo do post 11524
+2025-08-05 09:55:48 - wordpress_client - INFO - Post 11524 atualizado com sucesso
+2025-08-05 09:55:48 - wordpress_client - INFO - Meta description truncada: 271 → 113 caracteres
+2025-08-05 09:55:48 - wordpress_client - INFO - Atualizando meta Yoast do post 11524
+2025-08-05 09:55:49 - wordpress_client - INFO - Meta Yoast do post 11524 atualizada
+2025-08-05 09:55:49 - database - INFO - Log registrado: optimization - success para post 11524
+2025-08-05 09:55:49 - database - INFO - Último post processado atualizado para ID: 11524
+2025-08-05 09:55:49 - seo_optimizer - INFO - Submetendo post 11524 para a API de Indexação Instantânea...
+2025-08-05 09:55:49 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/o-futuro-de-boba-fett-em-star-wars-temuera-morrison-confirma-ausencia-e-fas-podem-mudar-o-jogo/
+2025-08-05 09:55:51 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:55:51 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:55:51 - database - INFO - Log registrado: instant_indexing - error para post 11524
+2025-08-05 09:55:51 - seo_optimizer - INFO - Post 11524 otimizado com sucesso em 20.75s
+2025-08-05 09:55:51 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 09:55:51 - seo_optimizer - INFO - --- Processando post 11522: Retorno Sombrio do Justiceiro no MCU: Novo Uniforme, Data e Detalhes Exclusivos de Jon Bernthal ---
+2025-08-05 09:55:51 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:55:51 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:55:51 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:56:10 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:56:10 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:56:10 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:56:10 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:56:10 - wordpress_client - INFO - Excerpt truncado: 328 → 179 caracteres
+2025-08-05 09:56:10 - wordpress_client - INFO - Atualizando conteúdo do post 11522
+2025-08-05 09:56:12 - wordpress_client - INFO - Post 11522 atualizado com sucesso
+2025-08-05 09:56:12 - wordpress_client - INFO - Meta description truncada: 328 → 179 caracteres
+2025-08-05 09:56:12 - wordpress_client - INFO - Atualizando meta Yoast do post 11522
+2025-08-05 09:56:13 - wordpress_client - INFO - Meta Yoast do post 11522 atualizada
+2025-08-05 09:56:13 - database - INFO - Log registrado: optimization - success para post 11522
+2025-08-05 09:56:14 - database - INFO - Último post processado atualizado para ID: 11522
+2025-08-05 09:56:14 - seo_optimizer - INFO - Submetendo post 11522 para a API de Indexação Instantânea...
+2025-08-05 09:56:14 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/o-retorno-sombrio-do-justiceiro-no-mcu-jon-bernthal-exibe-novo-uniforme-e-detalhes-exclusivos/
+2025-08-05 09:56:14 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:56:14 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:56:15 - database - INFO - Log registrado: instant_indexing - error para post 11522
+2025-08-05 09:56:15 - seo_optimizer - INFO - Post 11522 otimizado com sucesso em 22.77s
+2025-08-05 09:56:15 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 09:56:15 - seo_optimizer - INFO - --- Processando post 11520: Análise WWE Raw (4 de Agosto): Resultados, Destaques e Rivalidades Após o SummerSlam ---
+2025-08-05 09:56:15 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 09:56:15 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 09:56:15 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 09:56:25 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 09:56:25 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 09:56:25 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 09:56:25 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 09:56:25 - wordpress_client - INFO - Excerpt truncado: 272 → 177 caracteres
+2025-08-05 09:56:25 - wordpress_client - INFO - Atualizando conteúdo do post 11520
+2025-08-05 09:56:27 - wordpress_client - INFO - Post 11520 atualizado com sucesso
+2025-08-05 09:56:27 - wordpress_client - INFO - Meta description truncada: 272 → 177 caracteres
+2025-08-05 09:56:27 - wordpress_client - INFO - Atualizando meta Yoast do post 11520
+2025-08-05 09:56:28 - wordpress_client - INFO - Meta Yoast do post 11520 atualizada
+2025-08-05 09:56:28 - database - INFO - Log registrado: optimization - success para post 11520
+2025-08-05 09:56:28 - database - INFO - Último post processado atualizado para ID: 11520
+2025-08-05 09:56:28 - seo_optimizer - INFO - Submetendo post 11520 para a API de Indexação Instantânea...
+2025-08-05 09:56:28 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/analise-wwe-raw-4-de-agosto-destaques-surpresas-e-reviravoltas-pos-summerslam/
+2025-08-05 09:56:29 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 09:56:29 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 09:56:29 - database - INFO - Log registrado: instant_indexing - error para post 11520
+2025-08-05 09:56:29 - seo_optimizer - INFO - Post 11520 otimizado com sucesso em 13.32s
+2025-08-05 09:56:29 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 09:56:29 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 192.89s ===
+2025-08-05 09:56:29 - seo_optimizer - INFO - Posts encontrados: 7
+2025-08-05 09:56:29 - seo_optimizer - INFO - Posts processados: 7
+2025-08-05 09:56:29 - seo_optimizer - INFO - Sucessos: 7
+2025-08-05 09:56:29 - seo_optimizer - INFO - Erros: 0
+2025-08-05 09:56:29 - __main__ - INFO - Resumo: 7 sucessos, 0 erros em 192.89s
+2025-08-05 09:56:29 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-05T09:53:16.546499', 'posts_found': 7, 'posts_processed': 7, 'posts_success': 7, 'posts_error': 0, 'processing_time': 192.88823819160461, 'errors': []}
+2025-08-05 09:56:29 - __main__ - INFO - Otimização concluída. Próxima execução: 09:56
+2025-08-05 10:11:29 - __main__ - INFO - Executando otimização agendada...
+2025-08-05 10:11:29 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-05 10:11:30 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 10:11:30 - seo_optimizer - INFO - Último post processado: 11520
+2025-08-05 10:11:30 - wordpress_client - INFO - Buscando posts novos desde ID 11520
+2025-08-05 10:11:52 - wordpress_client - INFO - Encontrados 7 posts novos
+2025-08-05 10:11:52 - seo_optimizer - INFO - Verificando 7 posts por duplicatas...
+2025-08-05 10:11:52 - seo_optimizer - INFO - Post otimizável encontrado: 11549 - Jurassic World Rebirth: Cena Deletada Inédita Destaca Velociraptors Que Fizeram Falta
+2025-08-05 10:11:52 - seo_optimizer - INFO - Post otimizável encontrado: 11532 - Olhos de Wakanda: 3 Novos Usos do Vibranium que Revolucionam o UCM
+2025-08-05 10:11:52 - seo_optimizer - INFO - Post otimizável encontrado: 11530 - Superman (2025) Domina a Bilheteria de Verão: DC Supera a Marvel
+2025-08-05 10:11:52 - seo_optimizer - INFO - Post otimizável encontrado: 11528 - Teoria Marvel: Doutor Destino e o Poder Cósmico de Franklin Richards no MCU
+2025-08-05 10:11:52 - seo_optimizer - INFO - Post otimizável encontrado: 11526 - Chad Michael Murray revela futuro de Jack Thompson em Agent Carter: Retorno ao MCU é possível?
+2025-08-05 10:11:52 - seo_optimizer - INFO - Post otimizável encontrado: 11524 - O Futuro de Boba Fett em Star Wars: Temuera Morrison Confirma Ausência em Novos Projetos
+2025-08-05 10:11:52 - seo_optimizer - INFO - Post otimizável encontrado: 11522 - Retorno Sombrio do Justiceiro: Novo Uniforme, Data e Participação em Spider-Man no MCU
+2025-08-05 10:11:52 - seo_optimizer - INFO - --- Processando post 11549: Jurassic World Rebirth: Cena Deletada Inédita Destaca Velociraptors Que Fizeram Falta ---
+2025-08-05 10:11:52 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:11:52 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:11:52 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:12:03 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:12:03 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:12:03 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:12:03 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:12:03 - wordpress_client - INFO - Excerpt truncado: 462 → 149 caracteres
+2025-08-05 10:12:03 - wordpress_client - INFO - Atualizando conteúdo do post 11549
+2025-08-05 10:12:11 - wordpress_client - INFO - Post 11549 atualizado com sucesso
+2025-08-05 10:12:11 - wordpress_client - INFO - Meta description truncada: 462 → 149 caracteres
+2025-08-05 10:12:11 - wordpress_client - INFO - Atualizando meta Yoast do post 11549
+2025-08-05 10:12:14 - wordpress_client - INFO - Meta Yoast do post 11549 atualizada
+2025-08-05 10:12:14 - database - INFO - Log registrado: optimization - success para post 11549
+2025-08-05 10:12:14 - database - INFO - Último post processado atualizado para ID: 11549
+2025-08-05 10:12:14 - seo_optimizer - INFO - Submetendo post 11549 para a API de Indexação Instantânea...
+2025-08-05 10:12:14 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/jurassic-world-rebirth-cena-deletada-inedita-destaca-velociraptors-que-fizeram-falta/
+2025-08-05 10:12:15 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:12:15 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:12:15 - database - INFO - Log registrado: instant_indexing - error para post 11549
+2025-08-05 10:12:15 - seo_optimizer - INFO - Post 11549 otimizado com sucesso em 21.63s
+2025-08-05 10:12:15 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 10:12:15 - seo_optimizer - INFO - --- Processando post 11532: Olhos de Wakanda: 3 Novos Usos do Vibranium que Revolucionam o UCM ---
+2025-08-05 10:12:15 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:12:15 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:12:15 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:12:23 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:12:23 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:12:23 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:12:23 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:12:23 - wordpress_client - INFO - Excerpt truncado: 369 → 120 caracteres
+2025-08-05 10:12:23 - wordpress_client - INFO - Atualizando conteúdo do post 11532
+2025-08-05 10:12:26 - wordpress_client - INFO - Post 11532 atualizado com sucesso
+2025-08-05 10:12:26 - wordpress_client - INFO - Meta description truncada: 369 → 120 caracteres
+2025-08-05 10:12:26 - wordpress_client - INFO - Atualizando meta Yoast do post 11532
+2025-08-05 10:12:27 - wordpress_client - INFO - Meta Yoast do post 11532 atualizada
+2025-08-05 10:12:27 - database - INFO - Log registrado: optimization - success para post 11532
+2025-08-05 10:12:27 - database - INFO - Último post processado atualizado para ID: 11532
+2025-08-05 10:12:27 - seo_optimizer - INFO - Submetendo post 11532 para a API de Indexação Instantânea...
+2025-08-05 10:12:27 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/vibranium-olhos-de-wakanda-revela-3-aprimoramentos-chave-para-o-metal-mais-cobicado-do-ucm/
+2025-08-05 10:12:28 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:12:28 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:12:28 - database - INFO - Log registrado: instant_indexing - error para post 11532
+2025-08-05 10:12:28 - seo_optimizer - INFO - Post 11532 otimizado com sucesso em 11.93s
+2025-08-05 10:12:28 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:12:28 - seo_optimizer - INFO - --- Processando post 11530: Superman (2025) Domina a Bilheteria de Verão: DC Supera a Marvel ---
+2025-08-05 10:12:28 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:12:28 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:12:28 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:12:43 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:12:43 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:12:43 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:12:43 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:12:43 - wordpress_client - INFO - Excerpt truncado: 332 → 152 caracteres
+2025-08-05 10:12:43 - wordpress_client - INFO - Atualizando conteúdo do post 11530
+2025-08-05 10:12:46 - wordpress_client - INFO - Post 11530 atualizado com sucesso
+2025-08-05 10:12:46 - wordpress_client - INFO - Meta description truncada: 332 → 152 caracteres
+2025-08-05 10:12:46 - wordpress_client - INFO - Atualizando meta Yoast do post 11530
+2025-08-05 10:12:48 - wordpress_client - INFO - Meta Yoast do post 11530 atualizada
+2025-08-05 10:12:48 - database - INFO - Log registrado: optimization - success para post 11530
+2025-08-05 10:12:48 - database - INFO - Último post processado atualizado para ID: 11530
+2025-08-05 10:12:48 - seo_optimizer - INFO - Submetendo post 11530 para a API de Indexação Instantânea...
+2025-08-05 10:12:48 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/superman-2025-voa-alto-quantas-vezes-a-dc-superou-a-marvel-na-bilheteria-de-verao/
+2025-08-05 10:12:49 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:12:49 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:12:49 - database - INFO - Log registrado: instant_indexing - error para post 11530
+2025-08-05 10:12:49 - seo_optimizer - INFO - Post 11530 otimizado com sucesso em 20.02s
+2025-08-05 10:12:49 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:12:49 - seo_optimizer - INFO - --- Processando post 11528: Teoria Marvel: Doutor Destino e o Poder Cósmico de Franklin Richards no MCU ---
+2025-08-05 10:12:49 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:12:49 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:12:49 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:13:03 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:13:03 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:13:03 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:13:03 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:13:03 - wordpress_client - INFO - Excerpt truncado: 357 → 174 caracteres
+2025-08-05 10:13:03 - wordpress_client - INFO - Atualizando conteúdo do post 11528
+2025-08-05 10:13:06 - wordpress_client - INFO - Post 11528 atualizado com sucesso
+2025-08-05 10:13:06 - wordpress_client - INFO - Meta description truncada: 357 → 174 caracteres
+2025-08-05 10:13:06 - wordpress_client - INFO - Atualizando meta Yoast do post 11528
+2025-08-05 10:13:07 - wordpress_client - INFO - Meta Yoast do post 11528 atualizada
+2025-08-05 10:13:07 - database - INFO - Log registrado: optimization - success para post 11528
+2025-08-05 10:13:07 - database - INFO - Último post processado atualizado para ID: 11528
+2025-08-05 10:13:07 - seo_optimizer - INFO - Submetendo post 11528 para a API de Indexação Instantânea...
+2025-08-05 10:13:07 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/doutor-destino-e-franklin-richards-no-mcu-entenda-a-teoria-chocante-do-poder-cosmico/
+2025-08-05 10:13:08 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:13:08 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:13:08 - database - INFO - Log registrado: instant_indexing - error para post 11528
+2025-08-05 10:13:08 - seo_optimizer - INFO - Post 11528 otimizado com sucesso em 17.50s
+2025-08-05 10:13:08 - seo_optimizer - INFO - SEO Score: 60
+2025-08-05 10:13:08 - seo_optimizer - INFO - --- Processando post 11526: Chad Michael Murray revela futuro de Jack Thompson em Agent Carter: Retorno ao MCU é possível? ---
+2025-08-05 10:13:08 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:13:08 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:13:08 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:14:29 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:14:29 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:14:29 - seo_optimizer - INFO - Cálculo do SEO Score: 40/100. Fatores: Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:14:29 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:14:29 - wordpress_client - INFO - Excerpt truncado: 373 → 158 caracteres
+2025-08-05 10:14:29 - wordpress_client - INFO - Atualizando conteúdo do post 11526
+2025-08-05 10:14:33 - wordpress_client - INFO - Post 11526 atualizado com sucesso
+2025-08-05 10:14:33 - wordpress_client - INFO - Meta description truncada: 373 → 158 caracteres
+2025-08-05 10:14:33 - wordpress_client - INFO - Atualizando meta Yoast do post 11526
+2025-08-05 10:14:34 - wordpress_client - INFO - Meta Yoast do post 11526 atualizada
+2025-08-05 10:14:34 - database - INFO - Log registrado: optimization - success para post 11526
+2025-08-05 10:14:34 - database - INFO - Último post processado atualizado para ID: 11526
+2025-08-05 10:14:34 - seo_optimizer - INFO - Submetendo post 11526 para a API de Indexação Instantânea...
+2025-08-05 10:14:34 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/chad-michael-murray-revela-o-destino-inesperado-de-jack-thompson-apos-o-fim-de-agent-carter/
+2025-08-05 10:14:35 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:14:35 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:14:35 - database - INFO - Log registrado: instant_indexing - error para post 11526
+2025-08-05 10:14:35 - seo_optimizer - INFO - Post 11526 otimizado com sucesso em 86.27s
+2025-08-05 10:14:35 - seo_optimizer - INFO - SEO Score: 40
+2025-08-05 10:14:35 - seo_optimizer - INFO - --- Processando post 11524: O Futuro de Boba Fett em Star Wars: Temuera Morrison Confirma Ausência em Novos Projetos ---
+2025-08-05 10:14:35 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:14:35 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:14:35 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:18:10 - gemini_client - WARNING - Tentativa 1 falhou: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 49
+}
+]
+2025-08-05 10:18:10 - gemini_client - INFO - Erro de API (quota/inválida), alternando para a próxima chave...
+2025-08-05 10:18:10 - gemini_client - INFO - Cliente Gemini inicializado com chave 2
+2025-08-05 10:18:10 - gemini_client - INFO - Alternado para chave API 2
+2025-08-05 10:18:10 - gemini_client - INFO - Tentativa 2 de otimização com Gemini
+2025-08-05 10:19:09 - gemini_client - WARNING - Tentativa 2 falhou: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 51
+}
+]
+2025-08-05 10:19:09 - gemini_client - INFO - Erro de API (quota/inválida), alternando para a próxima chave...
+2025-08-05 10:19:09 - gemini_client - INFO - Cliente Gemini inicializado com chave 3
+2025-08-05 10:19:09 - gemini_client - INFO - Alternado para chave API 3
+2025-08-05 10:19:09 - gemini_client - INFO - Tentativa 3 de otimização com Gemini
+2025-08-05 10:20:26 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:20:26 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:20:26 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:20:26 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:20:26 - wordpress_client - INFO - Excerpt truncado: 290 → 170 caracteres
+2025-08-05 10:20:26 - wordpress_client - INFO - Atualizando conteúdo do post 11524
+2025-08-05 10:20:29 - wordpress_client - INFO - Post 11524 atualizado com sucesso
+2025-08-05 10:20:29 - wordpress_client - INFO - Meta description truncada: 290 → 170 caracteres
+2025-08-05 10:20:29 - wordpress_client - INFO - Atualizando meta Yoast do post 11524
+2025-08-05 10:20:30 - wordpress_client - INFO - Meta Yoast do post 11524 atualizada
+2025-08-05 10:20:30 - database - INFO - Log registrado: optimization - success para post 11524
+2025-08-05 10:20:30 - database - INFO - Último post processado atualizado para ID: 11524
+2025-08-05 10:20:30 - seo_optimizer - INFO - Submetendo post 11524 para a API de Indexação Instantânea...
+2025-08-05 10:20:30 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/o-futuro-de-boba-fett-em-star-wars-temuera-morrison-confirma-ausencia-e-fas-podem-mudar-o-jogo/
+2025-08-05 10:20:31 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:20:31 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:20:31 - database - INFO - Log registrado: instant_indexing - error para post 11524
+2025-08-05 10:20:31 - seo_optimizer - INFO - Post 11524 otimizado com sucesso em 354.82s
+2025-08-05 10:20:31 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 10:20:31 - seo_optimizer - INFO - --- Processando post 11522: Retorno Sombrio do Justiceiro: Novo Uniforme, Data e Participação em Spider-Man no MCU ---
+2025-08-05 10:20:31 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:20:31 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:20:31 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:20:58 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:20:58 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:20:58 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:20:58 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:20:58 - wordpress_client - INFO - Excerpt truncado: 332 → 182 caracteres
+2025-08-05 10:20:58 - wordpress_client - INFO - Atualizando conteúdo do post 11522
+2025-08-05 10:21:01 - wordpress_client - INFO - Post 11522 atualizado com sucesso
+2025-08-05 10:21:01 - wordpress_client - INFO - Meta description truncada: 332 → 182 caracteres
+2025-08-05 10:21:01 - wordpress_client - INFO - Atualizando meta Yoast do post 11522
+2025-08-05 10:21:02 - wordpress_client - INFO - Meta Yoast do post 11522 atualizada
+2025-08-05 10:21:02 - database - INFO - Log registrado: optimization - success para post 11522
+2025-08-05 10:21:02 - database - INFO - Último post processado atualizado para ID: 11522
+2025-08-05 10:21:02 - seo_optimizer - INFO - Submetendo post 11522 para a API de Indexação Instantânea...
+2025-08-05 10:21:02 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/o-retorno-sombrio-do-justiceiro-no-mcu-jon-bernthal-exibe-novo-uniforme-e-detalhes-exclusivos/
+2025-08-05 10:21:03 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:21:03 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:21:03 - database - INFO - Log registrado: instant_indexing - error para post 11522
+2025-08-05 10:21:03 - seo_optimizer - INFO - Post 11522 otimizado com sucesso em 31.06s
+2025-08-05 10:21:03 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 10:21:03 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 574.09s ===
+2025-08-05 10:21:03 - seo_optimizer - INFO - Posts encontrados: 7
+2025-08-05 10:21:03 - seo_optimizer - INFO - Posts processados: 7
+2025-08-05 10:21:03 - seo_optimizer - INFO - Sucessos: 7
+2025-08-05 10:21:03 - seo_optimizer - INFO - Erros: 0
+2025-08-05 10:21:03 - __main__ - INFO - Resumo: 7 sucessos, 0 erros em 574.09s
+2025-08-05 10:21:03 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-05T10:11:29.530763', 'posts_found': 7, 'posts_processed': 7, 'posts_success': 7, 'posts_error': 0, 'processing_time': 574.0851483345032, 'errors': []}
+2025-08-05 10:21:03 - __main__ - INFO - Otimização concluída. Próxima execução: 10:21
+2025-08-05 10:36:03 - __main__ - INFO - Executando otimização agendada...
+2025-08-05 10:36:03 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-05 10:36:05 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 10:36:05 - seo_optimizer - INFO - Último post processado: 11522
+2025-08-05 10:36:05 - wordpress_client - INFO - Buscando posts novos desde ID 11522
+2025-08-05 10:36:28 - wordpress_client - INFO - Encontrados 9 posts novos
+2025-08-05 10:36:28 - seo_optimizer - INFO - Verificando 9 posts por duplicatas...
+2025-08-05 10:36:28 - seo_optimizer - INFO - Post otimizável encontrado: 11560 - Destino Final Bloodlines: O Filme de Terror de 2025 que Conquistou o HBO Max e Arrasou na Crítica!
+2025-08-05 10:36:28 - seo_optimizer - INFO - Post otimizável encontrado: 11558 - A Ausência Chocante de Oswald Mosley em &#8220;The Immortal Man&#8221;: Tudo Sobre o Filme de Peaky Blinders
+2025-08-05 10:36:28 - seo_optimizer - INFO - Post otimizável encontrado: 11556 - Final Destination: Bloodlines (2025): O Filme de Terror com 93% no Rotten Tomatoes que Domina o Streaming e Bilheterias
+2025-08-05 10:36:28 - seo_optimizer - INFO - Post otimizável encontrado: 11549 - Jurassic World: Ascensão – Cena Deletada Revela Velociraptors e Deixa Fãs decepcionados
+2025-08-05 10:36:28 - seo_optimizer - INFO - Post otimizável encontrado: 11532 - Olhos de Wakanda: 3 Novos Usos do Vibranium que Mudam o UCM
+2025-08-05 10:36:28 - seo_optimizer - INFO - Post otimizável encontrado: 11530 - Superman (2025) Domina Bilheteria de Verão: DC Supera a Marvel em 2025
+2025-08-05 10:36:28 - seo_optimizer - INFO - Post otimizável encontrado: 11528 - Teoria Marvel: Doutor Destino e o Poder Cósmico de Franklin Richards em Vingadores: Guerras Secretas
+2025-08-05 10:36:28 - seo_optimizer - INFO - Post otimizável encontrado: 11526 - Chad Michael Murray Revela o Futuro de Jack Thompson em Agent Carter: Retorno ao MCU é Possível?
+2025-08-05 10:36:28 - seo_optimizer - INFO - Post otimizável encontrado: 11524 - Temuera Morrison Confirma: Boba Fett Ausente do Novo Filme Star Wars; Fãs Reagem
+2025-08-05 10:36:28 - seo_optimizer - INFO - --- Processando post 11560: Destino Final Bloodlines: O Filme de Terror de 2025 que Conquistou o HBO Max e Arrasou na Crítica! ---
+2025-08-05 10:36:28 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:36:28 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:36:28 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:36:42 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:36:42 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:36:42 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:36:42 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:36:42 - wordpress_client - INFO - Excerpt truncado: 343 → 181 caracteres
+2025-08-05 10:36:42 - wordpress_client - INFO - Atualizando conteúdo do post 11560
+2025-08-05 10:36:44 - wordpress_client - INFO - Post 11560 atualizado com sucesso
+2025-08-05 10:36:44 - wordpress_client - INFO - Meta description truncada: 343 → 181 caracteres
+2025-08-05 10:36:44 - wordpress_client - INFO - Atualizando meta Yoast do post 11560
+2025-08-05 10:36:46 - wordpress_client - INFO - Meta Yoast do post 11560 atualizada
+2025-08-05 10:36:46 - database - INFO - Log registrado: optimization - success para post 11560
+2025-08-05 10:36:46 - database - INFO - Último post processado atualizado para ID: 11560
+2025-08-05 10:36:46 - seo_optimizer - INFO - Submetendo post 11560 para a API de Indexação Instantânea...
+2025-08-05 10:36:46 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/destino-final-bloodlines-o-filme-de-terror-de-2025-que-conquistou-o-hbo-max-e-arrasou-na-critica/
+2025-08-05 10:36:47 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:36:47 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:36:47 - database - INFO - Log registrado: instant_indexing - error para post 11560
+2025-08-05 10:36:47 - seo_optimizer - INFO - Post 11560 otimizado com sucesso em 17.90s
+2025-08-05 10:36:47 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:36:47 - seo_optimizer - INFO - --- Processando post 11558: A Ausência Chocante de Oswald Mosley em &#8220;The Immortal Man&#8221;: Tudo Sobre o Filme de Peaky Blinders ---
+2025-08-05 10:36:47 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:36:47 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:36:47 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:36:57 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:36:57 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:36:57 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:36:57 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:36:57 - wordpress_client - INFO - Excerpt truncado: 310 → 175 caracteres
+2025-08-05 10:36:57 - wordpress_client - INFO - Atualizando conteúdo do post 11558
+2025-08-05 10:36:59 - wordpress_client - INFO - Post 11558 atualizado com sucesso
+2025-08-05 10:36:59 - wordpress_client - INFO - Meta description truncada: 310 → 175 caracteres
+2025-08-05 10:36:59 - wordpress_client - INFO - Atualizando meta Yoast do post 11558
+2025-08-05 10:37:01 - wordpress_client - INFO - Meta Yoast do post 11558 atualizada
+2025-08-05 10:37:01 - database - INFO - Log registrado: optimization - success para post 11558
+2025-08-05 10:37:01 - database - INFO - Último post processado atualizado para ID: 11558
+2025-08-05 10:37:01 - seo_optimizer - INFO - Submetendo post 11558 para a API de Indexação Instantânea...
+2025-08-05 10:37:01 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/a-ausencia-chocante-de-oswald-mosley-em-the-immortal-man-tudo-sobre-o-filme-de-peaky-blinders/
+2025-08-05 10:37:02 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:37:02 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:37:02 - database - INFO - Log registrado: instant_indexing - error para post 11558
+2025-08-05 10:37:02 - seo_optimizer - INFO - Post 11558 otimizado com sucesso em 13.57s
+2025-08-05 10:37:02 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:37:02 - seo_optimizer - INFO - --- Processando post 11556: Final Destination: Bloodlines (2025): O Filme de Terror com 93% no Rotten Tomatoes que Domina o Streaming e Bilheterias ---
+2025-08-05 10:37:02 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:37:02 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:37:02 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:37:15 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:37:15 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:37:15 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:37:15 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:37:15 - wordpress_client - INFO - Excerpt truncado: 400 → 133 caracteres
+2025-08-05 10:37:15 - wordpress_client - INFO - Atualizando conteúdo do post 11556
+2025-08-05 10:37:18 - wordpress_client - INFO - Post 11556 atualizado com sucesso
+2025-08-05 10:37:18 - wordpress_client - INFO - Meta description truncada: 400 → 133 caracteres
+2025-08-05 10:37:18 - wordpress_client - INFO - Atualizando meta Yoast do post 11556
+2025-08-05 10:37:19 - wordpress_client - INFO - Meta Yoast do post 11556 atualizada
+2025-08-05 10:37:19 - database - INFO - Log registrado: optimization - success para post 11556
+2025-08-05 10:37:19 - database - INFO - Último post processado atualizado para ID: 11556
+2025-08-05 10:37:19 - seo_optimizer - INFO - Submetendo post 11556 para a API de Indexação Instantânea...
+2025-08-05 10:37:19 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/final-destination-bloodlines-2025-o-filme-de-terror-com-93-no-rotten-tomatoes-que-domina-o-streaming-e-bilheterias/
+2025-08-05 10:37:20 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:37:20 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:37:20 - database - INFO - Log registrado: instant_indexing - error para post 11556
+2025-08-05 10:37:20 - seo_optimizer - INFO - Post 11556 otimizado com sucesso em 16.64s
+2025-08-05 10:37:20 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:37:20 - seo_optimizer - INFO - --- Processando post 11549: Jurassic World: Ascensão – Cena Deletada Revela Velociraptors e Deixa Fãs decepcionados ---
+2025-08-05 10:37:20 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:37:20 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:37:20 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:37:32 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:37:32 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:37:32 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:37:32 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:37:32 - wordpress_client - INFO - Excerpt truncado: 395 → 117 caracteres
+2025-08-05 10:37:32 - wordpress_client - INFO - Atualizando conteúdo do post 11549
+2025-08-05 10:37:35 - wordpress_client - INFO - Post 11549 atualizado com sucesso
+2025-08-05 10:37:35 - wordpress_client - INFO - Meta description truncada: 395 → 117 caracteres
+2025-08-05 10:37:35 - wordpress_client - INFO - Atualizando meta Yoast do post 11549
+2025-08-05 10:37:36 - wordpress_client - INFO - Meta Yoast do post 11549 atualizada
+2025-08-05 10:37:36 - database - INFO - Log registrado: optimization - success para post 11549
+2025-08-05 10:37:36 - database - INFO - Último post processado atualizado para ID: 11549
+2025-08-05 10:37:36 - seo_optimizer - INFO - Submetendo post 11549 para a API de Indexação Instantânea...
+2025-08-05 10:37:36 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/jurassic-world-rebirth-cena-deletada-inedita-destaca-velociraptors-que-fizeram-falta/
+2025-08-05 10:37:37 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:37:37 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:37:37 - database - INFO - Log registrado: instant_indexing - error para post 11549
+2025-08-05 10:37:37 - seo_optimizer - INFO - Post 11549 otimizado com sucesso em 16.20s
+2025-08-05 10:37:37 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 10:37:37 - seo_optimizer - INFO - --- Processando post 11532: Olhos de Wakanda: 3 Novos Usos do Vibranium que Mudam o UCM ---
+2025-08-05 10:37:37 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:37:37 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:37:37 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:37:44 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:37:44 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:37:44 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:37:44 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:37:44 - wordpress_client - INFO - Excerpt truncado: 261 → 121 caracteres
+2025-08-05 10:37:44 - wordpress_client - INFO - Atualizando conteúdo do post 11532
+2025-08-05 10:37:47 - wordpress_client - INFO - Post 11532 atualizado com sucesso
+2025-08-05 10:37:47 - wordpress_client - INFO - Meta description truncada: 261 → 121 caracteres
+2025-08-05 10:37:47 - wordpress_client - INFO - Atualizando meta Yoast do post 11532
+2025-08-05 10:37:48 - wordpress_client - INFO - Meta Yoast do post 11532 atualizada
+2025-08-05 10:37:48 - database - INFO - Log registrado: optimization - success para post 11532
+2025-08-05 10:37:48 - database - INFO - Último post processado atualizado para ID: 11532
+2025-08-05 10:37:48 - seo_optimizer - INFO - Submetendo post 11532 para a API de Indexação Instantânea...
+2025-08-05 10:37:48 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/vibranium-olhos-de-wakanda-revela-3-aprimoramentos-chave-para-o-metal-mais-cobicado-do-ucm/
+2025-08-05 10:37:49 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:37:49 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:37:49 - database - INFO - Log registrado: instant_indexing - error para post 11532
+2025-08-05 10:37:49 - seo_optimizer - INFO - Post 11532 otimizado com sucesso em 10.44s
+2025-08-05 10:37:49 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:37:49 - seo_optimizer - INFO - --- Processando post 11530: Superman (2025) Domina Bilheteria de Verão: DC Supera a Marvel em 2025 ---
+2025-08-05 10:37:49 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:37:49 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:37:49 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:38:03 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:38:03 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:38:03 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:38:03 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:38:03 - wordpress_client - INFO - Excerpt truncado: 289 → 179 caracteres
+2025-08-05 10:38:03 - wordpress_client - INFO - Atualizando conteúdo do post 11530
+2025-08-05 10:38:06 - wordpress_client - INFO - Post 11530 atualizado com sucesso
+2025-08-05 10:38:06 - wordpress_client - INFO - Meta description truncada: 289 → 179 caracteres
+2025-08-05 10:38:06 - wordpress_client - INFO - Atualizando meta Yoast do post 11530
+2025-08-05 10:38:08 - wordpress_client - INFO - Meta Yoast do post 11530 atualizada
+2025-08-05 10:38:08 - database - INFO - Log registrado: optimization - success para post 11530
+2025-08-05 10:38:08 - database - INFO - Último post processado atualizado para ID: 11530
+2025-08-05 10:38:08 - seo_optimizer - INFO - Submetendo post 11530 para a API de Indexação Instantânea...
+2025-08-05 10:38:08 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/superman-2025-voa-alto-quantas-vezes-a-dc-superou-a-marvel-na-bilheteria-de-verao/
+2025-08-05 10:38:08 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:38:08 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:38:08 - database - INFO - Log registrado: instant_indexing - error para post 11530
+2025-08-05 10:38:08 - seo_optimizer - INFO - Post 11530 otimizado com sucesso em 18.32s
+2025-08-05 10:38:08 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:38:08 - seo_optimizer - INFO - --- Processando post 11528: Teoria Marvel: Doutor Destino e o Poder Cósmico de Franklin Richards em Vingadores: Guerras Secretas ---
+2025-08-05 10:38:08 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:38:08 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:38:08 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:38:19 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:38:19 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:38:19 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:38:19 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:38:19 - wordpress_client - INFO - Excerpt truncado: 400 → 176 caracteres
+2025-08-05 10:38:19 - wordpress_client - INFO - Atualizando conteúdo do post 11528
+2025-08-05 10:38:22 - wordpress_client - INFO - Post 11528 atualizado com sucesso
+2025-08-05 10:38:22 - wordpress_client - INFO - Meta description truncada: 400 → 176 caracteres
+2025-08-05 10:38:22 - wordpress_client - INFO - Atualizando meta Yoast do post 11528
+2025-08-05 10:38:24 - wordpress_client - INFO - Meta Yoast do post 11528 atualizada
+2025-08-05 10:38:24 - database - INFO - Log registrado: optimization - success para post 11528
+2025-08-05 10:38:24 - database - INFO - Último post processado atualizado para ID: 11528
+2025-08-05 10:38:24 - seo_optimizer - INFO - Submetendo post 11528 para a API de Indexação Instantânea...
+2025-08-05 10:38:24 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/doutor-destino-e-franklin-richards-no-mcu-entenda-a-teoria-chocante-do-poder-cosmico/
+2025-08-05 10:38:25 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:38:25 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:38:25 - database - INFO - Log registrado: instant_indexing - error para post 11528
+2025-08-05 10:38:25 - seo_optimizer - INFO - Post 11528 otimizado com sucesso em 15.10s
+2025-08-05 10:38:25 - seo_optimizer - INFO - SEO Score: 60
+2025-08-05 10:38:25 - seo_optimizer - INFO - --- Processando post 11526: Chad Michael Murray Revela o Futuro de Jack Thompson em Agent Carter: Retorno ao MCU é Possível? ---
+2025-08-05 10:38:25 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:38:25 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:38:25 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:38:35 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:38:35 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:38:35 - seo_optimizer - INFO - Cálculo do SEO Score: 40/100. Fatores: Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:38:35 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:38:35 - wordpress_client - INFO - Excerpt truncado: 385 → 130 caracteres
+2025-08-05 10:38:35 - wordpress_client - INFO - Atualizando conteúdo do post 11526
+2025-08-05 10:38:38 - wordpress_client - INFO - Post 11526 atualizado com sucesso
+2025-08-05 10:38:38 - wordpress_client - INFO - Meta description truncada: 385 → 130 caracteres
+2025-08-05 10:38:38 - wordpress_client - INFO - Atualizando meta Yoast do post 11526
+2025-08-05 10:38:40 - wordpress_client - INFO - Meta Yoast do post 11526 atualizada
+2025-08-05 10:38:40 - database - INFO - Log registrado: optimization - success para post 11526
+2025-08-05 10:38:40 - database - INFO - Último post processado atualizado para ID: 11526
+2025-08-05 10:38:40 - seo_optimizer - INFO - Submetendo post 11526 para a API de Indexação Instantânea...
+2025-08-05 10:38:40 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/chad-michael-murray-revela-o-destino-inesperado-de-jack-thompson-apos-o-fim-de-agent-carter/
+2025-08-05 10:38:41 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:38:41 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:38:41 - database - INFO - Log registrado: instant_indexing - error para post 11526
+2025-08-05 10:38:41 - seo_optimizer - INFO - Post 11526 otimizado com sucesso em 14.43s
+2025-08-05 10:38:41 - seo_optimizer - INFO - SEO Score: 40
+2025-08-05 10:38:41 - seo_optimizer - INFO - --- Processando post 11524: Temuera Morrison Confirma: Boba Fett Ausente do Novo Filme Star Wars; Fãs Reagem ---
+2025-08-05 10:38:41 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:38:41 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:38:41 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:38:53 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:38:53 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:38:53 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:38:53 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:38:53 - wordpress_client - INFO - Excerpt truncado: 357 → 137 caracteres
+2025-08-05 10:38:53 - wordpress_client - INFO - Atualizando conteúdo do post 11524
+2025-08-05 10:38:56 - wordpress_client - INFO - Post 11524 atualizado com sucesso
+2025-08-05 10:38:56 - wordpress_client - INFO - Meta description truncada: 357 → 137 caracteres
+2025-08-05 10:38:56 - wordpress_client - INFO - Atualizando meta Yoast do post 11524
+2025-08-05 10:38:57 - wordpress_client - INFO - Meta Yoast do post 11524 atualizada
+2025-08-05 10:38:57 - database - INFO - Log registrado: optimization - success para post 11524
+2025-08-05 10:38:57 - database - INFO - Último post processado atualizado para ID: 11524
+2025-08-05 10:38:57 - seo_optimizer - INFO - Submetendo post 11524 para a API de Indexação Instantânea...
+2025-08-05 10:38:57 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/o-futuro-de-boba-fett-em-star-wars-temuera-morrison-confirma-ausencia-e-fas-podem-mudar-o-jogo/
+2025-08-05 10:38:58 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:38:58 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:38:58 - database - INFO - Log registrado: instant_indexing - error para post 11524
+2025-08-05 10:38:58 - seo_optimizer - INFO - Post 11524 otimizado com sucesso em 16.06s
+2025-08-05 10:38:58 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 10:38:58 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 174.73s ===
+2025-08-05 10:38:58 - seo_optimizer - INFO - Posts encontrados: 9
+2025-08-05 10:38:58 - seo_optimizer - INFO - Posts processados: 9
+2025-08-05 10:38:58 - seo_optimizer - INFO - Sucessos: 9
+2025-08-05 10:38:58 - seo_optimizer - INFO - Erros: 0
+2025-08-05 10:38:58 - __main__ - INFO - Resumo: 9 sucessos, 0 erros em 174.73s
+2025-08-05 10:38:58 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-05T10:36:03.702332', 'posts_found': 9, 'posts_processed': 9, 'posts_success': 9, 'posts_error': 0, 'processing_time': 174.73391842842102, 'errors': []}
+2025-08-05 10:38:58 - __main__ - INFO - Otimização concluída. Próxima execução: 10:38
+2025-08-05 10:53:58 - __main__ - INFO - Executando otimização agendada...
+2025-08-05 10:53:58 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-05 10:54:00 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 10:54:00 - seo_optimizer - INFO - Último post processado: 11524
+2025-08-05 10:54:00 - wordpress_client - INFO - Buscando posts novos desde ID 11524
+2025-08-05 10:54:24 - wordpress_client - INFO - Encontrados 9 posts novos
+2025-08-05 10:54:24 - seo_optimizer - INFO - Verificando 9 posts por duplicatas...
+2025-08-05 10:54:24 - seo_optimizer - INFO - Post otimizável encontrado: 11573 - James Gunn Nega Rumores de Casting Batman DCU: O Futuro do Cavaleiro das Trevas
+2025-08-05 10:54:24 - seo_optimizer - INFO - Post otimizável encontrado: 11560 - Destino Final Bloodlines: Sucesso de Terror no HBO Max com 93% de Aprovação no Rotten Tomatoes
+2025-08-05 10:54:24 - seo_optimizer - INFO - Post otimizável encontrado: 11558 - Filme de Peaky Blinders: A Ausência de Oswald Mosley em &#8220;The Immortal Man&#8221; e o que esperar
+2025-08-05 10:54:24 - seo_optimizer - INFO - Post otimizável encontrado: 11556 - Final Destination: Bloodlines (2025) Conquista 93% no Rotten Tomatoes e Domina Bilheterias e Streaming
+2025-08-05 10:54:24 - seo_optimizer - INFO - Post otimizável encontrado: 11549 - Cena Deletada de Jurassic World: Ascensão Revela Velociraptors e Deixa Fãs Decepcionados
+2025-08-05 10:54:24 - seo_optimizer - INFO - Post otimizável encontrado: 11532 - Olhos de Wakanda: 3 Novos Usos do Vibranium que Mudam o MCU
+2025-08-05 10:54:25 - seo_optimizer - INFO - Post otimizável encontrado: 11530 - Superman (2025) domina a bilheteria de verão, superando a Marvel
+2025-08-05 10:54:25 - seo_optimizer - INFO - Post otimizável encontrado: 11528 - Teoria Marvel: Doutor Destino e o Poder Cósmico de Franklin Richards em Vingadores: Guerras Secretas
+2025-08-05 10:54:25 - seo_optimizer - INFO - Post otimizável encontrado: 11526 - Chad Michael Murray e o Futuro de Jack Thompson em Agent Carter: Retorno ao MCU é Possível?
+2025-08-05 10:54:25 - seo_optimizer - INFO - --- Processando post 11573: James Gunn Nega Rumores de Casting Batman DCU: O Futuro do Cavaleiro das Trevas ---
+2025-08-05 10:54:25 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:54:25 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:54:25 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:55:26 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:55:26 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:55:26 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:55:26 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:55:26 - wordpress_client - INFO - Excerpt truncado: 395 → 180 caracteres
+2025-08-05 10:55:26 - wordpress_client - INFO - Atualizando conteúdo do post 11573
+2025-08-05 10:55:29 - wordpress_client - INFO - Post 11573 atualizado com sucesso
+2025-08-05 10:55:29 - wordpress_client - INFO - Meta description truncada: 395 → 180 caracteres
+2025-08-05 10:55:29 - wordpress_client - INFO - Atualizando meta Yoast do post 11573
+2025-08-05 10:55:30 - wordpress_client - INFO - Meta Yoast do post 11573 atualizada
+2025-08-05 10:55:30 - database - INFO - Log registrado: optimization - success para post 11573
+2025-08-05 10:55:30 - database - INFO - Último post processado atualizado para ID: 11573
+2025-08-05 10:55:30 - seo_optimizer - INFO - Submetendo post 11573 para a API de Indexação Instantânea...
+2025-08-05 10:55:30 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/james-gunn-nega-rumores-de-casting-batman-dcu-o-futuro-do-cavaleiro-das-trevas/
+2025-08-05 10:55:31 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:55:31 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:55:31 - database - INFO - Log registrado: instant_indexing - error para post 11573
+2025-08-05 10:55:31 - seo_optimizer - INFO - Post 11573 otimizado com sucesso em 65.46s
+2025-08-05 10:55:31 - seo_optimizer - INFO - SEO Score: 60
+2025-08-05 10:55:31 - seo_optimizer - INFO - --- Processando post 11560: Destino Final Bloodlines: Sucesso de Terror no HBO Max com 93% de Aprovação no Rotten Tomatoes ---
+2025-08-05 10:55:31 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:55:31 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:55:31 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:56:38 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:56:38 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:56:38 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:56:38 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:56:38 - wordpress_client - INFO - Excerpt truncado: 303 → 125 caracteres
+2025-08-05 10:56:38 - wordpress_client - INFO - Atualizando conteúdo do post 11560
+2025-08-05 10:56:57 - wordpress_client - INFO - Post 11560 atualizado com sucesso
+2025-08-05 10:56:57 - wordpress_client - INFO - Meta description truncada: 303 → 125 caracteres
+2025-08-05 10:56:57 - wordpress_client - INFO - Atualizando meta Yoast do post 11560
+2025-08-05 10:56:58 - wordpress_client - INFO - Meta Yoast do post 11560 atualizada
+2025-08-05 10:56:58 - database - INFO - Log registrado: optimization - success para post 11560
+2025-08-05 10:56:58 - database - INFO - Último post processado atualizado para ID: 11560
+2025-08-05 10:56:58 - seo_optimizer - INFO - Submetendo post 11560 para a API de Indexação Instantânea...
+2025-08-05 10:56:58 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/destino-final-bloodlines-o-filme-de-terror-de-2025-que-conquistou-o-hbo-max-e-arrasou-na-critica/
+2025-08-05 10:56:59 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:56:59 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:56:59 - database - INFO - Log registrado: instant_indexing - error para post 11560
+2025-08-05 10:56:59 - seo_optimizer - INFO - Post 11560 otimizado com sucesso em 87.01s
+2025-08-05 10:56:59 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 10:56:59 - seo_optimizer - INFO - --- Processando post 11558: Filme de Peaky Blinders: A Ausência de Oswald Mosley em &#8220;The Immortal Man&#8221; e o que esperar ---
+2025-08-05 10:56:59 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:56:59 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:56:59 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:57:12 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:57:12 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:57:12 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:57:12 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:57:12 - wordpress_client - INFO - Excerpt truncado: 329 → 180 caracteres
+2025-08-05 10:57:12 - wordpress_client - INFO - Atualizando conteúdo do post 11558
+2025-08-05 10:57:15 - wordpress_client - INFO - Post 11558 atualizado com sucesso
+2025-08-05 10:57:15 - wordpress_client - INFO - Meta description truncada: 329 → 180 caracteres
+2025-08-05 10:57:15 - wordpress_client - INFO - Atualizando meta Yoast do post 11558
+2025-08-05 10:57:16 - wordpress_client - INFO - Meta Yoast do post 11558 atualizada
+2025-08-05 10:57:16 - database - INFO - Log registrado: optimization - success para post 11558
+2025-08-05 10:57:16 - database - INFO - Último post processado atualizado para ID: 11558
+2025-08-05 10:57:16 - seo_optimizer - INFO - Submetendo post 11558 para a API de Indexação Instantânea...
+2025-08-05 10:57:16 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/a-ausencia-chocante-de-oswald-mosley-em-the-immortal-man-tudo-sobre-o-filme-de-peaky-blinders/
+2025-08-05 10:57:17 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:57:17 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:57:17 - database - INFO - Log registrado: instant_indexing - error para post 11558
+2025-08-05 10:57:17 - seo_optimizer - INFO - Post 11558 otimizado com sucesso em 17.09s
+2025-08-05 10:57:17 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:57:17 - seo_optimizer - INFO - --- Processando post 11556: Final Destination: Bloodlines (2025) Conquista 93% no Rotten Tomatoes e Domina Bilheterias e Streaming ---
+2025-08-05 10:57:17 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:57:17 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:57:17 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:57:43 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:57:43 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:57:43 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:57:43 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:57:43 - wordpress_client - INFO - Excerpt truncado: 311 → 130 caracteres
+2025-08-05 10:57:43 - wordpress_client - INFO - Atualizando conteúdo do post 11556
+2025-08-05 10:57:45 - wordpress_client - INFO - Post 11556 atualizado com sucesso
+2025-08-05 10:57:45 - wordpress_client - INFO - Meta description truncada: 311 → 130 caracteres
+2025-08-05 10:57:45 - wordpress_client - INFO - Atualizando meta Yoast do post 11556
+2025-08-05 10:57:47 - wordpress_client - INFO - Meta Yoast do post 11556 atualizada
+2025-08-05 10:57:47 - database - INFO - Log registrado: optimization - success para post 11556
+2025-08-05 10:57:47 - database - INFO - Último post processado atualizado para ID: 11556
+2025-08-05 10:57:47 - seo_optimizer - INFO - Submetendo post 11556 para a API de Indexação Instantânea...
+2025-08-05 10:57:47 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/final-destination-bloodlines-2025-o-filme-de-terror-com-93-no-rotten-tomatoes-que-domina-o-streaming-e-bilheterias/
+2025-08-05 10:57:47 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:57:47 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:57:48 - database - INFO - Log registrado: instant_indexing - error para post 11556
+2025-08-05 10:57:48 - seo_optimizer - INFO - Post 11556 otimizado com sucesso em 29.22s
+2025-08-05 10:57:48 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:57:48 - seo_optimizer - INFO - --- Processando post 11549: Cena Deletada de Jurassic World: Ascensão Revela Velociraptors e Deixa Fãs Decepcionados ---
+2025-08-05 10:57:48 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:57:48 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:57:48 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:57:59 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:57:59 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:57:59 - seo_optimizer - INFO - Cálculo do SEO Score: 100/100. Fatores: KW no título, KW no resumo, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:57:59 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:57:59 - wordpress_client - INFO - Excerpt truncado: 397 → 162 caracteres
+2025-08-05 10:57:59 - wordpress_client - INFO - Atualizando conteúdo do post 11549
+2025-08-05 10:58:01 - wordpress_client - INFO - Post 11549 atualizado com sucesso
+2025-08-05 10:58:01 - wordpress_client - INFO - Meta description truncada: 397 → 162 caracteres
+2025-08-05 10:58:01 - wordpress_client - INFO - Atualizando meta Yoast do post 11549
+2025-08-05 10:58:02 - wordpress_client - INFO - Meta Yoast do post 11549 atualizada
+2025-08-05 10:58:02 - database - INFO - Log registrado: optimization - success para post 11549
+2025-08-05 10:58:03 - database - INFO - Último post processado atualizado para ID: 11549
+2025-08-05 10:58:03 - seo_optimizer - INFO - Submetendo post 11549 para a API de Indexação Instantânea...
+2025-08-05 10:58:03 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/jurassic-world-rebirth-cena-deletada-inedita-destaca-velociraptors-que-fizeram-falta/
+2025-08-05 10:58:03 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:58:03 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:58:03 - database - INFO - Log registrado: instant_indexing - error para post 11549
+2025-08-05 10:58:03 - seo_optimizer - INFO - Post 11549 otimizado com sucesso em 14.85s
+2025-08-05 10:58:03 - seo_optimizer - INFO - SEO Score: 100
+2025-08-05 10:58:03 - seo_optimizer - INFO - --- Processando post 11532: Olhos de Wakanda: 3 Novos Usos do Vibranium que Mudam o MCU ---
+2025-08-05 10:58:03 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:58:03 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:58:03 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:58:15 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:58:15 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:58:15 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, KW no resumo, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:58:15 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:58:15 - wordpress_client - INFO - Excerpt truncado: 278 → 127 caracteres
+2025-08-05 10:58:15 - wordpress_client - INFO - Atualizando conteúdo do post 11532
+2025-08-05 10:58:17 - wordpress_client - INFO - Post 11532 atualizado com sucesso
+2025-08-05 10:58:17 - wordpress_client - INFO - Meta description truncada: 278 → 127 caracteres
+2025-08-05 10:58:17 - wordpress_client - INFO - Atualizando meta Yoast do post 11532
+2025-08-05 10:58:18 - wordpress_client - INFO - Meta Yoast do post 11532 atualizada
+2025-08-05 10:58:18 - database - INFO - Log registrado: optimization - success para post 11532
+2025-08-05 10:58:18 - database - INFO - Último post processado atualizado para ID: 11532
+2025-08-05 10:58:18 - seo_optimizer - INFO - Submetendo post 11532 para a API de Indexação Instantânea...
+2025-08-05 10:58:18 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/vibranium-olhos-de-wakanda-revela-3-aprimoramentos-chave-para-o-metal-mais-cobicado-do-ucm/
+2025-08-05 10:58:20 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:58:20 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:58:20 - database - INFO - Log registrado: instant_indexing - error para post 11532
+2025-08-05 10:58:20 - seo_optimizer - INFO - Post 11532 otimizado com sucesso em 15.02s
+2025-08-05 10:58:20 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:58:20 - seo_optimizer - INFO - --- Processando post 11530: Superman (2025) domina a bilheteria de verão, superando a Marvel ---
+2025-08-05 10:58:20 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:58:20 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:58:20 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:58:45 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:58:45 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:58:45 - seo_optimizer - INFO - Cálculo do SEO Score: 80/100. Fatores: KW no título, Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:58:45 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:58:45 - wordpress_client - INFO - Excerpt truncado: 341 → 178 caracteres
+2025-08-05 10:58:45 - wordpress_client - INFO - Atualizando conteúdo do post 11530
+2025-08-05 10:58:48 - wordpress_client - INFO - Post 11530 atualizado com sucesso
+2025-08-05 10:58:48 - wordpress_client - INFO - Meta description truncada: 341 → 178 caracteres
+2025-08-05 10:58:48 - wordpress_client - INFO - Atualizando meta Yoast do post 11530
+2025-08-05 10:58:49 - wordpress_client - INFO - Meta Yoast do post 11530 atualizada
+2025-08-05 10:58:49 - database - INFO - Log registrado: optimization - success para post 11530
+2025-08-05 10:58:49 - database - INFO - Último post processado atualizado para ID: 11530
+2025-08-05 10:58:49 - seo_optimizer - INFO - Submetendo post 11530 para a API de Indexação Instantânea...
+2025-08-05 10:58:49 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/superman-2025-voa-alto-quantas-vezes-a-dc-superou-a-marvel-na-bilheteria-de-verao/
+2025-08-05 10:58:50 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:58:50 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:58:50 - database - INFO - Log registrado: instant_indexing - error para post 11530
+2025-08-05 10:58:50 - seo_optimizer - INFO - Post 11530 otimizado com sucesso em 29.37s
+2025-08-05 10:58:50 - seo_optimizer - INFO - SEO Score: 80
+2025-08-05 10:58:50 - seo_optimizer - INFO - --- Processando post 11528: Teoria Marvel: Doutor Destino e o Poder Cósmico de Franklin Richards em Vingadores: Guerras Secretas ---
+2025-08-05 10:58:50 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:58:50 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:58:50 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:59:11 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:59:11 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:59:11 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:59:11 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:59:11 - wordpress_client - INFO - Excerpt truncado: 361 → 178 caracteres
+2025-08-05 10:59:11 - wordpress_client - INFO - Atualizando conteúdo do post 11528
+2025-08-05 10:59:13 - wordpress_client - INFO - Post 11528 atualizado com sucesso
+2025-08-05 10:59:13 - wordpress_client - INFO - Meta description truncada: 361 → 178 caracteres
+2025-08-05 10:59:13 - wordpress_client - INFO - Atualizando meta Yoast do post 11528
+2025-08-05 10:59:14 - wordpress_client - INFO - Meta Yoast do post 11528 atualizada
+2025-08-05 10:59:14 - database - INFO - Log registrado: optimization - success para post 11528
+2025-08-05 10:59:14 - database - INFO - Último post processado atualizado para ID: 11528
+2025-08-05 10:59:14 - seo_optimizer - INFO - Submetendo post 11528 para a API de Indexação Instantânea...
+2025-08-05 10:59:14 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/doutor-destino-e-franklin-richards-no-mcu-entenda-a-teoria-chocante-do-poder-cosmico/
+2025-08-05 10:59:15 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:59:15 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:59:15 - database - INFO - Log registrado: instant_indexing - error para post 11528
+2025-08-05 10:59:15 - seo_optimizer - INFO - Post 11528 otimizado com sucesso em 23.81s
+2025-08-05 10:59:15 - seo_optimizer - INFO - SEO Score: 60
+2025-08-05 10:59:15 - seo_optimizer - INFO - --- Processando post 11526: Chad Michael Murray e o Futuro de Jack Thompson em Agent Carter: Retorno ao MCU é Possível? ---
+2025-08-05 10:59:15 - seo_optimizer - INFO - Busca de mídia no TMDB desativada para simplificar a otimização.
+2025-08-05 10:59:15 - seo_optimizer - INFO - Otimizando conteúdo com Gemini...
+2025-08-05 10:59:15 - gemini_client - INFO - Tentativa 1 de otimização com Gemini
+2025-08-05 10:59:27 - gemini_client - INFO - Resposta do Gemini parseada com sucesso
+2025-08-05 10:59:27 - gemini_client - INFO - Conteúdo otimizado com sucesso pelo Gemini
+2025-08-05 10:59:27 - seo_optimizer - INFO - Cálculo do SEO Score: 60/100. Fatores: Links internos, Uso de negrito, Boa estrutura de parágrafos
+2025-08-05 10:59:27 - seo_optimizer - INFO - Atualizando post no WordPress...
+2025-08-05 10:59:27 - wordpress_client - INFO - Excerpt truncado: 316 → 130 caracteres
+2025-08-05 10:59:27 - wordpress_client - INFO - Atualizando conteúdo do post 11526
+2025-08-05 10:59:29 - wordpress_client - INFO - Post 11526 atualizado com sucesso
+2025-08-05 10:59:29 - wordpress_client - INFO - Meta description truncada: 316 → 130 caracteres
+2025-08-05 10:59:29 - wordpress_client - INFO - Atualizando meta Yoast do post 11526
+2025-08-05 10:59:31 - wordpress_client - INFO - Meta Yoast do post 11526 atualizada
+2025-08-05 10:59:31 - database - INFO - Log registrado: optimization - success para post 11526
+2025-08-05 10:59:31 - database - INFO - Último post processado atualizado para ID: 11526
+2025-08-05 10:59:31 - seo_optimizer - INFO - Submetendo post 11526 para a API de Indexação Instantânea...
+2025-08-05 10:59:31 - wordpress_client - INFO - Enviando URL para o Rank Math Instant Indexing: https://www.maquinanerd.com.br/chad-michael-murray-revela-o-destino-inesperado-de-jack-thompson-apos-o-fim-de-agent-carter/
+2025-08-05 10:59:32 - wordpress_client - ERROR - Erro 404 (Not Found) ao acessar a API do Rank Math.
+2025-08-05 10:59:32 - wordpress_client - ERROR - Verifique se a API REST está ativada no Rank Math e se a RANK_MATH_API_KEY no arquivo .env está correta.
+2025-08-05 10:59:32 - database - INFO - Log registrado: instant_indexing - error para post 11526
+2025-08-05 10:59:32 - seo_optimizer - INFO - Post 11526 otimizado com sucesso em 15.93s
+2025-08-05 10:59:32 - seo_optimizer - INFO - SEO Score: 60
+2025-08-05 10:59:32 - seo_optimizer - INFO - === CICLO CONCLUÍDO EM 333.67s ===
+2025-08-05 10:59:32 - seo_optimizer - INFO - Posts encontrados: 9
+2025-08-05 10:59:32 - seo_optimizer - INFO - Posts processados: 9
+2025-08-05 10:59:32 - seo_optimizer - INFO - Sucessos: 9
+2025-08-05 10:59:32 - seo_optimizer - INFO - Erros: 0
+2025-08-05 10:59:32 - __main__ - INFO - Resumo: 9 sucessos, 0 erros em 333.67s
+2025-08-05 10:59:32 - database - INFO - Estatística definida: last_cycle_result = {'cycle_start': '2025-08-05T10:53:58.538877', 'posts_found': 9, 'posts_processed': 9, 'posts_success': 9, 'posts_error': 0, 'processing_time': 333.67259430885315, 'errors': []}
+2025-08-05 10:59:32 - __main__ - INFO - Otimização concluída. Próxima execução: 10:59
+2025-08-05 11:11:35 - config - WARNING - RANK_MATH_API_KEY não configurado ou está com o valor padrão. A indexação instantânea será desativada.
+2025-08-05 11:11:35 - config - INFO - Configuração validada com sucesso
+2025-08-05 11:11:35 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-05 11:11:35 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-05 11:11:35 - config - INFO - TMDB configurado: Sim
+2025-08-05 11:11:35 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-05 11:11:36 - gemini_client - INFO - Cliente Gemini inicializado com chave 3
+2025-08-05 11:11:36 - waitress - INFO - Serving on http://0.0.0.0:5000
+2025-08-05 11:12:06 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:12:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:12:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:12:25 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:12:26 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:12:45 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:12:45 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:13:15 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:13:15 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:13:44 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:13:45 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:14:15 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:14:15 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:14:32 - __main__ - INFO - Executando otimização agendada...
+2025-08-05 11:14:32 - seo_optimizer - INFO - === INICIANDO CICLO DE OTIMIZAÇÃO SEO ===
+2025-08-05 11:14:44 - wordpress_client - INFO - Conectado como: Abel
+2025-08-05 11:14:45 - wordpress_client - INFO - Conectado como: Abel
