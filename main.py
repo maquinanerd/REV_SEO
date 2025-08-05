@@ -84,11 +84,18 @@ class SEOOptimizerApp:
             print("="*50)
             print(f"Total de posts otimizados: {stats.get('total_processed', 0)}")
             print(f"Otimizados hoje: {stats.get('today_processed', 0)}")
-            print(f"Erros hoje: {stats.get('today_errors', 0)}")
             print(f"ID do último post processado: {last_post_id}")
             if stats.get('last_processing'):
                 last_proc_time = datetime.fromisoformat(stats['last_processing']).strftime('%d/%m/%Y %H:%M:%S')
                 print(f"Última atividade registrada: {last_proc_time}")
+            print("-"*50)
+            print("📈 Histórico Recente (Otimizações / Erros)")
+            historical_stats = stats.get('historical', [])
+            if historical_stats:
+                for day_stat in historical_stats:
+                    print(f"  - {day_stat['date']}: {day_stat['success']} sucessos, {day_stat['errors']} erros")
+            else:
+                print("  - Nenhum dado histórico encontrado.")
             print("-"*50)
             print("🤖 Status da Quota Gemini")
             print(f"Índice da chave atual: {quota_info.get('api_key_index', 0)}")

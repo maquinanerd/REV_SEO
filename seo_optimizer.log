@@ -36022,3 +36022,34 @@ message: "API key not valid. Please pass a valid API key."
 2025-08-04 21:06:14 - wordpress_client - INFO - Conectado como: Abel
 2025-08-04 21:07:13 - wordpress_client - INFO - Conectado como: Abel
 2025-08-04 21:07:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:08:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:08:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:09:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:09:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:09:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:09:52 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:09:53 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:10:10 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:10:11 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:10:59 - wordpress_client - ERROR - Erro ao testar conexão: HTTPSConnectionPool(host='www.maquinanerd.com.br', port=443): Read timed out. (read timeout=None)
+2025-08-04 21:11:21 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:11:22 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:11:23 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:12:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:12:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:12:37 - config - WARNING - RANK_MATH_API_KEY não configurado ou está com o valor padrão. A indexação instantânea será desativada.
+2025-08-04 21:12:37 - config - INFO - Configuração validada com sucesso
+2025-08-04 21:12:37 - config - INFO - WordPress: https://www.maquinanerd.com.br
+2025-08-04 21:12:37 - config - INFO - Gemini API Keys: 3 chaves configuradas
+2025-08-04 21:12:37 - config - INFO - TMDB configurado: Sim
+2025-08-04 21:12:37 - database - INFO - Banco de dados inicializado com sucesso
+2025-08-04 21:12:39 - gemini_client - INFO - Cliente Gemini inicializado com chave 1
+2025-08-04 21:12:39 - __main__ - INFO - Buscando estatísticas do banco de dados...
+2025-08-04 21:13:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:13:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:14:13 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:14:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:15:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:15:15 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:16:14 - wordpress_client - INFO - Conectado como: Abel
+2025-08-04 21:16:15 - wordpress_client - INFO - Conectado como: Abel
