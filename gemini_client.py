@@ -1,12 +1,24 @@
 import json
 import logging
 import time
+import re
 import random
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Optional
+
 import google.generativeai as genai
+from google.generativeai.types import generation_types
+
 from config import config
 from database import db
 
+class AllKeysExhaustedError(Exception):
+    """Exceção para quando todas as chaves de API atingiram a quota."""
+    pass
+
+class GeminiClient:
+    """Cliente para integração com Google Gemini AI com gerenciamento de múltiplas chaves."""
+
+    def __init__(self):
         self.logger = logging.getLogger(__name__)
         self.api_keys = config.gemini_api_keys
         self.current_key_index = db.get_gemini_quota_info().get('api_key_index', 0)

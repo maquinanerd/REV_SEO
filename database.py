@@ -151,32 +151,56 @@ class Database:
             ''', (limit,))
             return [dict(row) for row in cursor.fetchall()]
 
+    def get_best_available_key_index(self) -> Optional[int]:
+        """
+        Retorna o índice da melhor chave de API disponível.
+        A melhor chave é a que não excedeu a quota e foi usada menos recentemente.
+        """
         with self.get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute('''
-                UPDATE gemini_quota 
-                SET api_key_index = ?, 
-                    requests_made = ?, 
-                    quota_exceeded = ?,
-                    updated_at = ?
-                WHERE id = 1
-            ''', (api_key_index, requests_made, quota_exceeded, datetime.now().isoformat()))
-            conn.commit()
+                SELECT api_key_index FROM gemini_quota
+                WHERE quota_exceeded = 0
+                ORDER BY last_used_at ASC
+                LIMIT 1
+            ''')
+            result = cursor.fetchone()
+            return result['api_key_index'] if result else None
 
-    def reset_gemini_quota(self):
-        """Reseta quota do Gemini (usado diariamente)"""
+    def update_key_usage(self, api_key_index: int, quota_exceeded: bool = False):
+        """
+        Atualiza o uso de uma chave, incrementando requisições e marcando se a quota foi excedida.
+        """
         with self.get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute('''
-                UPDATE gemini_quota 
-                SET requests_made = 0, 
-                    quota_exceeded = 0,
-                    last_reset_date = ?,
+                UPDATE gemini_quota
+                SET requests_made = requests_made + 1,
+                    quota_exceeded = ?,
+                    last_used_at = ?,
                     updated_at = ?
-                WHERE id = 1
-            ''', (datetime.now().isoformat(), datetime.now().isoformat()))
+                WHERE api_key_index = ?
+            ''', (quota_exceeded, datetime.now().isoformat(), datetime.now().isoformat(), api_key_index))
             conn.commit()
-            self.logger.info("Quota do Gemini resetada")
+            self.logger.info(f"Uso da chave {api_key_index} atualizado. Quota excedida: {quota_exceeded}")
+
+    def reset_all_quotas(self):
+        """Reseta o status de quota_exceeded para todas as chaves."""
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+                UPDATE gemini_quota
+                SET quota_exceeded = 0, requests_made = 0, updated_at = ?
+            ''', (datetime.now().isoformat(),))
+            conn.commit()
+            self.logger.info("Todas as quotas de chaves Gemini foram resetadas.")
+
+    def get_all_keys_status(self) -> List[Dict]:
+        """Retorna o status de todas as chaves de API do Gemini."""
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute('SELECT * FROM gemini_quota ORDER BY api_key_index ASC')
+            return [dict(row) for row in cursor.fetchall()]
 
     def get_statistics(self) -> Dict:
         """Retorna estatísticas gerais do sistema"""
