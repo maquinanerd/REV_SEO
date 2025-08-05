@@ -70,6 +70,34 @@ class SEOOptimizerApp:
         except Exception as e:
             self.logger.error(f"Erro durante o teste: {e}")
             sys.exit(1)
+
+    def show_stats(self):
+        """Exibe as estatísticas do banco de dados e sai."""
+        self.logger.info("Buscando estatísticas do banco de dados...")
+        try:
+            stats = db.get_statistics()
+            quota_info = db.get_gemini_quota_info()
+            last_post_id = db.get_last_processed_post_id()
+
+            print("\n" + "="*50)
+            print("📊 ESTATÍSTICAS - WordPress SEO Optimizer")
+            print("="*50)
+            print(f"Total de posts otimizados: {stats.get('total_processed', 0)}")
+            print(f"Otimizados hoje: {stats.get('today_processed', 0)}")
+            print(f"Erros hoje: {stats.get('today_errors', 0)}")
+            print(f"ID do último post processado: {last_post_id}")
+            if stats.get('last_processing'):
+                last_proc_time = datetime.fromisoformat(stats['last_processing']).strftime('%d/%m/%Y %H:%M:%S')
+                print(f"Última atividade registrada: {last_proc_time}")
+            print("-"*50)
+            print("🤖 Status da Quota Gemini")
+            print(f"Índice da chave atual: {quota_info.get('api_key_index', 0)}")
+            print(f"Requisições feitas (chave atual): {quota_info.get('requests_made', 0)}")
+            print(f"Quota excedida: {'Sim' if quota_info.get('quota_exceeded') else 'Não'}")
+            print("="*50 + "\n")
+        except Exception as e:
+            self.logger.error(f"Erro ao buscar estatísticas: {e}", exc_info=True)
+            sys.exit(1)
     
     def run_continuous(self):
         """Executa otimização continuamente"""
@@ -136,6 +164,7 @@ def main():
         epilog="""
 Exemplos de uso:
   python main.py --once     # Executa uma vez (teste)
+  python main.py --stats    # Exibe estatísticas e sai
   python main.py           # Executa continuamente (produção)
 
 Para acessar o painel web:
@@ -149,11 +178,19 @@ Para acessar o painel web:
         help='Executa otimização apenas uma vez (modo teste)'
     )
     
+    parser.add_argument(
+        '--stats',
+        action='store_true',
+        help='Exibe estatísticas de otimização e sai'
+    )
+    
     args = parser.parse_args()
     
     app = SEOOptimizerApp()
     
-    if args.once:
+    if args.stats:
+        app.show_stats()
+    elif args.once:
         app.run_once()
     else:
         app.run_continuous()
