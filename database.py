@@ -151,39 +151,6 @@ class Database:
             ''', (limit,))
             return [dict(row) for row in cursor.fetchall()]
 
-    def get_gemini_quota_info(self) -> Dict:
-        """Retorna informações sobre quota do Gemini"""
-        try:
-            with self.get_connection() as conn:
-                cursor = conn.cursor()
-                cursor.execute('SELECT * FROM gemini_quota WHERE id = 1')
-                result = cursor.fetchone()
-
-                if result:
-                    return {
-                        'api_key_index': result['api_key_index'],
-                        'requests_made': result['requests_made'],
-                        'quota_exceeded': bool(result['quota_exceeded']),
-                        'last_reset_date': result['last_reset_date']
-                    }
-                else:
-                    return {
-                        'api_key_index': 0,
-                        'requests_made': 0,
-                        'quota_exceeded': False,
-                        'last_reset_date': None
-                    }
-        except Exception as e:
-            self.logger.error(f"Erro ao obter quota do Gemini: {e}")
-            return {
-                'api_key_index': 0,
-                'requests_made': 0,
-                'quota_exceeded': False,
-                'last_reset_date': None
-            }
-
-    def update_gemini_quota(self, api_key_index: int, requests_made: int, quota_exceeded: bool = False):
-        """Atualiza informações de quota do Gemini"""
         with self.get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute('''
